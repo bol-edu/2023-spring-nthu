@@ -49,8 +49,8 @@ For Lab #A, students practiced the labs in Vitis-Tutorials [[2]](#[2]) and tried
 |   Topics (Links to folders in Xilinx official repository)    |                       Students (Links)                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | [Mixing C++ and RTL Kernels](https://github.com/Xilinx/Vitis-Tutorials/tree/2021.2/Hardware_Acceleration/Feature_Tutorials/02-mixing-c-rtl-kernels) | [邱崇喆](https://github.com/ccontemplator/Vitis-mixed-c-rtl-kernel) |
-| [Vitis HLS Analysis and Optimization](https://github.com/Xilinx/Vitis-Tutorials/blob/2021.2/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/README.md) |       [許睿哲](https://github.com/ray3210ray3210/2022HLS)        |
-| [Vitis HLS Analysis and Optimization](https://github.com/Xilinx/Vitis-Tutorials/blob/2021.2/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization/README.md) |       [宋乃仁](https://github.com/Barry-Sung/HLS_LABA_Dataflow-Debug-and-Optimization)        |
+| [Dataflow Debug and Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization) |       [許睿哲](https://github.com/ray3210ray3210/2022HLS)        |
+| [Dataflow Debug and Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization) |       [宋乃仁](https://github.com/Barry-Sung/HLS_LABA_Dataflow-Debug-and-Optimization)        |
 | [Host Code Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Design_Tutorials/07-host-code-opt) | [陳佳詳](https://github.com/yclin629/High-Level-Synthesis--Host-Memory-Access) |
 | [Host Code Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Design_Tutorials/07-host-code-opt) | [張耀明](https://github.com/s095339/LabA-host-code-optimization) |
 
