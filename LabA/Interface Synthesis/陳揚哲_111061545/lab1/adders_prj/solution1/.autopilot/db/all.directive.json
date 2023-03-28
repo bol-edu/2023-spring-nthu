@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "adders",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "D:\/LAB\/Interface_Synthesis\/lab1\/adders_prj\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "adders"
+              }]
+          }
+        },
+        {
+          "functionName": "adders",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "D:\/LAB\/Interface_Synthesis\/lab1\/adders_prj\/solution1\/csynth.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "adders"
+              }]
+          }
+        }
+      ]
+    }]}

@@ -1,0 +1,145 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_array_io.cpp
+   Compiling (apcc) array_io_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ecoyu' on host 'joedesktop' (Windows NT_amd64 version 6.2) on Tue Mar 21 01:47:56 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.591 seconds; peak allocated memory: 0.836 MB.
+   Compiling (apcc) array_io.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ecoyu' on host 'joedesktop' (Windows NT_amd64 version 6.2) on Tue Mar 21 01:47:59 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.547 seconds; peak allocated memory: 1.215 MB.
+   Compiling apatb_array_io_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Test passed !
+
+D:\master\HLS\labA_InterfaceSynthesis\lab3\array_io_prj\solution8\sim\verilog>set PATH= 
+
+D:\master\HLS\labA_InterfaceSynthesis\lab3\array_io_prj\solution8\sim\verilog>call C:/Xilinx/Vivado/2022.1/bin/xelab xil_defaultlib.apatb_array_io_top glbl -Oenable_linking_all_libraries  -prj array_io.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib "ieee_proposed=./ieee_proposed" -s array_io -debug wave 
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_array_io_top glbl -Oenable_linking_all_libraries -prj array_io.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s array_io -debug wave 
+Multi-threading is on. Using 22 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/AESL_autofifo_d_o.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_d_o
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/AESL_automem_d_i.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_d_i
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/array_io.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_array_io_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/array_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module array_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/array_io_acc_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module array_io_acc_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/array_io_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module array_io_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.array_io_acc_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.array_io_flow_control_loop_pipe
+Compiling module xil_defaultlib.array_io
+Compiling module xil_defaultlib.AESL_autofifo_d_o
+Compiling module xil_defaultlib.AESL_automem_d_i
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_array_io_top
+Compiling module work.glbl
+Built simulation snapshot array_io
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/array_io/xsim_script.tcl
+# xsim {array_io} -view {{array_io_dataflow_ana.wcfg}} -tclbatch {array_io.tcl} -protoinst {array_io.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file array_io.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_array_io_top/AESL_inst_array_io//AESL_inst_array_io_activity
+Time resolution is 1 ps
+open_wave_config array_io_dataflow_ana.wcfg
+source array_io.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(fifo) -into $coutputgroup]
+## add_wave /apatb_array_io_top/AESL_inst_array_io/d_o_write -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_array_io_top/AESL_inst_array_io/d_o_full_n -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_array_io_top/AESL_inst_array_io/d_o_din -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_array_io_top/AESL_inst_array_io/d_i_q0 -into $return_group -radix hex
+## add_wave /apatb_array_io_top/AESL_inst_array_io/d_i_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_array_io_top/AESL_inst_array_io/d_i_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_array_io_top/AESL_inst_array_io/ap_start -into $blocksiggroup
+## add_wave /apatb_array_io_top/AESL_inst_array_io/ap_done -into $blocksiggroup
+## add_wave /apatb_array_io_top/AESL_inst_array_io/ap_idle -into $blocksiggroup
+## add_wave /apatb_array_io_top/AESL_inst_array_io/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_array_io_top/AESL_inst_array_io/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_array_io_top/AESL_inst_array_io/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_array_io_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_array_io_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_array_io_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_array_io_top/LENGTH_d_o -into $tb_portdepth_group -radix hex
+## add_wave /apatb_array_io_top/LENGTH_d_i -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(fifo) -into $tbcoutputgroup]
+## add_wave /apatb_array_io_top/d_o_write -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_array_io_top/d_o_full_n -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_array_io_top/d_o_din -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_array_io_top/d_i_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_array_io_top/d_i_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_array_io_top/d_i_address0 -into $tb_return_group -radix hex
+## save_wave_config array_io.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "110000"
+// RTL Simulation : 1 / 1 [100.00%] @ "250000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 274 ns : File "D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/solution8/sim/verilog/array_io.autotb.v" Line 265
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Mar 21 01:48:06 2023...
+Test passed !
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

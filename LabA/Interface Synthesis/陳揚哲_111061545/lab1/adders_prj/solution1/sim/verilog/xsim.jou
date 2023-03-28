@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Mar 12 23:24:14 2023
+# Process ID: 1460
+# Current directory: D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/adders/xsim_script.tcl}
+# Log file: D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/xsim.log
+# Journal file: D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog\xsim.jou
+# Running On: DESKTOP-650NISA, OS: Windows, CPU Frequency: 3394 MHz, CPU Physical cores: 16, Host memory: 34258 MB
+#-----------------------------------------------------------
+source xsim.dir/adders/xsim_script.tcl
+open_wave_config adders_dataflow_ana.wcfg
+source adders.tcl

@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="array_io.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_dataflow_monitor_sv " />
+            <top_module name="apatb_array_io_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="HLS Process Summary Group" type="group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io//AESL_inst_array_io_activity" type="group">
+         <obj_property name="label">AESL_inst_array_io_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_array_io_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_array_io_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_array_io_top/AESL_inst_array_io//AESL_inst_array_io_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_array_io_top/AESL_inst_array_io//AESL_inst_array_io_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_array_io_top/AESL_inst_array_io//AESL_inst_array_io_activity.dataflowTxTooltipData</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/AESL_inst_array_io_activity" type="protoinst">
+      <obj_property name="ElementShortName">AESL_inst_array_io_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_array_io_activity</obj_property>
+   </wvobject>
+   <wvobject fp_name="AESL_inst_array_io_group" type="group">
+      <obj_property name="label">AESL_inst_array_io</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="AESL_inst_array_io_Handshake_group" type="group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group17" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group18" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group19" type="group">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_31_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_31_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_31_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_31" type="array">
+               <obj_property name="ElementShortName">d_o_31[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_31[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_30_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_30_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_30_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_30" type="array">
+               <obj_property name="ElementShortName">d_o_30[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_30[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_29_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_29_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_29_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_29" type="array">
+               <obj_property name="ElementShortName">d_o_29[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_29[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_28_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_28_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_28_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_28" type="array">
+               <obj_property name="ElementShortName">d_o_28[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_28[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_27_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_27_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_27_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_27" type="array">
+               <obj_property name="ElementShortName">d_o_27[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_27[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_26_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_26_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_26_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_26" type="array">
+               <obj_property name="ElementShortName">d_o_26[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_26[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_25_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_25_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_25_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_25" type="array">
+               <obj_property name="ElementShortName">d_o_25[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_25[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_24_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_24_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_24_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_24" type="array">
+               <obj_property name="ElementShortName">d_o_24[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_24[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_23_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_23_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_23_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_23" type="array">
+               <obj_property name="ElementShortName">d_o_23[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_23[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_22_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_22_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_22_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_22" type="array">
+               <obj_property name="ElementShortName">d_o_22[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_22[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_21_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_21_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_21_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_21" type="array">
+               <obj_property name="ElementShortName">d_o_21[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_21[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_20_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_20_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_20_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_20" type="array">
+               <obj_property name="ElementShortName">d_o_20[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_20[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_19_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_19_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_19_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_19" type="array">
+               <obj_property name="ElementShortName">d_o_19[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_19[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_18_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_18_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_18_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_18" type="array">
+               <obj_property name="ElementShortName">d_o_18[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_18[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_17_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_17_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_17_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_17" type="array">
+               <obj_property name="ElementShortName">d_o_17[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_17[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_16_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_16_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_16_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_16" type="array">
+               <obj_property name="ElementShortName">d_o_16[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_16[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_15_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_15_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_15_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_15" type="array">
+               <obj_property name="ElementShortName">d_o_15[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_15[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_14_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_14_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_14_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_14" type="array">
+               <obj_property name="ElementShortName">d_o_14[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_14[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_13_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_13_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_13_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_13" type="array">
+               <obj_property name="ElementShortName">d_o_13[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_13[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_12_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_12_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_12_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_12" type="array">
+               <obj_property name="ElementShortName">d_o_12[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_12[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_11_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_11_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_11_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_11" type="array">
+               <obj_property name="ElementShortName">d_o_11[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_11[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_10_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_10_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_10_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_10" type="array">
+               <obj_property name="ElementShortName">d_o_10[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_10[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_9_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_9_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_9_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_9" type="array">
+               <obj_property name="ElementShortName">d_o_9[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_9[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_8_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_8_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_8_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_8" type="array">
+               <obj_property name="ElementShortName">d_o_8[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_8[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_7_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_7_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_7_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_7" type="array">
+               <obj_property name="ElementShortName">d_o_7[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_7[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_6_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_6_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_6_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_6" type="array">
+               <obj_property name="ElementShortName">d_o_6[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_6[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_5_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_5_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_5_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_5" type="array">
+               <obj_property name="ElementShortName">d_o_5[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_5[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_4_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_4_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_4_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_4" type="array">
+               <obj_property name="ElementShortName">d_o_4[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_4[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_3_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_3_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_3_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_3" type="array">
+               <obj_property name="ElementShortName">d_o_3[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_3[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_2_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_2_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_2_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_2" type="array">
+               <obj_property name="ElementShortName">d_o_2[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_2[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_1_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_1" type="array">
+               <obj_property name="ElementShortName">d_o_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_0_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_0_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_0_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_o_0" type="array">
+               <obj_property name="ElementShortName">d_o_0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group84" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group85" type="group">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_31" type="array">
+               <obj_property name="ElementShortName">d_i_31[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_31[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_30" type="array">
+               <obj_property name="ElementShortName">d_i_30[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_30[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_29" type="array">
+               <obj_property name="ElementShortName">d_i_29[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_29[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_28" type="array">
+               <obj_property name="ElementShortName">d_i_28[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_28[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_27" type="array">
+               <obj_property name="ElementShortName">d_i_27[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_27[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_26" type="array">
+               <obj_property name="ElementShortName">d_i_26[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_26[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_25" type="array">
+               <obj_property name="ElementShortName">d_i_25[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_25[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_24" type="array">
+               <obj_property name="ElementShortName">d_i_24[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_24[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_23" type="array">
+               <obj_property name="ElementShortName">d_i_23[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_23[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_22" type="array">
+               <obj_property name="ElementShortName">d_i_22[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_22[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_21" type="array">
+               <obj_property name="ElementShortName">d_i_21[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_21[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_20" type="array">
+               <obj_property name="ElementShortName">d_i_20[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_20[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_19" type="array">
+               <obj_property name="ElementShortName">d_i_19[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_19[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_18" type="array">
+               <obj_property name="ElementShortName">d_i_18[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_18[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_17" type="array">
+               <obj_property name="ElementShortName">d_i_17[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_17[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_16" type="array">
+               <obj_property name="ElementShortName">d_i_16[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_16[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_15" type="array">
+               <obj_property name="ElementShortName">d_i_15[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_15[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_14" type="array">
+               <obj_property name="ElementShortName">d_i_14[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_14[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_13" type="array">
+               <obj_property name="ElementShortName">d_i_13[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_13[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_12" type="array">
+               <obj_property name="ElementShortName">d_i_12[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_12[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_11" type="array">
+               <obj_property name="ElementShortName">d_i_11[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_11[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_10" type="array">
+               <obj_property name="ElementShortName">d_i_10[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_10[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_9" type="array">
+               <obj_property name="ElementShortName">d_i_9[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_9[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_8" type="array">
+               <obj_property name="ElementShortName">d_i_8[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_8[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_7" type="array">
+               <obj_property name="ElementShortName">d_i_7[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_7[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_6" type="array">
+               <obj_property name="ElementShortName">d_i_6[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_6[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_5" type="array">
+               <obj_property name="ElementShortName">d_i_5[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_5[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_4" type="array">
+               <obj_property name="ElementShortName">d_i_4[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_4[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_3" type="array">
+               <obj_property name="ElementShortName">d_i_3[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_3[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_2" type="array">
+               <obj_property name="ElementShortName">d_i_2[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_2[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_1" type="array">
+               <obj_property name="ElementShortName">d_i_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/d_i_0" type="array">
+               <obj_property name="ElementShortName">d_i_0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group118" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group123" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_rst" type="logic">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group125" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_array_io_top/AESL_inst_array_io/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group127" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group128" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group129" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_array_io_top/AUTOTB_TRANSACTION_NUM" type="array">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group130" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_0" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_1" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_2" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_3" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_4" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_5" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_6" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_7" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_8" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_8[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_8[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_9" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_9[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_9[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_10" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_10[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_10[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_11" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_11[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_11[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_12" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_12[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_12[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_13" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_13[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_13[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_14" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_14[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_14[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_15" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_15[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_15[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_16" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_16[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_16[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_17" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_17[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_17[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_18" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_18[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_18[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_19" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_19[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_19[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_20" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_20[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_20[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_21" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_21[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_21[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_22" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_22[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_22[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_23" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_23[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_23[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_24" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_24[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_24[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_25" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_25[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_25[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_26" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_26[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_26[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_27" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_27[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_27[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_28" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_28[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_28[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_29" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_29[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_29[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_30" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_30[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_30[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_o_31" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_o_31[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_o_31[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_0" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_0[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_0[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_1" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_1[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_1[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_2" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_3" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_3[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_3[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_4" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_4[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_4[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_5" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_5[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_5[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_6" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_6[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_6[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_7" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_7[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_7[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_8" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_8[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_8[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_9" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_9[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_9[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_10" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_10[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_10[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_11" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_11[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_11[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_12" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_12[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_12[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_13" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_13[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_13[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_14" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_14[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_14[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_15" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_15[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_15[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_16" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_16[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_16[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_17" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_17[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_17[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_18" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_18[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_18[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_19" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_19[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_19[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_20" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_20[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_20[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_21" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_21[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_21[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_22" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_22[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_22[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_23" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_23[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_23[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_24" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_24[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_24[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_25" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_25[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_25[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_26" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_26[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_26[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_27" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_27[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_27[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_28" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_28[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_28[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_29" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_29[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_29[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_30" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_30[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_30[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/LENGTH_d_i_31" type="array">
+               <obj_property name="ElementShortName">LENGTH_d_i_31[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_d_i_31[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group198" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group199" type="group">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_array_io_top/d_o_31_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_31_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_31_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_31" type="array">
+               <obj_property name="ElementShortName">d_o_31[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_31[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_30_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_30_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_30_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_30" type="array">
+               <obj_property name="ElementShortName">d_o_30[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_30[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_29_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_29_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_29_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_29" type="array">
+               <obj_property name="ElementShortName">d_o_29[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_29[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_28_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_28_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_28_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_28" type="array">
+               <obj_property name="ElementShortName">d_o_28[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_28[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_27_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_27_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_27_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_27" type="array">
+               <obj_property name="ElementShortName">d_o_27[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_27[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_26_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_26_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_26_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_26" type="array">
+               <obj_property name="ElementShortName">d_o_26[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_26[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_25_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_25_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_25_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_25" type="array">
+               <obj_property name="ElementShortName">d_o_25[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_25[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_24_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_24_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_24_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_24" type="array">
+               <obj_property name="ElementShortName">d_o_24[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_24[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_23_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_23_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_23_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_23" type="array">
+               <obj_property name="ElementShortName">d_o_23[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_23[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_22_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_22_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_22_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_22" type="array">
+               <obj_property name="ElementShortName">d_o_22[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_22[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_21_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_21_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_21_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_21" type="array">
+               <obj_property name="ElementShortName">d_o_21[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_21[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_20_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_20_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_20_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_20" type="array">
+               <obj_property name="ElementShortName">d_o_20[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_20[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_19_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_19_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_19_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_19" type="array">
+               <obj_property name="ElementShortName">d_o_19[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_19[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_18_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_18_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_18_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_18" type="array">
+               <obj_property name="ElementShortName">d_o_18[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_18[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_17_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_17_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_17_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_17" type="array">
+               <obj_property name="ElementShortName">d_o_17[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_17[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_16_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_16_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_16_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_16" type="array">
+               <obj_property name="ElementShortName">d_o_16[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_16[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_15_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_15_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_15_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_15" type="array">
+               <obj_property name="ElementShortName">d_o_15[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_15[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_14_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_14_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_14_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_14" type="array">
+               <obj_property name="ElementShortName">d_o_14[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_14[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_13_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_13_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_13_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_13" type="array">
+               <obj_property name="ElementShortName">d_o_13[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_13[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_12_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_12_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_12_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_12" type="array">
+               <obj_property name="ElementShortName">d_o_12[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_12[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_11_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_11_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_11_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_11" type="array">
+               <obj_property name="ElementShortName">d_o_11[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_11[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_10_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_10_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_10_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_10" type="array">
+               <obj_property name="ElementShortName">d_o_10[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_10[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_9_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_9_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_9_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_9" type="array">
+               <obj_property name="ElementShortName">d_o_9[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_9[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_8_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_8_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_8_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_8" type="array">
+               <obj_property name="ElementShortName">d_o_8[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_8[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_7_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_7_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_7_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_7" type="array">
+               <obj_property name="ElementShortName">d_o_7[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_7[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_6_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_6_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_6_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_6" type="array">
+               <obj_property name="ElementShortName">d_o_6[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_6[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_5_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_5_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_5_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_5" type="array">
+               <obj_property name="ElementShortName">d_o_5[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_5[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_4_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_4_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_4_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_4" type="array">
+               <obj_property name="ElementShortName">d_o_4[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_4[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_3_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_3_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_3_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_3" type="array">
+               <obj_property name="ElementShortName">d_o_3[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_3[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_2_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_2_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_2_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_2" type="array">
+               <obj_property name="ElementShortName">d_o_2[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_2[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_1_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_1_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_1_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_1" type="array">
+               <obj_property name="ElementShortName">d_o_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_0_ap_vld" type="logic">
+               <obj_property name="ElementShortName">d_o_0_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">d_o_0_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_o_0" type="array">
+               <obj_property name="ElementShortName">d_o_0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_o_0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group264" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group265" type="group">
+            <obj_property name="label">return(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_array_io_top/d_i_31" type="array">
+               <obj_property name="ElementShortName">d_i_31[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_31[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_30" type="array">
+               <obj_property name="ElementShortName">d_i_30[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_30[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_29" type="array">
+               <obj_property name="ElementShortName">d_i_29[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_29[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_28" type="array">
+               <obj_property name="ElementShortName">d_i_28[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_28[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_27" type="array">
+               <obj_property name="ElementShortName">d_i_27[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_27[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_26" type="array">
+               <obj_property name="ElementShortName">d_i_26[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_26[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_25" type="array">
+               <obj_property name="ElementShortName">d_i_25[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_25[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_24" type="array">
+               <obj_property name="ElementShortName">d_i_24[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_24[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_23" type="array">
+               <obj_property name="ElementShortName">d_i_23[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_23[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_22" type="array">
+               <obj_property name="ElementShortName">d_i_22[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_22[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_21" type="array">
+               <obj_property name="ElementShortName">d_i_21[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_21[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_20" type="array">
+               <obj_property name="ElementShortName">d_i_20[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_20[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_19" type="array">
+               <obj_property name="ElementShortName">d_i_19[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_19[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_18" type="array">
+               <obj_property name="ElementShortName">d_i_18[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_18[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_17" type="array">
+               <obj_property name="ElementShortName">d_i_17[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_17[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_16" type="array">
+               <obj_property name="ElementShortName">d_i_16[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_16[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_15" type="array">
+               <obj_property name="ElementShortName">d_i_15[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_15[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_14" type="array">
+               <obj_property name="ElementShortName">d_i_14[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_14[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_13" type="array">
+               <obj_property name="ElementShortName">d_i_13[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_13[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_12" type="array">
+               <obj_property name="ElementShortName">d_i_12[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_12[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_11" type="array">
+               <obj_property name="ElementShortName">d_i_11[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_11[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_10" type="array">
+               <obj_property name="ElementShortName">d_i_10[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_10[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_9" type="array">
+               <obj_property name="ElementShortName">d_i_9[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_9[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_8" type="array">
+               <obj_property name="ElementShortName">d_i_8[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_8[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_7" type="array">
+               <obj_property name="ElementShortName">d_i_7[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_7[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_6" type="array">
+               <obj_property name="ElementShortName">d_i_6[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_6[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_5" type="array">
+               <obj_property name="ElementShortName">d_i_5[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_5[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_4" type="array">
+               <obj_property name="ElementShortName">d_i_4[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_4[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_3" type="array">
+               <obj_property name="ElementShortName">d_i_3[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_3[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_2" type="array">
+               <obj_property name="ElementShortName">d_i_2[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_2[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_1" type="array">
+               <obj_property name="ElementShortName">d_i_1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_array_io_top/d_i_0" type="array">
+               <obj_property name="ElementShortName">d_i_0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">d_i_0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

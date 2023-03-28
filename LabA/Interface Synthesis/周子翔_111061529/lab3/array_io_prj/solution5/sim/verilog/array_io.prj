@@ -1,0 +1,8 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_autofifo_d_o_0.v"
+sv xil_defaultlib "AESL_autofifo_d_o_1.v"
+sv xil_defaultlib "AESL_automem_d_i.v"
+sv xil_defaultlib "array_io.autotb.v"
+sv xil_defaultlib "array_io.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

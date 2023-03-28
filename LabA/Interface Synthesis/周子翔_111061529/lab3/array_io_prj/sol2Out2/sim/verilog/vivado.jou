@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Mar 18 18:25:44 2023
+# Process ID: 14164
+# Current directory: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/sim/verilog/vivado.log
+# Journal file: D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/sim/verilog\vivado.jou
+# Running On: JoeDesktop, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 16, Host memory: 68448 MB
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config D:/master/HLS/labA_InterfaceSynthesis/lab3/array_io_prj/sol2Out2/sim/verilog/array_io.wcfg
+close_sim

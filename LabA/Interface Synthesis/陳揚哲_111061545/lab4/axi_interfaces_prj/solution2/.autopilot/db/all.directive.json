@@ -1,0 +1,202 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "d_o"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "8"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "d_o"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "d_i"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "8"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "d_i"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "For_Loop",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "8"
+              }]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "For_Loop",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "rewind",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "axi_interfaces"
+              }]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "return"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "axi_interfaces",
+          "label": "",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "E:\/HLS\/Interface_Synthesis\/lab4\/axi_interfaces_prj\/solution2\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "axi_interfaces"
+              }]
+          }
+        }
+      ]
+    }]}

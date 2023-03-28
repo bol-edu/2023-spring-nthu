@@ -1,0 +1,22 @@
+   Build using "C:/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_adders.cpp
+   Compiling (apcc) adders.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ecoyu' on host 'joedesktop' (Windows NT_amd64 version 6.2) on Fri Mar 17 01:55:27 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/master/HLS/labA_InterfaceSynthesis/lab1/adders_prj/solution4/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.504 seconds; peak allocated memory: 0.887 MB.
+   Compiling (apcc) adders_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ecoyu' on host 'joedesktop' (Windows NT_amd64 version 6.2) on Fri Mar 17 01:55:30 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/master/HLS/labA_InterfaceSynthesis/lab1/adders_prj/solution4/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.516 seconds; peak allocated memory: 0.852 MB.
+   Compiling apatb_adders_ir.ll
+   Generating cosim.tv.exe

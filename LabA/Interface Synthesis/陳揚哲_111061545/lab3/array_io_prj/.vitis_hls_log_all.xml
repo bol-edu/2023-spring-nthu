@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.420+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.398+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.392+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.387+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.381+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.374+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.368+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:19.362+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_1' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:18.619+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_0' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:18.609+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (D:/LAB/Interface_Synthesis/lab3/array_io_prj/solution9/directives.tcl:8:9)" projectName="array_io_prj" solutionName="solution9" date="2023-03-13T01:38:18.599+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.509+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.493+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.486+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.480+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.474+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.467+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.461+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:29.455+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_3' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:28.748+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_2' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:28.741+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_1' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:28.735+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_0' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:28.729+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (D:/LAB/Interface_Synthesis/lab3/array_io_prj/solution8/directives.tcl:8:9)" projectName="array_io_prj" solutionName="solution8" date="2023-03-13T01:37:28.718+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.708+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.686+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.680+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.675+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.670+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.665+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.660+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:56.655+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_1' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:55.958+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_0' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:55.952+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (D:/LAB/Interface_Synthesis/lab3/array_io_prj/solution6/directives.tcl:8:9)" projectName="array_io_prj" solutionName="solution6" date="2023-03-13T01:36:55.939+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.166+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.143+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.136+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.130+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.124+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.118+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.114+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:45.108+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_3' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:44.412+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_2' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:44.406+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_1' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:44.399+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'd_o_0' (array_io.c:57:0)&#xD;&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:44.391+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-340] The resource pragma (bind_storage) on top-level function argument, in 'call' is unsupported, please use INTERFACE pragma instead (D:/LAB/Interface_Synthesis/lab3/array_io_prj/solution3/directives.tcl:8:9)" projectName="array_io_prj" solutionName="solution3" date="2023-03-13T01:34:44.381+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

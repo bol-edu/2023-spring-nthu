@@ -1,0 +1,57 @@
+
+主機名稱:             JOEDESKTOP
+作業系統名稱:         Microsoft Windows 11 家用版
+作業系統版本:         10.0.22621 N/A 組建 22621
+作業系統製造商:       Microsoft Corporation
+作業系統設定:         獨立工作站
+作業系統組建類型:     Multiprocessor Free
+註冊的擁有者:         ecoyukino@gmail.com
+註冊公司:             
+產品識別碼:           00326-10027-82483-AA402
+原始安裝日期:         9/28/2022, 3:27:32 PM
+系統開機時間:         3/20/2023, 8:26:58 PM
+系統製造商:           ASUS
+系統型號:             System Product Name
+系統類型:             x64-based PC
+處理器:               已安裝 1 處理器。
+                      [01]: Intel64 Family 6 Model 151 Stepping 2 GenuineIntel ~3200 Mhz
+BIOS 版本:            American Megatrends Inc. 1402, 4/1/2022
+Windows 目錄:         C:\WINDOWS
+系統目錄:             C:\WINDOWS\system32
+開機裝置:             \Device\HarddiskVolume1
+系統地區設定:         zh-tw;中文 (台灣)
+輸入法地區設定:       en-us;英文 (美國)
+時區:                 (UTC+08:00) 台北
+實體記憶體總計:       65,277 MB
+可用實體記憶體:       45,879 MB
+虛擬記憶體: 大小上限: 69,373 MB
+虛擬記憶體: 可用:     43,027 MB
+虛擬記憶體: 使用中:   26,346 MB
+分頁檔位置:           C:\pagefile.sys
+網域:                 WORKGROUP
+登入伺服器:           \\JOEDESKTOP
+Hotfix:               已安裝 4 Hotfix。
+                      [01]: KB5022497
+                      [02]: KB5012170
+                      [03]: KB5023706
+                      [04]: KB5022948
+網路卡:               已安裝 3 NIC。
+                      [01]: TAP-Surfshark Windows Adapter V9
+                            連線名稱:           乙太網路 3
+                            狀態:               媒體已中斷連線
+                      [02]: Realtek Gaming 2.5GbE Family Controller
+                            連線名稱:           乙太網路
+                            DHCP 已啟用:          是
+                            DHCP 伺服器:        192.168.1.1
+                            IP 位址
+                            [01]: 192.168.1.102
+                            [02]: fe80::6e09:543e:44ba:9fb8
+                            [03]: 2001:b011:7004:3b64:a0fe:6384:fa59:a9c2
+                            [04]: 2001:b011:7004:3b64:2e76:aabe:a4a7:9129
+                      [03]: VPN Client Adapter - VPN
+                            連線名稱:           VPN - VPN Client
+                            狀態:               媒體已中斷連線
+Hyper-V 需求:         VM 監視器模式擴充: 是
+                      韌體中已啟用虛擬化: 是
+                      第二層位址轉譯: 是
+                      具有資料執行防止: 是

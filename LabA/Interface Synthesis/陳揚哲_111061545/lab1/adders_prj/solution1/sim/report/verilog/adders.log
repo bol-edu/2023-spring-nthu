@@ -1,0 +1,133 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_adders.cpp
+   Compiling (apcc) adders.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Bill' on host 'desktop-650nisa' (Windows NT_amd64 version 6.2) on Sun Mar 12 23:24:04 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.396 seconds; peak allocated memory: 0.461 MB.
+   Compiling (apcc) adders_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'Bill' on host 'desktop-650nisa' (Windows NT_amd64 version 6.2) on Sun Mar 12 23:24:08 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 2.395 seconds; peak allocated memory: 0.863 MB.
+   Compiling apatb_adders_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+  10+20+30=60 
+  20+30+40=90 
+  30+40+50=120 
+  40+50+60=150 
+  50+60+70=180 
+----------Pass!------------
+
+D:\LAB\Interface_Synthesis\lab1\adders_prj\solution1\sim\verilog>set PATH= 
+
+D:\LAB\Interface_Synthesis\lab1\adders_prj\solution1\sim\verilog>call D:/Xilinx/Vivado/2022.1/bin/xelab xil_defaultlib.apatb_adders_top glbl -Oenable_linking_all_libraries  -prj adders.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib "ieee_proposed=./ieee_proposed" -s adders -debug wave 
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_adders_top glbl -Oenable_linking_all_libraries -prj adders.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s adders -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/adders.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_adders_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/adders.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adders
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.adders
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_adders_top
+Compiling module work.glbl
+Built simulation snapshot adders
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/adders/xsim_script.tcl
+# xsim {adders} -view {{adders_dataflow_ana.wcfg}} -tclbatch {adders.tcl} -protoinst {adders.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file adders.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_adders_top/AESL_inst_adders//AESL_inst_adders_activity
+WARNING: [Wavedata 42-559] Protocol instance "/apatb_adders_top/AESL_inst_adders//AESL_inst_adders_activity" was created but is non-functional for the following reason(s):
+Couldn't find port object "ap_clk" for protocol analyzer port "AP_CLK".
+Couldn't find port object "ap_rst" for protocol analyzer port "AP_RESET".
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+Time resolution is 1 ps
+open_wave_config adders_dataflow_ana.wcfg
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_adders_top/AESL_inst_adders/AESL_inst_adders_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+WARNING: [Wavedata 42-572] Protocol instance "/apatb_adders_top/AESL_inst_adders/AESL_inst_adders_activity" is non-functional for the following reason(s):
+Protocol instance has no valid analyzer.  Please configure the protocol instance again.
+
+source adders.tcl
+## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_adders_top/AESL_inst_adders/*]
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $coutputgroup]
+## add_wave /apatb_adders_top/AESL_inst_adders/ap_return -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_adders_top/AESL_inst_adders/in3 -into $return_group -radix hex
+## add_wave /apatb_adders_top/AESL_inst_adders/in2 -into $return_group -radix hex
+## add_wave /apatb_adders_top/AESL_inst_adders/in1 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_adders_top/AESL_inst_adders/ap_start -into $blocksiggroup
+## add_wave /apatb_adders_top/AESL_inst_adders/ap_done -into $blocksiggroup
+## add_wave /apatb_adders_top/AESL_inst_adders/ap_idle -into $blocksiggroup
+## add_wave /apatb_adders_top/AESL_inst_adders/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## save_wave_config adders.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [n/a] @ "110000"
+// RTL Simulation : 1 / 5 [n/a] @ "118000"
+// RTL Simulation : 2 / 5 [n/a] @ "122000"
+// RTL Simulation : 3 / 5 [n/a] @ "126000"
+// RTL Simulation : 4 / 5 [n/a] @ "130000"
+// RTL Simulation : 5 / 5 [n/a] @ "134000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 158 ns : File "D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/adders.autotb.v" Line 372
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Mar 12 23:24:16 2023...
+  10+20+30=60 
+  20+30+40=90 
+  30+40+50=120 
+  40+50+60=150 
+  50+60+70=180 
+----------Pass!------------
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-210] Design is translated to an combinational logic. II and Latency will be marked as all 0.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="WARNING: [Wavedata 42-572] Protocol instance &quot;/apatb_adders_top/AESL_inst_adders/AESL_inst_adders_activity&quot; is non-functional for the following reason(s):&#xD;&#xA;Protocol instance has no valid analyzer.  Please configure the protocol instance again.&#xD;&#xA;&#xD;&#xA;source adders.tcl&#xD;&#xA;## log_wave [get_objects -filter {type == in_port || type == out_port || type == inout_port || type == port} /apatb_adders_top/AESL_inst_adders/*]&#xD;&#xA;## set designtopgroup [add_wave_group &quot;Design Top Signals&quot;]&#xD;&#xA;## set coutputgroup [add_wave_group &quot;C Outputs&quot; -into $designtopgroup]&#xD;&#xA;## set return_group [add_wave_group return(wire) -into $coutputgroup]&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/ap_return -into $return_group -radix hex&#xD;&#xA;## set cinputgroup [add_wave_group &quot;C Inputs&quot; -into $designtopgroup]&#xD;&#xA;## set return_group [add_wave_group return(wire) -into $cinputgroup]&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/in3 -into $return_group -radix hex&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/in2 -into $return_group -radix hex&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/in1 -into $return_group -radix hex&#xD;&#xA;## set blocksiggroup [add_wave_group &quot;Block-level IO Handshake&quot; -into $designtopgroup]&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/ap_start -into $blocksiggroup&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/ap_done -into $blocksiggroup&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/ap_idle -into $blocksiggroup&#xD;&#xA;## add_wave /apatb_adders_top/AESL_inst_adders/ap_ready -into $blocksiggroup&#xD;&#xA;## set resetgroup [add_wave_group &quot;Reset&quot; -into $designtopgroup]&#xD;&#xA;## set clockgroup [add_wave_group &quot;Clock&quot; -into $designtopgroup]&#xD;&#xA;## save_wave_config adders.wcfg&#xD;&#xA;## run all&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xD;&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xD;&#xA;//&#xD;&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;// RTL Simulation : 0 / 5 [n/a] @ &quot;110000&quot;&#xD;&#xA;// RTL Simulation : 1 / 5 [n/a] @ &quot;118000&quot;&#xD;&#xA;// RTL Simulation : 2 / 5 [n/a] @ &quot;122000&quot;&#xD;&#xA;// RTL Simulation : 3 / 5 [n/a] @ &quot;126000&quot;&#xD;&#xA;// RTL Simulation : 4 / 5 [n/a] @ &quot;130000&quot;&#xD;&#xA;// RTL Simulation : 5 / 5 [n/a] @ &quot;134000&quot;&#xD;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xD;&#xA;$finish called at time : 158 ns : File &quot;D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/adders.autotb.v&quot; Line 372&#xD;&#xA;## quit" projectName="adders_prj" solutionName="solution1" date="2023-03-12T23:24:16.525+0800" type="Warning"/>
+        <logs message="WARNING: [Wavedata 42-572] Protocol instance &quot;/apatb_adders_top/AESL_inst_adders/AESL_inst_adders_activity&quot; is non-functional for the following reason(s):&#xD;&#xA;Protocol instance has no valid analyzer.  Please configure the protocol instance again.&#xD;&#xA;" projectName="adders_prj" solutionName="solution1" date="2023-03-12T23:24:15.950+0800" type="Warning"/>
+        <logs message="WARNING: [Wavedata 42-559] Protocol instance &quot;/apatb_adders_top/AESL_inst_adders//AESL_inst_adders_activity&quot; was created but is non-functional for the following reason(s):&#xD;&#xA;Couldn't find port object &quot;ap_clk&quot; for protocol analyzer port &quot;AP_CLK&quot;.&#xD;&#xA;Couldn't find port object &quot;ap_rst&quot; for protocol analyzer port &quot;AP_RESET&quot;.&#xD;&#xA;Protocol instance has no valid analyzer.  Please configure the protocol instance again.&#xD;&#xA;&#xD;&#xA;Time resolution is 1 ps&#xD;&#xA;open_wave_config adders_dataflow_ana.wcfg" projectName="adders_prj" solutionName="solution1" date="2023-03-12T23:24:15.942+0800" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

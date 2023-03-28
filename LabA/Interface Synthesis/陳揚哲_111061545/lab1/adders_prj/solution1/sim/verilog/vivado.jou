@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Mar 12 23:25:56 2023
+# Process ID: 17604
+# Current directory: D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/vivado.log
+# Journal file: D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog\vivado.jou
+# Running On: DESKTOP-650NISA, OS: Windows, CPU Frequency: 3394 MHz, CPU Physical cores: 16, Host memory: 34258 MB
+#-----------------------------------------------------------
+start_gusosource open_wave.tcopopen_wave_config D:/LAB/Interface_Synthesis/lab1/adders_prj/solution1/sim/verilog/adders.wcfclclose_sim

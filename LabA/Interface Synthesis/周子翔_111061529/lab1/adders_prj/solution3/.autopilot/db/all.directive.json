@@ -1,0 +1,56 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "adders",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "D:\/master\/HLS\/labA_InterfaceSynthesis\/lab1\/adders_prj\/solution3\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "adders"
+              }]
+          }
+        },
+        {
+          "functionName": "adders",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "D:\/master\/HLS\/labA_InterfaceSynthesis\/lab1\/adders_prj\/solution3\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_ctrl_none",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "return"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "adders",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "D:\/master\/HLS\/labA_InterfaceSynthesis\/lab1\/adders_prj\/solution3\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "adders"
+              }]
+          }
+        }
+      ]
+    }]}

@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_d_i.v"
+sv xil_defaultlib "AESL_automem_d_o.v"
+sv xil_defaultlib "array_io.autotb.v"
+sv xil_defaultlib "array_io.v"
+sv xil_defaultlib "array_io_acc_RAM_AUTO_1R1W.v"
+sv xil_defaultlib "array_io_flow_control_loop_pipe.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+
