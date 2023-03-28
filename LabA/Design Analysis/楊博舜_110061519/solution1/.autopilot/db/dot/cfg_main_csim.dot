@@ -1,0 +1,72 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x47ef710 [shape=record,filename="",linenumber="",label="{entry.predFake}"];
+	Node0x47ef710 -> Node0x47afed0[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+	Node0x47a4e00 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="69",label="{for.end46.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a4e00:s0 -> Node0x47f08b0[label="W:1" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="0"];
+	Node0x47a4e00:s1 -> Node0x47f08b0[label="W:2" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+	Node0x47f08b0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="75",label="{if.end53.predFake}"];
+	Node0x47f08b0 -> Node0x47a4f90[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+	Node0x47a4f90 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="75",label="{if.end53.succFake}"];
+subgraph cluster_0 {
+	label="for.end35";
+	tripcount="64";
+	invocationtime="2";
+
+	Node0x47f06d0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="61",label="{for.cond37.predFake}"];
+	Node0x47f06d0 -> Node0x47a4cf0[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="65"];
+	Node0x47a4cf0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="61",label="{for.cond37.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a4cf0:s0 -> Node0x47f06d0[label="W:65" callList="" memoryops="b_prime_read:62" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="64"];
+	Node0x47a4cf0:s1 -> Node0x47a4e00[label="W:2" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+}
+subgraph cluster_1 {
+	label="for.end";
+	tripcount="10";
+	invocationtime="2";
+
+subgraph cluster_1_0 {
+	label="for.body6";
+	tripcount="640";
+	invocationtime="11";
+
+	Node0x47b00b0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="39",label="{for.cond8.predFake}"];
+	Node0x47b00b0 -> Node0x47a46b0[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="650"];
+	Node0x47a46b0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="39",label="{for.cond8.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a46b0:s0 -> Node0x47b00b0[label="W:641" callList="" memoryops="x_read:40; a_write:40" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="640"];
+	Node0x47a46b0:s1 -> Node0x47a4870[label="W:11" callList="1:46" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="10"];
+}
+subgraph cluster_1_1 {
+	label="if.then";
+	tripcount="64";
+	invocationtime="2";
+
+	Node0x47f04a0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="52",label="{for.cond23.predFake}"];
+	Node0x47f04a0 -> Node0x47a4a40[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="65"];
+	Node0x47a4a40 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="52",label="{for.cond23.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a4a40:s0 -> Node0x47f04a0[label="W:65" callList="" memoryops="b_read:53; b_prime_write:53" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="64"];
+	Node0x47a4a40:s1 -> Node0x47f05e0[label="W:2" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+}
+	Node0x47b0010 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="36",label="{for.cond4.predFake}"];
+	Node0x47b0010 -> Node0x47a8570[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="11"];
+	Node0x47f05e0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="56",label="{if.end.predFake}"];
+	Node0x47f05e0 -> Node0x47b0010[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="10"];
+	Node0x47a8570 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="36",label="{for.cond4.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a8570:s0 -> Node0x47b00b0[label="W:11" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="10"];
+	Node0x47a8570:s1 -> Node0x47f06d0[label="W:2" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+	Node0x47a4870 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="50",label="{for.end18.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a4870:s0 -> Node0x47f04a0[label="W:2" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+	Node0x47a4870:s1 -> Node0x47f05e0[label="W:10"];
+}
+subgraph cluster_2 {
+	label="entry";
+	tripcount="640";
+	invocationtime="1";
+
+	Node0x47afed0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="27",label="{for.cond.predFake}"];
+	Node0x47afed0 -> Node0x47a77f0[ callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="641"];
+	Node0x47a77f0 [shape=record,filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp",linenumber="27",label="{for.cond.succFake|{<s0>T|<s1>F}}"];
+	Node0x47a77f0:s0 -> Node0x47afed0[label="W:641" callList="" memoryops="; x_write:30" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="640"];
+	Node0x47a77f0:s1 -> Node0x47b0010[label="W:2" callList="" memoryops="" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp" execusionnum="1"];
+}
+}

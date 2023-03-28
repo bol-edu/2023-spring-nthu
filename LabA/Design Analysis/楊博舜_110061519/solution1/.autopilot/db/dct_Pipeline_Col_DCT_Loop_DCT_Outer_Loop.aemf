@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1678505132677">
+  <ports id="1" name="col_inbuf" type="PortType" coreName="RAM_1WnR" coreId="62" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="col_outbuf" type="PortType" coreName="RAM" coreId="3621216858" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="154" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="156" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="157" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="173" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="185" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="196" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="198" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="205" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="211" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="214" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="215" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="217" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="219" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="223" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="227" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="228" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="235" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="239" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="247" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="250" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.1/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.1/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="259" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.1/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.43"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="266" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.1/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.45"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.1/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.46"/>
+  <edges id="271" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.1/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="274" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <edges id="275" source_obj="//@regions.0/@basic_blocks.1/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="276" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="278" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="279" source_obj="//@regions.0/@basic_blocks.1/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="282" source_obj="//@regions.0/@basic_blocks.1/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="283" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="285" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="286" source_obj="//@regions.0/@basic_blocks.1/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="287" source_obj="//@regions.0/@basic_blocks.1/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="288" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="289" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.57"/>
+  <edges id="290" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.58"/>
+  <edges id="291" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.58"/>
+  <edges id="292" source_obj="//@regions.0/@basic_blocks.1/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.59"/>
+  <edges id="293" source_obj="//@regions.0/@basic_blocks.1/@node_objs.60" sink_obj="//@ports.1"/>
+  <edges id="295" source_obj="//@regions.0/@basic_blocks.1/@node_objs.59" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.60"/>
+  <edges id="296" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.61"/>
+  <edges id="298" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.61"/>
+  <edges id="299" source_obj="//@regions.0/@basic_blocks.1/@node_objs.61" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.62"/>
+  <edges id="300" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.63"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.64"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.1/@node_objs.63" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.64"/>
+  <edges id="303" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.65"/>
+  <edges id="305" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.65"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.1/@node_objs.65" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.66"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.1/@node_objs.66" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.67"/>
+  <edges id="308" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.68"/>
+  <edges id="309" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.68"/>
+  <edges id="310" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.69"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.69"/>
+  <edges id="313" source_obj="//@regions.0/@basic_blocks.1/@node_objs.69" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.70"/>
+  <edges id="314" source_obj="//@regions.0/@basic_blocks.1/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.71"/>
+  <edges id="315" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.72"/>
+  <edges id="316" source_obj="//@regions.0/@basic_blocks.1/@node_objs.71" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.72"/>
+  <edges id="317" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.73"/>
+  <edges id="319" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.73"/>
+  <edges id="320" source_obj="//@regions.0/@basic_blocks.1/@node_objs.73" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.74"/>
+  <edges id="321" source_obj="//@regions.0/@basic_blocks.1/@node_objs.74" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.75"/>
+  <edges id="322" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.76"/>
+  <edges id="323" source_obj="//@regions.0/@basic_blocks.1/@node_objs.75" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.76"/>
+  <edges id="324" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.77"/>
+  <edges id="326" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.77"/>
+  <edges id="327" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.78"/>
+  <edges id="328" source_obj="//@regions.0/@basic_blocks.1/@node_objs.78" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.79"/>
+  <edges id="329" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.80"/>
+  <edges id="330" source_obj="//@regions.0/@basic_blocks.1/@node_objs.79" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.80"/>
+  <edges id="331" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.81"/>
+  <edges id="333" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.81"/>
+  <edges id="334" source_obj="//@regions.0/@basic_blocks.1/@node_objs.81" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.82"/>
+  <edges id="335" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.83"/>
+  <edges id="336" source_obj="//@regions.0/@basic_blocks.1/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.84"/>
+  <edges id="337" source_obj="//@regions.0/@basic_blocks.1/@node_objs.83" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.84"/>
+  <edges id="338" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.85"/>
+  <edges id="340" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.85"/>
+  <edges id="341" source_obj="//@regions.0/@basic_blocks.1/@node_objs.85" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="342" source_obj="//@regions.0/@basic_blocks.1/@node_objs.86" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.87"/>
+  <edges id="343" source_obj="//@regions.0/@basic_blocks.1/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.88"/>
+  <edges id="344" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.88"/>
+  <edges id="345" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.89"/>
+  <edges id="347" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.89"/>
+  <edges id="348" source_obj="//@regions.0/@basic_blocks.1/@node_objs.89" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.90"/>
+  <edges id="349" source_obj="//@regions.0/@basic_blocks.1/@node_objs.90" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.91"/>
+  <edges id="350" source_obj="//@regions.0/@basic_blocks.1/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.92"/>
+  <edges id="351" source_obj="//@regions.0/@basic_blocks.1/@node_objs.91" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.92"/>
+  <edges id="352" source_obj="//@regions.0/@basic_blocks.1/@node_objs.68" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.93"/>
+  <edges id="353" source_obj="//@regions.0/@basic_blocks.1/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.93"/>
+  <edges id="354" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.94"/>
+  <edges id="355" source_obj="//@regions.0/@basic_blocks.1/@node_objs.76" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.94"/>
+  <edges id="356" source_obj="//@regions.0/@basic_blocks.1/@node_objs.94" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.95"/>
+  <edges id="357" source_obj="//@regions.0/@basic_blocks.1/@node_objs.93" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.95"/>
+  <edges id="358" source_obj="//@regions.0/@basic_blocks.1/@node_objs.80" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.96"/>
+  <edges id="359" source_obj="//@regions.0/@basic_blocks.1/@node_objs.84" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.96"/>
+  <edges id="360" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.97"/>
+  <edges id="363" source_obj="//@regions.0/@basic_blocks.1/@node_objs.97" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.98"/>
+  <edges id="364" source_obj="//@regions.0/@basic_blocks.1/@node_objs.88" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.98"/>
+  <edges id="365" source_obj="//@regions.0/@basic_blocks.1/@node_objs.98" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.99"/>
+  <edges id="366" source_obj="//@regions.0/@basic_blocks.1/@node_objs.96" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.99"/>
+  <edges id="367" source_obj="//@regions.0/@basic_blocks.1/@node_objs.99" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.100"/>
+  <edges id="368" source_obj="//@regions.0/@basic_blocks.1/@node_objs.95" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.100"/>
+  <edges id="371" source_obj="//@regions.0/@basic_blocks.1/@node_objs.100" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.101"/>
+  <edges id="376" source_obj="//@regions.0/@basic_blocks.1/@node_objs.101" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.102"/>
+  <edges id="377" source_obj="//@regions.0/@basic_blocks.1/@node_objs.60" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.102"/>
+  <edges id="378" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.103"/>
+  <edges id="380" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.104"/>
+  <edges id="381" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.104"/>
+  <edges id="382" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.105"/>
+  <edges id="383" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.105"/>
+  <edges id="384" source_obj="//@regions.0/@basic_blocks.1/@node_objs.103" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.106"/>
+  <edges id="385" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.106"/>
+  <edges id="386" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.107"/>
+  <edges id="416" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="417" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="418" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="419" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="420" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.106"/>
+  <edges id="421" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="422" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="423" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.104"/>
+  <edges id="424" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.105"/>
+  <edges id="425" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="426" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.106"/>
+  <edges id="427" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.105"/>
+  <edges id="428" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.104"/>
+  <blocks id="18" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>DCT_Inner_Loop.i17.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="k" originalName="k" coreId="0" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i" originalName="i" coreId="0" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="indvar_flatten29" coreId="0" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="indvar_flatten29_write_ln0" coreId="456512800" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="i_write_ln0" coreId="456521872" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="k_write_ln0" coreId="3401733856" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln0" coreId="456808976" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>DCT_Inner_Loop.i17.i</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="142" name="for.inc50.i.preheader.exitStub" type="BlockType">
+    <controlInputObjs>DCT_Inner_Loop.i17.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="_ln0" coreId="0" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="566" pipe_depth="6" RegionName="Col_DCT_Loop_DCT_Outer_Loop">
+    <basic_blocks id="27" name="DCT_Inner_Loop.i17.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>_Z6dct_1dPsS_.exit37.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc50.i.preheader.exitStub</controlOutputObjs>
+      <controlOutputObjs>_Z6dct_1dPsS_.exit37.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i_1" lineNumber="32" originalName="i" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="448" contextFuncName="dct_1d" bitwidth="4" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="indvar_flatten29_load" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456153856" contextFuncName="dct_2d" bitwidth="7" opcode="load" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="trunc_ln32" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="trunc_ln32_fu_327_p1" coreId="192" contextFuncName="dct_1d" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="tmp_3_cast" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="tmp_3_cast_fu_331_p3" coreId="32" contextFuncName="dct_1d" bitwidth="6" opcode="bitconcatenate" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="icmp_ln58_fu_339_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.59" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="add_ln58_1" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln58_1_fu_345_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="7" opcode="add" m_display="0" m_delay="0.7" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456522904" contextFuncName="dct_2d" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>_Z6dct_1dPsS_.exit37.i</controlInputObjs>
+        <controlInputObjs>for.inc50.i.preheader.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp">
+        <validLinenumbers>32</validLinenumbers>
+        <validLinenumbers>58</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="140" name="_Z6dct_1dPsS_.exit37.i" type="BlockType">
+      <controlInputObjs>DCT_Inner_Loop.i17.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>DCT_Inner_Loop.i17.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="k_load" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456514736" contextFuncName="dct_1d" bitwidth="4" opcode="load" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="add_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln58_fu_354_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_2d" bitwidth="4" opcode="add" m_display="0" m_delay="0.7" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="trunc_ln43" lineNumber="43" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="trunc_ln43_fu_360_p1" coreId="456713808" contextFuncName="dct_2d" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="43" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln28" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="icmp_ln28_fu_364_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dct_1d" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.65" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="select_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_fu_370_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="4" opcode="select" m_display="0" m_delay="0.35" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp_11_cast" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="tmp_11_cast_fu_378_p3" coreId="574452846" contextFuncName="dct_1d" bitwidth="6" opcode="bitconcatenate" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="select_ln58_1" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_1_fu_386_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="4" opcode="select" m_display="0" m_delay="0.35" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="trunc_ln34" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="trunc_ln34_fu_394_p1" coreId="456509416" contextFuncName="dct_1d" bitwidth="3" opcode="trunc" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_s" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="tmp_s_fu_398_p3" coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="bitconcatenate" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="select_ln58_2" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_2_fu_406_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="zext_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln58_fu_414_p1" coreId="456510368" contextFuncName="dct_2d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="col_inbuf_addr" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="col_inbuf_load" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="sext_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="1953394531" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="select_ln58_10" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_10_fu_419_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="or_ln58" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_fu_427_p2" coreId="456673264" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="zext_ln32" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_fu_433_p1" coreId="176" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="col_inbuf_addr_1" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="1313423963" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="col_inbuf_load_1" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="sext_ln58_1" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456497568" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="select_ln58_11" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_11_fu_438_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="or_ln58_1" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_1_fu_446_p2" coreId="456499840" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="zext_ln32_1" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_1_fu_452_p1" coreId="4294967295" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="col_inbuf_addr_2" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456639312" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="col_inbuf_load_2" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="sext_ln58_2" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456659760" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="select_ln58_12" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_12_fu_457_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="or_ln58_2" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_2_fu_465_p2" coreId="0" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln32_2" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_2_fu_471_p1" coreId="456665392" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="col_inbuf_addr_3" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="col_inbuf_load_3" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="sext_ln58_3" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="select_ln58_13" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_13_fu_476_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="or_ln58_3" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_3_fu_484_p2" coreId="0" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="zext_ln32_3" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_3_fu_490_p1" coreId="0" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="col_inbuf_addr_4" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456679328" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="col_inbuf_load_4" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="sext_ln58_4" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456679568" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="select_ln58_14" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_14_fu_495_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="or_ln58_4" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_4_fu_503_p2" coreId="456684208" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="zext_ln32_4" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_4_fu_509_p1" coreId="784" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="col_inbuf_addr_5" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="col_inbuf_load_5" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sext_ln58_5" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="select_ln58_15" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_15_fu_514_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="or_ln58_5" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_5_fu_522_p2" coreId="456690464" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="zext_ln32_5" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_5_fu_528_p1" coreId="456680896" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="col_inbuf_addr_6" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="col_inbuf_load_6" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="sext_ln58_6" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="176" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="101" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="select_ln58_16" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="select_ln58_16_fu_533_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="dct_2d" bitwidth="6" opcode="select" m_display="0" m_delay="0.29" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="or_ln58_6" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="or_ln58_6_fu_541_p2" coreId="456698256" contextFuncName="dct_2d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="zext_ln32_6" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln32_6_fu_547_p1" coreId="1819113532" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="col_inbuf_addr_7" lineNumber="32" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456700528" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="32" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>col_inbuf</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="col_inbuf_load_7" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM_1WnR" implIndex="auto" control="no" opType="ram_1wnr" coreId="84" contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="sext_ln58_7" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="88" contextFuncName="dct_2d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="k_1_cast" lineNumber="58" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="k_1_cast_fu_552_p1" coreId="176" contextFuncName="dct_2d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="58" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="zext_ln34" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln34_fu_564_p1" coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="zext" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="add_ln34" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln34_fu_568_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_1d" bitwidth="6" opcode="add" m_display="0" m_delay="0.7" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="zext_ln34_2" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="zext_ln34_2_fu_651_p1" coreId="542329928" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="116" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="col_outbuf_addr" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456708736" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>col_outbuf</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="dct_coeff_table_0_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456709928" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="dct_coeff_table_0_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="14" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="zext_ln31" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="grp_fu_706_p10" coreId="456712632" contextFuncName="dct_1d" bitwidth="29" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="mul_ln31" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_14ns_29s_29_4_1_U47" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="2.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="103" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="dct_coeff_table_1_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456598368" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="dct_coeff_table_1_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="sext_ln31" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456599728" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="mul_ln31_7" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mul_mul_16s_15s_29_4_1_U43" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="1.0" nodeLatency="3" m_display="0" m_delay="0.53" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="dct_coeff_table_2_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456602064" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="dct_coeff_table_2_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="sext_ln31_6" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="mul_ln31_8" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mul_mul_16s_15s_29_4_1_U44" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="1.0" nodeLatency="3" m_display="0" m_delay="0.53" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="dct_coeff_table_3_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="dct_coeff_table_3_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="sext_ln31_7" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456609128" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="mul_ln31_9" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_29s_29_4_1_U48" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="2.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="105" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="dct_coeff_table_4_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="176" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="dct_coeff_table_4_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="sext_ln31_8" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456575248" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="mul_ln31_10" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mul_mul_16s_15s_29_4_1_U45" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="1.0" nodeLatency="3" m_display="0" m_delay="0.53" m_topoIndex="95" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="dct_coeff_table_5_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456616224" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="dct_coeff_table_5_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="sext_ln31_9" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="mul_ln31_11" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_29s_29_4_1_U49" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="2.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="dct_coeff_table_6_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="1330007625" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="dct_coeff_table_6_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="sext_ln31_10" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="1702258035" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="mul_ln31_12" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_29ns_29_4_1_U50" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="2.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="109" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="dct_coeff_table_7_addr" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456627808" contextFuncName="dct_1d" bitwidth="3" opcode="getelementptr" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="dct_coeff_table_7_load" lineNumber="31" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLatency="1" m_display="0" m_delay="0.68" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="31" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="sext_ln34" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456630160" contextFuncName="dct_1d" bitwidth="29" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="mul_ln34" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_13ns_29_4_1_U46" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="1.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="97" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="add_ln34_9" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_14ns_29s_29_4_1_U47" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="111" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="add_ln34_10" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_29s_29_4_1_U48" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="112" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="add_ln34_11" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln34_11_fu_655_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="add_ln34_12" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_29s_29_4_1_U49" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="113" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="add_ln34_13" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_13ns_29_4_1_U46" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="110" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="add_ln34_14" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="mac_muladd_16s_15s_29ns_29_4_1_U50" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="114" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="add_ln34_15" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln34_15_fu_659_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.86" m_topoIndex="119" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="add_ln34_1" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln34_1_fu_663_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.72" m_topoIndex="120" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="trunc_ln34_1" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="col_outbuf_d0" coreId="456515280" contextFuncName="dct_1d" bitwidth="16" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="col_outbuf_addr_write_ln34" lineNumber="34" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="dct_1d" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.68" m_topoIndex="122" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="34" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="add_ln28" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." rtlName="add_ln28_fu_574_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dct_1d" bitwidth="4" opcode="add" m_display="0" m_delay="0.7" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="indvar_flatten29_write_ln28" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456645440" contextFuncName="dct_1d" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="i_write_ln28" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456646656" contextFuncName="dct_1d" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="k_write_ln28" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="1702258035" contextFuncName="dct_1d" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="br_ln28" lineNumber="28" fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" fileDirectory=".." coreId="456648928" contextFuncName="dct_1d" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="28" fileDirectory="/mnt/HLSNAS/03.aGBUtS" functionName="dct_1d"/>
+        <controlInputObjs>DCT_Inner_Loop.i17.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp">
+        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>58</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
+        <validLinenumbers>32</validLinenumbers>
+        <validLinenumbers>34</validLinenumbers>
+        <validLinenumbers>31</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="dct_coeff_table_3_addr_reg_827">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_4_reg_872">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln34_13_reg_987">
+    <nodeIds>129</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln31_6_reg_902">
+    <nodeIds>103</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_load_reg_852">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_6_addr_reg_842">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_3_reg_937">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_5_reg_792">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_load_6_reg_882">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln31_reg_897">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_1_reg_857">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten29_reg_756">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="k_reg_742">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_6_load_reg_922">
+    <nodeIds>118</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_reg_932">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln31_8_reg_912">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_1_reg_772">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_2_reg_777">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_5_addr_reg_837">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_749">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln31_7_reg_972">
+    <nodeIds>100</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_4_addr_reg_832">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_5_reg_942">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_0_load_reg_892">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_load_3_reg_867">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_reg_767">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_7_addr_reg_847">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_load_5_reg_877">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_4_reg_787">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_5_load_reg_917">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln34_reg_927">
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln34_reg_807">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln31_10_reg_967">
+    <nodeIds>119</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln31_reg_952">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln31_7_reg_957">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln31_8_reg_977">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_2_addr_reg_822">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_7_reg_887">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_7_reg_802">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_6_reg_947">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_1_addr_reg_817">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln58_reg_763">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_3_load_reg_907">
+    <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_0_addr_reg_812">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln31_10_reg_982">
+    <nodeIds>112</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_6_reg_797">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_3_reg_782">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln58_2_reg_862">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln31_9_reg_962">
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln31_8_fu_619">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln31_6_fu_615">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln58_fu_414">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln34_1_fu_663">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_fu_427">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln32_fu_327">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_7_gep_fu_181">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_1_addr_gep_fu_202">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln31_fu_611">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_4_addr_gep_fu_241">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_7_addr_gep_fu_280">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten29_fu_88">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_14_fu_495">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_10_fu_419">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_1_fu_386">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_12_fu_457">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_5_fu_528">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln34_fu_564">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_16_fu_533">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_fu_627">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_cast_fu_331">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_3_gep_fu_149">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln31_fu_639">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln34_2_fu_651">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_outbuf_addr_gep_fu_293">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_cast_fu_378">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln43_fu_360">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln34_11_fu_655">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln58_fu_354">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln58_fu_339">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln31_10_fu_648">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_3_fu_490">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln34_fu_623">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_398">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln34_1_fu_669">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_2_fu_471">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_1_fu_452">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln34_15_fu_659">
+    <nodeIds>131</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_2_addr_gep_fu_215">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_5_addr_gep_fu_254">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln28_fu_364">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_5_gep_fu_165">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_4_fu_603">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_fu_370">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_2_gep_fu_141">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_gep_fu_92">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln28_fu_574">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_fu_80">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_11_fu_438">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_6_gep_fu_173">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_84">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_3_fu_630">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_6_fu_547">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_2_fu_406">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_5_fu_633">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_6_fu_636">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_15_fu_514">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln31_7_fu_642">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_4_fu_509">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln58_13_fu_476">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_2_fu_599">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_1_fu_595">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln31_9_fu_645">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln34_fu_568">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_1_gep_fu_133">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_3_addr_gep_fu_228">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_4_gep_fu_157">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_1_cast_fu_552">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_5_fu_522">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_2_fu_465">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_3_fu_484">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_6_fu_541">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln32_fu_433">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_1_fu_446">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln58_7_fu_607">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln58_1_fu_345">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln58_4_fu_503">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_6_addr_gep_fu_267">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln34_fu_394">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_0_addr_gep_fu_189">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_715">
+    <nodeIds>108</nodeIds>
+    <nodeIds>126</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_706">
+    <nodeIds>96</nodeIds>
+    <nodeIds>125</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_733">
+    <nodeIds>120</nodeIds>
+    <nodeIds>130</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_724">
+    <nodeIds>116</nodeIds>
+    <nodeIds>128</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_686">
+    <nodeIds>104</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_698">
+    <nodeIds>124</nodeIds>
+    <nodeIds>129</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_680">
+    <nodeIds>100</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_692">
+    <nodeIds>112</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln28_store_fu_580">
+    <nodeIds>136</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln28_store_fu_590">
+    <nodeIds>138</nodeIds>
+  </ioNodes>
+  <ioNodes realName="k_load_load_fu_351">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_1_load_fu_321">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_316">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_306">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_311">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten29_load_load_fu_324">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln28_store_fu_585">
+    <nodeIds>137</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="col_inbuf">
+    <nodeIds>84</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="1">
+    <nodeIds>78</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="2">
+    <nodeIds>72</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="3">
+    <nodeIds>66</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="4">
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="5">
+    <nodeIds>54</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="6">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="7">
+    <nodeIds>42</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_outbuf">
+    <nodeIds>134</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_0">
+    <nodeIds>94</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_1">
+    <nodeIds>98</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_2">
+    <nodeIds>102</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_3">
+    <nodeIds>106</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_4">
+    <nodeIds>110</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_5">
+    <nodeIds>114</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_6">
+    <nodeIds>118</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_7">
+    <nodeIds>122</nodeIds>
+  </memoryPorts>
+  <ioPorts name="col_inbuf(p0)">
+    <contents name="load">
+      <nodeIds>84</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p1)">
+    <contents name="load">
+      <nodeIds>78</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p2)">
+    <contents name="load">
+      <nodeIds>72</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p3)">
+    <contents name="load">
+      <nodeIds>66</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p4)">
+    <contents name="load">
+      <nodeIds>60</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p5)">
+    <contents name="load">
+      <nodeIds>54</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p6)">
+    <contents name="load">
+      <nodeIds>48</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_inbuf(p7)">
+    <contents name="load">
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="col_outbuf(p0)">
+    <contents name="store">
+      <nodeIds>134</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="2" latency="2"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="2" latency="2"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="2" latency="2"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="2" latency="2"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="2" latency="2"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="2" latency="2"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="2" latency="2"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="2" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="2" latency="2"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="2" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="2" latency="2"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="2" latency="2"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="2" latency="2"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="2" latency="2"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="2" latency="2"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="2" latency="2"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="42" stage="1" latency="2"/>
+      <operations id="48" stage="1" latency="2"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="2"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="66" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="78" stage="1" latency="2"/>
+      <operations id="84" stage="1" latency="2"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="2"/>
+      <operations id="98" stage="1" latency="2"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="4" latency="4"/>
+      <operations id="102" stage="1" latency="2"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="4" latency="4"/>
+      <operations id="106" stage="1" latency="2"/>
+      <operations id="110" stage="1" latency="2"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="4" latency="4"/>
+      <operations id="114" stage="1" latency="2"/>
+      <operations id="118" stage="1" latency="2"/>
+      <operations id="122" stage="1" latency="2"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="3" latency="3"/>
+    </states>
+    <states id="3">
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="3" latency="3"/>
+      <operations id="100" stage="3" latency="4"/>
+      <operations id="104" stage="3" latency="4"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="3" latency="3"/>
+      <operations id="112" stage="3" latency="4"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="3" latency="3"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="3" latency="3"/>
+      <operations id="124" stage="2" latency="3"/>
+    </states>
+    <states id="4">
+      <operations id="96" stage="2" latency="3"/>
+      <operations id="100" stage="2" latency="4"/>
+      <operations id="104" stage="2" latency="4"/>
+      <operations id="108" stage="2" latency="3"/>
+      <operations id="112" stage="2" latency="4"/>
+      <operations id="116" stage="2" latency="3"/>
+      <operations id="120" stage="2" latency="3"/>
+      <operations id="124" stage="1" latency="3"/>
+      <operations id="129" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="96" stage="1" latency="3"/>
+      <operations id="100" stage="1" latency="4"/>
+      <operations id="104" stage="1" latency="4"/>
+      <operations id="108" stage="1" latency="3"/>
+      <operations id="112" stage="1" latency="4"/>
+      <operations id="116" stage="1" latency="3"/>
+      <operations id="120" stage="1" latency="3"/>
+      <operations id="125" stage="2" latency="2"/>
+      <operations id="126" stage="2" latency="2"/>
+      <operations id="128" stage="2" latency="2"/>
+      <operations id="129" stage="1" latency="2"/>
+      <operations id="130" stage="2" latency="2"/>
+      <operations id="141" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="2"/>
+      <operations id="126" stage="1" latency="2"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="2"/>
+      <operations id="130" stage="1" latency="2"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="70" mMaxLatency="70">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Col_DCT_Loop_DCT_Outer_Loop" mII="1" mDepth="6" mMinTripCount="64" mMaxTripCount="64" mMinLatency="68" mMaxLatency="68" mType="1">
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>140</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>142</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

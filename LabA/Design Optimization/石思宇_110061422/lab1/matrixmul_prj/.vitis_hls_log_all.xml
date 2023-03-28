@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to schedule 'load' operation ('a_load_1', matrixmul.cpp:54) on array 'a' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'a'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul_prj" solutionName="solution3" date="2023-03-12T17:56:12.461+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_7_write_ln61', matrixmul.cpp:61) of variable 'add_ln61_15', matrixmul.cpp:61 on array 'res' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'res'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul_prj" solutionName="solution6" date="2023-03-12T17:36:56.498+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_5_write_ln61', matrixmul.cpp:61) of variable 'add_ln61_11', matrixmul.cpp:61 on array 'res' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'res'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul_prj" solutionName="solution6" date="2023-03-12T17:36:56.468+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_3_write_ln61', matrixmul.cpp:61) of variable 'add_ln61_7', matrixmul.cpp:61 on array 'res' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'res'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul_prj" solutionName="solution6" date="2023-03-12T17:36:56.443+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'load' operation ('b_load_1', matrixmul.cpp:61) on array 'b' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'b'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul_prj" solutionName="solution6" date="2023-03-12T17:36:56.431+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-960] Cannot flatten loop 'Row' (matrixmul.cpp:54:17) in function 'matrixmul' the outer loop is not a perfect loop.&#xA;Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html" projectName="matrixmul_prj" solutionName="solution5" date="2023-03-12T17:33:45.898+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'res' (matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul_prj" solutionName="solution5" date="2023-03-12T17:33:45.823+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'b' (matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul_prj" solutionName="solution5" date="2023-03-12T17:33:45.815+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'a' (matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul_prj" solutionName="solution5" date="2023-03-12T17:33:45.811+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to schedule 'load' operation ('a_load_1', matrixmul.cpp:54) on array 'a' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'a'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul_prj" solutionName="solution2" date="2023-03-12T17:22:10.341+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:60:20)" projectName="matrixmul_prj" solutionName="solution1" date="2023-03-12T17:10:47.321+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

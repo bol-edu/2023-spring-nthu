@@ -1,0 +1,14 @@
+digraph "Call graph demangled" {
+	label="Call graph demangled";
+
+	Node0x3b73bb0 [shape=record,label="{dct}" fid="1" demanglename="dct" manglename="dct" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="94"];
+	Node0x3b73bb0 -> Node0x3b74040;
+	Node0x3b73bb0 -> Node0x3b74010;
+	Node0x3b73bb0 -> Node0x3b74140;
+	Node0x3b74040 [shape=record,label="{read_data(short*, short (*) [8])}" fid="2" demanglename="read_data" manglename="_Z9read_dataPsPA8_s" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="69"];
+	Node0x3b74010 [shape=record,label="{dct_2d(short (*) [8], short (*) [8])}" fid="3" demanglename="dct_2d" manglename="_Z6dct_2dPA8_sS0_" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="38"];
+	Node0x3b74010 -> Node0x3b73f60;
+	Node0x3b74010 -> Node0x3b73f60;
+	Node0x3b73f60 [shape=record,label="{dct_1d(short*, short*)}" fid="4" demanglename="dct_1d" manglename="_Z6dct_1dPsS_" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="19"];
+	Node0x3b74140 [shape=record,label="{write_data(short (*) [8], short*)}" fid="5" demanglename="write_data" manglename="_Z10write_dataPA8_sPs" filename="../../../../Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" linenumber="82"];
+}

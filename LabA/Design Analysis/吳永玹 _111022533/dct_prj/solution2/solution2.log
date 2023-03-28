@@ -1,0 +1,440 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
+INFO: [HLS 200-1510] Running: source ./dct_prj/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name dct dct 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_1d/DCT_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_2d/Xpose_Row_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_2d/Xpose_Col_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline read_data/RD_Loop_Col 
+INFO: [HLS 200-1510] Running: set_directive_pipeline write_data/WR_Loop_Col 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] Analyzing design file 'dct.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.725 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'dct_1d(short*, short*)' into 'dct_2d(short (*) [8], short (*) [8])' (dct.cpp:31:0)
+INFO: [HLS 214-178] Inlining function 'read_data(short*, short (*) [8])' into 'dct(short*, short*)' (dct.cpp:104:0)
+INFO: [HLS 214-178] Inlining function 'dct_2d(short (*) [8], short (*) [8])' into 'dct(short*, short*)' (dct.cpp:104:0)
+INFO: [HLS 214-178] Inlining function 'write_data(short (*) [8], short*)' into 'dct(short*, short*)' (dct.cpp:104:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.209 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.085 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 1.408 GB.
+INFO: [XFORM 203-541] Flattening a loop nest 'RD_Loop_Row' (dct.cpp:76:8) in function 'dct'.
+WARNING: [HLS 200-960] Cannot flatten loop 'DCT_Outer_Loop' (dct.cpp:7:17) in function 'dct' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row_DCT_Loop' (dct.cpp:34:13) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Row_Outer_Loop' (dct.cpp:34:16) in function 'dct'.
+WARNING: [HLS 200-960] Cannot flatten loop 'DCT_Outer_Loop' (dct.cpp:7:17) in function 'dct' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Col_DCT_Loop' (dct.cpp:34:13) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Col_Outer_Loop' (dct.cpp:34:16) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'WR_Loop_Row' (dct.cpp:91:8) in function 'dct'.
+INFO: [HLS 200-472] Inferring partial write operation for 'buf_2d_in' (dct.cpp:82:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_outbuf' (dct.cpp:22:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'col_inbuf' (dct.cpp:49:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf_2d_out' (dct.cpp:64:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RD_Loop_Row_RD_Loop_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'RD_Loop_Row_RD_Loop_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_DCT_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln20) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'DCT_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'DCT_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_DCT_Inner_Loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln20) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'DCT_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'DCT_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WR_Loop_Row_WR_Loop_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'WR_Loop_Row_WR_Loop_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 1.408 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' pipeline 'RD_Loop_Row_RD_Loop_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_DCT_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_DCT_Inner_Loop' pipeline 'DCT_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_DCT_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' pipeline 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_DCT_Inner_Loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_DCT_Inner_Loop1' pipeline 'DCT_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_DCT_Inner_Loop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' pipeline 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' pipeline 'WR_Loop_Row_WR_Loop_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.188 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 1.408 GB.
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'dct_row_outbuf_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.123 seconds; current allocated memory: 1.408 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.57 seconds; current allocated memory: 1.408 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 11.833 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 15.3 seconds; peak allocated memory: 1.408 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
+INFO: [HLS 200-1510] Running: source ./dct_prj/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name dct dct 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_1d/DCT_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_2d/Xpose_Row_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_2d/Xpose_Col_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline read_data/RD_Loop_Col 
+INFO: [HLS 200-1510] Running: set_directive_pipeline write_data/WR_Loop_Col 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 29.022 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 32.565 seconds; peak allocated memory: 1.421 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
+INFO: [HLS 200-1510] Running: source ./dct_prj/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name dct dct 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_1d/DCT_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_2d/Xpose_Row_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline dct_2d/Xpose_Col_Inner_Loop 
+INFO: [HLS 200-1510] Running: set_directive_pipeline read_data/RD_Loop_Col 
+INFO: [HLS 200-1510] Running: set_directive_pipeline write_data/WR_Loop_Col 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] Analyzing design file 'dct.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.358 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'dct_1d(short*, short*)' into 'dct_2d(short (*) [8], short (*) [8])' (dct.cpp:34:0)
+INFO: [HLS 214-178] Inlining function 'read_data(short*, short (*) [8])' into 'dct(short*, short*)' (dct.cpp:107:0)
+INFO: [HLS 214-178] Inlining function 'dct_2d(short (*) [8], short (*) [8])' into 'dct(short*, short*)' (dct.cpp:107:0)
+INFO: [HLS 214-178] Inlining function 'write_data(short (*) [8], short*)' into 'dct(short*, short*)' (dct.cpp:107:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.267 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.431 GB.
+INFO: [XFORM 203-541] Flattening a loop nest 'RD_Loop_Row' (dct.cpp:79:8) in function 'dct'.
+WARNING: [HLS 200-960] Cannot flatten loop 'DCT_Outer_Loop' (dct.cpp:9:17) in function 'dct' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row_DCT_Loop' (dct.cpp:37:13) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Row_Outer_Loop' (dct.cpp:37:16) in function 'dct'.
+WARNING: [HLS 200-960] Cannot flatten loop 'DCT_Outer_Loop' (dct.cpp:9:17) in function 'dct' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+INFO: [XFORM 203-541] Flattening a loop nest 'Col_DCT_Loop' (dct.cpp:37:13) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Col_Outer_Loop' (dct.cpp:37:16) in function 'dct'.
+INFO: [XFORM 203-541] Flattening a loop nest 'WR_Loop_Row' (dct.cpp:94:8) in function 'dct'.
+INFO: [HLS 200-472] Inferring partial write operation for 'buf_2d_in' (dct.cpp:85:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_outbuf' (dct.cpp:24:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'col_inbuf' (dct.cpp:52:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'buf_2d_out' (dct.cpp:67:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RD_Loop_Row_RD_Loop_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'RD_Loop_Row_RD_Loop_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_DCT_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln22) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'DCT_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'DCT_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_DCT_Inner_Loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln22) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'DCT_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'DCT_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WR_Loop_Row_WR_Loop_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'WR_Loop_Row_WR_Loop_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.121 seconds; current allocated memory: 1.431 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.163 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col' pipeline 'RD_Loop_Row_RD_Loop_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_RD_Loop_Row_RD_Loop_Col'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.251 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_DCT_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_DCT_Inner_Loop' pipeline 'DCT_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_DCT_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' pipeline 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_DCT_Inner_Loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_DCT_Inner_Loop1' pipeline 'DCT_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_DCT_Inner_Loop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' pipeline 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col' pipeline 'WR_Loop_Row_WR_Loop_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_WR_Loop_Row_WR_Loop_Col'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 1.431 GB.
+INFO: [RTMG 210-279] Implementing memory 'dct_dct_coeff_table_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'dct_row_outbuf_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.188 seconds; current allocated memory: 1.431 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.596 seconds; current allocated memory: 1.431 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 14.865 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 18.248 seconds; peak allocated memory: 1.431 GB.

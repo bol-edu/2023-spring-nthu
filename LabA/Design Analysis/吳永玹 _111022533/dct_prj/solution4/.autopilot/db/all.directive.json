@@ -1,0 +1,130 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "dct",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "dct"
+              }]
+          }
+        },
+        {
+          "functionName": "dct_2d",
+          "label": "Xpose_Row_Inner_Loop",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "dct_2d",
+          "label": "Xpose_Col_Inner_Loop",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "read_data",
+          "label": "RD_Loop_Col",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "write_data",
+          "label": "WR_Loop_Col",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "dct_1d",
+          "label": "DCT_Outer_Loop",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "dct",
+          "label": "",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "buf_2d_in"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dct_2d",
+          "label": "",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "col_inbuf"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dct",
+          "label": "",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "C:\/Users\/Richard\/Desktop\/Course\/AAHLS\/labs\/labA\/ug871-design-files-ch6\/dct_prj\/solution4\/csynth.tcl",
+          "sourceLine": "17",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "dct"
+              }]
+          }
+        }
+      ]
+    }]}

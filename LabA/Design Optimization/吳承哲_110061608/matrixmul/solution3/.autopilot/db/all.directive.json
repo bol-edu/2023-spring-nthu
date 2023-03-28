@@ -1,0 +1,53 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution3\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul"
+              }]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "Row",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution3\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {"name": "LOOP_FLATTEN"}
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "Col",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution3\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution3\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul"
+              }]
+          }
+        }
+      ]
+    }]}

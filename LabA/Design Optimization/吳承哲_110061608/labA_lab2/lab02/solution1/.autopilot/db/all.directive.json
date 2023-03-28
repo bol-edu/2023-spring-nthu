@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/labA_lab2\/lab02\/solution1\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul"
+              }]
+          }
+        }]
+    }]}

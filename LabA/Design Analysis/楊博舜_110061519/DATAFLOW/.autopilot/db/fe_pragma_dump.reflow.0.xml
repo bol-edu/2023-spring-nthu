@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" line="8" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="2" style=""/>
+<pragma file="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp" line="7" pragmaType="dataflow" parentfunction="dct" disable_start_propagation="0"/>
+</pragmas>

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Mar  8 19:39:16 2023
+# Process ID: 7108
+# Current directory: C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/dct/xsim_script.tcl}
+# Log file: C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/xsim.log
+# Journal file: C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog\xsim.jou
+# Running On: DESKTOP-1OHP5OJ, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 8, Host memory: 16953 MB
+#-----------------------------------------------------------
+source xsim.dir/dct/xsim_script.tcl
+open_wave_config dct_dataflow_ana.wcfg
+source dct.tcl

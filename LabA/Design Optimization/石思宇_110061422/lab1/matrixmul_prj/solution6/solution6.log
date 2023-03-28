@@ -1,0 +1,76 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_max_widen_bitwidth=0
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_rtl -register_reset_num=0
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: source ./matrixmul_prj/solution6/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name matrixmul matrixmul 
+INFO: [HLS 200-1510] Running: set_directive_array_reshape -type complete -dim 2 matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_array_reshape -type complete -dim 1 matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_pipeline matrixmul 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.462 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.64 seconds. CPU system time: 0.2 seconds. Elapsed time: 0.45 seconds; current allocated memory: 1.462 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'Row' is marked as complete unroll implied by the pipeline pragma (matrixmul.cpp:54:9)
+INFO: [HLS 214-291] Loop 'Col' is marked as complete unroll implied by the pipeline pragma (matrixmul.cpp:56:12)
+INFO: [HLS 214-291] Loop 'Product' is marked as complete unroll implied by the pipeline pragma (matrixmul.cpp:60:19)
+INFO: [HLS 214-186] Unrolling loop 'Row' (matrixmul.cpp:54:9) in function 'matrixmul' completely with a factor of 3 (matrixmul.cpp:52:0)
+INFO: [HLS 214-186] Unrolling loop 'Col' (matrixmul.cpp:56:12) in function 'matrixmul' completely with a factor of 3 (matrixmul.cpp:52:0)
+INFO: [HLS 214-186] Unrolling loop 'Product' (matrixmul.cpp:60:19) in function 'matrixmul' completely with a factor of 3 (matrixmul.cpp:52:0)
+INFO: [HLS 214-248] Applying array_reshape to 'a': Complete reshaping on dimension 2. (matrixmul.cpp:52:0)
+INFO: [HLS 214-248] Applying array_reshape to 'b': Complete reshaping on dimension 1. (matrixmul.cpp:52:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.89 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.38 seconds; current allocated memory: 463.371 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 463.371 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.820 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.898 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 484.969 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 484.969 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln61_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'matrixmul'.
+WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'load' operation ('b_load_1', matrixmul.cpp:61) on array 'b' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'b'.
+WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_3_write_ln61', matrixmul.cpp:61) of variable 'add_ln61_7', matrixmul.cpp:61 on array 'res' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'res'.
+WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_5_write_ln61', matrixmul.cpp:61) of variable 'add_ln61_11', matrixmul.cpp:61 on array 'res' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'res'.
+WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_7_write_ln61', matrixmul.cpp:61) of variable 'add_ln61_15', matrixmul.cpp:61 on array 'res' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'res'.

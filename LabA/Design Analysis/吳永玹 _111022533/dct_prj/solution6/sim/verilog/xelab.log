@@ -1,0 +1,132 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_dct_top glbl -Oenable_linking_all_libraries -prj dct.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s dct -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_automem_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_automem_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dct_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_col_inbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_col_inbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_col_inbuf_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_col_inbuf_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Col_DCT_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Col_DCT_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_3_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_3_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_4_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_4_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_5_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_5_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_6_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_6_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_7_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_7_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Xpose_Col_Outer_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Xpose_Col_Outer_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Xpose_Row_Outer_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Xpose_Row_Outer_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mac_muladd_16s_15s_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mac_muladd_16s_15s_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_4
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mac_muladd_16s_15s_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mul_mul_16s_14ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_14ns_29_4_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_14ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mul_mul_16s_15s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_15s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_15s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_read_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_read_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_row_outbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_row_outbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_row_outbuf_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_row_outbuf_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_write_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_write_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.dct_row_outbuf_RAM_AUTO_1R1W_mem...
+Compiling module xil_defaultlib.dct_row_outbuf_RAM_AUTO_1R1W(Add...
+Compiling module xil_defaultlib.dct_col_inbuf_RAM_AUTO_1R1W_memc...
+Compiling module xil_defaultlib.dct_col_inbuf_RAM_AUTO_1R1W(Addr...
+Compiling module xil_defaultlib.dct_flow_control_loop_pipe
+Compiling module xil_defaultlib.dct_read_data
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_mul_mul_16s_15s_29_4_1_DSP48...
+Compiling module xil_defaultlib.dct_mul_mul_16s_15s_29_4_1(ID=1,...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mul_mul_16s_14ns_29_4_1_DSP4...
+Compiling module xil_defaultlib.dct_mul_mul_16s_14ns_29_4_1(ID=1...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_flow_control_loop_delay_pipe
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc
+Compiling module xil_defaultlib.dct_Loop_Xpose_Row_Outer_Loop_pr...
+Compiling module xil_defaultlib.dct_Loop_Col_DCT_Loop_proc
+Compiling module xil_defaultlib.dct_Loop_Xpose_Col_Outer_Loop_pr...
+Compiling module xil_defaultlib.dct_write_data
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.AESL_automem_input_r
+Compiling module xil_defaultlib.AESL_automem_output_r
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_dct_top
+Compiling module work.glbl
+Built simulation snapshot dct

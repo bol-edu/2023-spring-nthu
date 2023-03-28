@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'res' (matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul_prj" solutionName="solution1" date="2023-03-12T18:04:37.019+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'b' (matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul_prj" solutionName="solution1" date="2023-03-12T18:04:37.014+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'a' (matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul_prj" solutionName="solution1" date="2023-03-12T18:04:37.008+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

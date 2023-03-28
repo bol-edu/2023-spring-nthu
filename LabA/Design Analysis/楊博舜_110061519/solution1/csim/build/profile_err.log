@@ -1,0 +1,37 @@
+make: Warning: File 'obj/dct.d' has modification time 1.9 s in the future
+ERROR: linking module flags 'ProfileSummary': IDs have conflicting values
+Function:dct ---> FID:1
+Function:_Z9read_dataPsPA8_s ---> FID:2
+Function:_Z6dct_2dPA8_sS0_ ---> FID:3
+Function:_Z6dct_1dPsS_ ---> FID:4
+Function:_Z10write_dataPA8_sPs ---> FID:5
+CFGHierUserfilelist:[/mnt/HLSNAS/03.aGBUtS/Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/out.golden.dat /mnt/HLSNAS/03.aGBUtS/Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/in.dat /mnt/HLSNAS/03.aGBUtS/Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct_test.cpp /mnt/HLSNAS/03.aGBUtS/Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp]
+TopFunctionName:dct
+Writing 'callgraphDemangle.dot'...Function:dct ---> FID:1
+Function:_Z9read_dataPsPA8_s ---> FID:2
+Function:_Z6dct_2dPA8_sS0_ ---> FID:3
+Function:_Z6dct_1dPsS_ ---> FID:4
+Function:_Z10write_dataPA8_sPs ---> FID:5
+
+Writing 'cfg__GLOBAL__sub_I_dct_test.cpp_csim.dot'...
+Writing 'cfg___cxx_global_var_init_csim.dot'...
+Writing 'cfg_main_csim.dot'...Function:dct ---> FID:1
+
+Writing 'cfg__GLOBAL__sub_I_dct.cpp_csim.dot'...
+Writing 'cfg___cxx_global_var_init.2_csim.dot'...
+Function:_Z6dct_1dPsS_ ---> FID:4
+Writing 'cfg_4_csim.dot'...
+Function:_Z6dct_2dPA8_sS0_ ---> FID:3
+Writing 'cfg_3_csim.dot'...Function:_Z6dct_1dPsS_ ---> FID:4
+Function:_Z6dct_1dPsS_ ---> FID:4
+
+Function:_Z9read_dataPsPA8_s ---> FID:2
+Writing 'cfg_2_csim.dot'...
+Function:_Z10write_dataPA8_sPs ---> FID:5
+Writing 'cfg_5_csim.dot'...
+Function:dct ---> FID:1
+Writing 'cfg_1_csim.dot'...Function:_Z9read_dataPsPA8_s ---> FID:2
+Function:_Z6dct_2dPA8_sS0_ ---> FID:3
+Function:_Z10write_dataPA8_sPs ---> FID:5
+
+make: warning:  Clock skew detected.  Your build may be incomplete.

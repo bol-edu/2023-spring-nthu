@@ -1,0 +1,949 @@
+
+
+================================================================
+== Vitis HLS Report for 'read_data'
+================================================================
+* Date:           Sat Mar 11 11:25:41 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        dct_prj
+* Solution:       DATAFLOW (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       83|       83|  0.830 us|  0.830 us|   83|   83|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 73
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%input_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %input_r"   --->   Operation 74 'read' 'input_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%buf_0_0_out_0_loc = alloca i64 1"   --->   Operation 75 'alloca' 'buf_0_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%buf_0_1_out_0_loc = alloca i64 1"   --->   Operation 76 'alloca' 'buf_0_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%buf_0_2_out_0_loc = alloca i64 1"   --->   Operation 77 'alloca' 'buf_0_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%buf_0_3_out_0_loc = alloca i64 1"   --->   Operation 78 'alloca' 'buf_0_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%buf_0_4_out_0_loc = alloca i64 1"   --->   Operation 79 'alloca' 'buf_0_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%buf_0_5_out_0_loc = alloca i64 1"   --->   Operation 80 'alloca' 'buf_0_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%buf_0_6_out_0_loc = alloca i64 1"   --->   Operation 81 'alloca' 'buf_0_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%buf_0_7_out_0_loc = alloca i64 1"   --->   Operation 82 'alloca' 'buf_0_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%buf_1_0_out_0_loc = alloca i64 1"   --->   Operation 83 'alloca' 'buf_1_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%buf_1_1_out_0_loc = alloca i64 1"   --->   Operation 84 'alloca' 'buf_1_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%buf_1_2_out_0_loc = alloca i64 1"   --->   Operation 85 'alloca' 'buf_1_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%buf_1_3_out_0_loc = alloca i64 1"   --->   Operation 86 'alloca' 'buf_1_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%buf_1_4_out_0_loc = alloca i64 1"   --->   Operation 87 'alloca' 'buf_1_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%buf_1_5_out_0_loc = alloca i64 1"   --->   Operation 88 'alloca' 'buf_1_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%buf_1_6_out_0_loc = alloca i64 1"   --->   Operation 89 'alloca' 'buf_1_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%buf_1_7_out_0_loc = alloca i64 1"   --->   Operation 90 'alloca' 'buf_1_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%buf_2_0_out_0_loc = alloca i64 1"   --->   Operation 91 'alloca' 'buf_2_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%buf_2_1_out_0_loc = alloca i64 1"   --->   Operation 92 'alloca' 'buf_2_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%buf_2_2_out_0_loc = alloca i64 1"   --->   Operation 93 'alloca' 'buf_2_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%buf_2_3_out_0_loc = alloca i64 1"   --->   Operation 94 'alloca' 'buf_2_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%buf_2_4_out_0_loc = alloca i64 1"   --->   Operation 95 'alloca' 'buf_2_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%buf_2_5_out_0_loc = alloca i64 1"   --->   Operation 96 'alloca' 'buf_2_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%buf_2_6_out_0_loc = alloca i64 1"   --->   Operation 97 'alloca' 'buf_2_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%buf_2_7_out_0_loc = alloca i64 1"   --->   Operation 98 'alloca' 'buf_2_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%buf_3_0_out_0_loc = alloca i64 1"   --->   Operation 99 'alloca' 'buf_3_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%buf_3_1_out_0_loc = alloca i64 1"   --->   Operation 100 'alloca' 'buf_3_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%buf_3_2_out_0_loc = alloca i64 1"   --->   Operation 101 'alloca' 'buf_3_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%buf_3_3_out_0_loc = alloca i64 1"   --->   Operation 102 'alloca' 'buf_3_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%buf_3_4_out_0_loc = alloca i64 1"   --->   Operation 103 'alloca' 'buf_3_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%buf_3_5_out_0_loc = alloca i64 1"   --->   Operation 104 'alloca' 'buf_3_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%buf_3_6_out_0_loc = alloca i64 1"   --->   Operation 105 'alloca' 'buf_3_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%buf_3_7_out_0_loc = alloca i64 1"   --->   Operation 106 'alloca' 'buf_3_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%buf_4_0_out_0_loc = alloca i64 1"   --->   Operation 107 'alloca' 'buf_4_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%buf_4_1_out_0_loc = alloca i64 1"   --->   Operation 108 'alloca' 'buf_4_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%buf_4_2_out_0_loc = alloca i64 1"   --->   Operation 109 'alloca' 'buf_4_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%buf_4_3_out_0_loc = alloca i64 1"   --->   Operation 110 'alloca' 'buf_4_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%buf_4_4_out_0_loc = alloca i64 1"   --->   Operation 111 'alloca' 'buf_4_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%buf_4_5_out_0_loc = alloca i64 1"   --->   Operation 112 'alloca' 'buf_4_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%buf_4_6_out_0_loc = alloca i64 1"   --->   Operation 113 'alloca' 'buf_4_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%buf_4_7_out_0_loc = alloca i64 1"   --->   Operation 114 'alloca' 'buf_4_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%buf_5_0_out_0_loc = alloca i64 1"   --->   Operation 115 'alloca' 'buf_5_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%buf_5_1_out_0_loc = alloca i64 1"   --->   Operation 116 'alloca' 'buf_5_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%buf_5_2_out_0_loc = alloca i64 1"   --->   Operation 117 'alloca' 'buf_5_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%buf_5_3_out_0_loc = alloca i64 1"   --->   Operation 118 'alloca' 'buf_5_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%buf_5_4_out_0_loc = alloca i64 1"   --->   Operation 119 'alloca' 'buf_5_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%buf_5_5_out_0_loc = alloca i64 1"   --->   Operation 120 'alloca' 'buf_5_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%buf_5_6_out_0_loc = alloca i64 1"   --->   Operation 121 'alloca' 'buf_5_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%buf_5_7_out_0_loc = alloca i64 1"   --->   Operation 122 'alloca' 'buf_5_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%buf_6_0_out_0_loc = alloca i64 1"   --->   Operation 123 'alloca' 'buf_6_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%buf_6_1_out_0_loc = alloca i64 1"   --->   Operation 124 'alloca' 'buf_6_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%buf_6_2_out_0_loc = alloca i64 1"   --->   Operation 125 'alloca' 'buf_6_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%buf_6_3_out_0_loc = alloca i64 1"   --->   Operation 126 'alloca' 'buf_6_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%buf_6_4_out_0_loc = alloca i64 1"   --->   Operation 127 'alloca' 'buf_6_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%buf_6_5_out_0_loc = alloca i64 1"   --->   Operation 128 'alloca' 'buf_6_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%buf_6_6_out_0_loc = alloca i64 1"   --->   Operation 129 'alloca' 'buf_6_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%buf_6_7_out_0_loc = alloca i64 1"   --->   Operation 130 'alloca' 'buf_6_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%buf_7_0_out_0_loc = alloca i64 1"   --->   Operation 131 'alloca' 'buf_7_0_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%buf_7_1_out_0_loc = alloca i64 1"   --->   Operation 132 'alloca' 'buf_7_1_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%buf_7_2_out_0_loc = alloca i64 1"   --->   Operation 133 'alloca' 'buf_7_2_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%buf_7_3_out_0_loc = alloca i64 1"   --->   Operation 134 'alloca' 'buf_7_3_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%buf_7_4_out_0_loc = alloca i64 1"   --->   Operation 135 'alloca' 'buf_7_4_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%buf_7_5_out_0_loc = alloca i64 1"   --->   Operation 136 'alloca' 'buf_7_5_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%buf_7_6_out_0_loc = alloca i64 1"   --->   Operation 137 'alloca' 'buf_7_6_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 138 [1/1] (0.00ns)   --->   "%buf_7_7_out_0_loc = alloca i64 1"   --->   Operation 138 'alloca' 'buf_7_7_out_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i58 @_ssdm_op_PartSelect.i58.i64.i32.i32, i64 %input_read, i32 6, i32 63" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 139 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 140 [1/1] (0.00ns)   --->   "%sext_ln74 = sext i58 %trunc_ln" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 140 'sext' 'sext_ln74' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 141 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i512 %gmem, i64 %sext_ln74" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 141 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 142 [70/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 142 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 143 [69/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 143 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 144 [68/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 144 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 145 [67/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 145 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 146 [66/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 146 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 147 [65/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 147 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 148 [64/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 148 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 149 [63/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 149 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 150 [62/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 150 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 151 [61/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 151 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 7.30>
+ST_11 : Operation 152 [60/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 152 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 7.30>
+ST_12 : Operation 153 [59/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 153 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 154 [58/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 154 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 7.30>
+ST_14 : Operation 155 [57/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 155 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 7.30>
+ST_15 : Operation 156 [56/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 156 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 157 [55/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 157 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.30>
+ST_17 : Operation 158 [54/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 158 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 17> <Delay = 7.30>
+ST_18 : Operation 159 [53/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 159 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 18> <Delay = 7.30>
+ST_19 : Operation 160 [52/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 160 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 7.30>
+ST_20 : Operation 161 [51/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 161 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 21 <SV = 20> <Delay = 7.30>
+ST_21 : Operation 162 [50/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 162 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 22 <SV = 21> <Delay = 7.30>
+ST_22 : Operation 163 [49/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 163 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 22> <Delay = 7.30>
+ST_23 : Operation 164 [48/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 164 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 23> <Delay = 7.30>
+ST_24 : Operation 165 [47/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 165 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 24> <Delay = 7.30>
+ST_25 : Operation 166 [46/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 166 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 26 <SV = 25> <Delay = 7.30>
+ST_26 : Operation 167 [45/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 167 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 27 <SV = 26> <Delay = 7.30>
+ST_27 : Operation 168 [44/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 168 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 28 <SV = 27> <Delay = 7.30>
+ST_28 : Operation 169 [43/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 169 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 29 <SV = 28> <Delay = 7.30>
+ST_29 : Operation 170 [42/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 170 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 30 <SV = 29> <Delay = 7.30>
+ST_30 : Operation 171 [41/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 171 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 31 <SV = 30> <Delay = 7.30>
+ST_31 : Operation 172 [40/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 172 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 32 <SV = 31> <Delay = 7.30>
+ST_32 : Operation 173 [39/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 173 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 33 <SV = 32> <Delay = 7.30>
+ST_33 : Operation 174 [38/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 174 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 34 <SV = 33> <Delay = 7.30>
+ST_34 : Operation 175 [37/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 175 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 35 <SV = 34> <Delay = 7.30>
+ST_35 : Operation 176 [36/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 176 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 36 <SV = 35> <Delay = 7.30>
+ST_36 : Operation 177 [35/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 177 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 37 <SV = 36> <Delay = 7.30>
+ST_37 : Operation 178 [34/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 178 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 38 <SV = 37> <Delay = 7.30>
+ST_38 : Operation 179 [33/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 179 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 39 <SV = 38> <Delay = 7.30>
+ST_39 : Operation 180 [32/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 180 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 40 <SV = 39> <Delay = 7.30>
+ST_40 : Operation 181 [31/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 181 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 41 <SV = 40> <Delay = 7.30>
+ST_41 : Operation 182 [30/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 182 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 42 <SV = 41> <Delay = 7.30>
+ST_42 : Operation 183 [29/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 183 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 43 <SV = 42> <Delay = 7.30>
+ST_43 : Operation 184 [28/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 184 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 44 <SV = 43> <Delay = 7.30>
+ST_44 : Operation 185 [27/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 185 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 45 <SV = 44> <Delay = 7.30>
+ST_45 : Operation 186 [26/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 186 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 46 <SV = 45> <Delay = 7.30>
+ST_46 : Operation 187 [25/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 187 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 47 <SV = 46> <Delay = 7.30>
+ST_47 : Operation 188 [24/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 188 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 48 <SV = 47> <Delay = 7.30>
+ST_48 : Operation 189 [23/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 189 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 49 <SV = 48> <Delay = 7.30>
+ST_49 : Operation 190 [22/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 190 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 50 <SV = 49> <Delay = 7.30>
+ST_50 : Operation 191 [21/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 191 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 51 <SV = 50> <Delay = 7.30>
+ST_51 : Operation 192 [20/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 192 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 52 <SV = 51> <Delay = 7.30>
+ST_52 : Operation 193 [19/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 193 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 53 <SV = 52> <Delay = 7.30>
+ST_53 : Operation 194 [18/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 194 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 54 <SV = 53> <Delay = 7.30>
+ST_54 : Operation 195 [17/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 195 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 55 <SV = 54> <Delay = 7.30>
+ST_55 : Operation 196 [16/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 196 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 56 <SV = 55> <Delay = 7.30>
+ST_56 : Operation 197 [15/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 197 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 57 <SV = 56> <Delay = 7.30>
+ST_57 : Operation 198 [14/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 198 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 58 <SV = 57> <Delay = 7.30>
+ST_58 : Operation 199 [13/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 199 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 59 <SV = 58> <Delay = 7.30>
+ST_59 : Operation 200 [12/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 200 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 60 <SV = 59> <Delay = 7.30>
+ST_60 : Operation 201 [11/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 201 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 61 <SV = 60> <Delay = 7.30>
+ST_61 : Operation 202 [10/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 202 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 62 <SV = 61> <Delay = 7.30>
+ST_62 : Operation 203 [9/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 203 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 63 <SV = 62> <Delay = 7.30>
+ST_63 : Operation 204 [8/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 204 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 64 <SV = 63> <Delay = 7.30>
+ST_64 : Operation 205 [7/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 205 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 65 <SV = 64> <Delay = 7.30>
+ST_65 : Operation 206 [6/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 206 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 66 <SV = 65> <Delay = 7.30>
+ST_66 : Operation 207 [5/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 207 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 67 <SV = 66> <Delay = 7.30>
+ST_67 : Operation 208 [4/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 208 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 68 <SV = 67> <Delay = 7.30>
+ST_68 : Operation 209 [3/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 209 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 69 <SV = 68> <Delay = 7.30>
+ST_69 : Operation 210 [2/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 210 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 70 <SV = 69> <Delay = 7.30>
+ST_70 : Operation 211 [1/70] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem_addr, i32 2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 211 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 71 <SV = 70> <Delay = 0.00>
+ST_71 : Operation 212 [2/2] (0.00ns)   --->   "%call_ln74 = call void @read_data_Pipeline_RD_Loop_Row, i512 %gmem, i58 %trunc_ln, i16 %buf_7_7_out_0_loc, i16 %buf_7_6_out_0_loc, i16 %buf_7_5_out_0_loc, i16 %buf_7_4_out_0_loc, i16 %buf_7_3_out_0_loc, i16 %buf_7_2_out_0_loc, i16 %buf_7_1_out_0_loc, i16 %buf_7_0_out_0_loc, i16 %buf_6_7_out_0_loc, i16 %buf_6_6_out_0_loc, i16 %buf_6_5_out_0_loc, i16 %buf_6_4_out_0_loc, i16 %buf_6_3_out_0_loc, i16 %buf_6_2_out_0_loc, i16 %buf_6_1_out_0_loc, i16 %buf_6_0_out_0_loc, i16 %buf_5_7_out_0_loc, i16 %buf_5_6_out_0_loc, i16 %buf_5_5_out_0_loc, i16 %buf_5_4_out_0_loc, i16 %buf_5_3_out_0_loc, i16 %buf_5_2_out_0_loc, i16 %buf_5_1_out_0_loc, i16 %buf_5_0_out_0_loc, i16 %buf_4_7_out_0_loc, i16 %buf_4_6_out_0_loc, i16 %buf_4_5_out_0_loc, i16 %buf_4_4_out_0_loc, i16 %buf_4_3_out_0_loc, i16 %buf_4_2_out_0_loc, i16 %buf_4_1_out_0_loc, i16 %buf_4_0_out_0_loc, i16 %buf_3_7_out_0_loc, i16 %buf_3_6_out_0_loc, i16 %buf_3_5_out_0_loc, i16 %buf_3_4_out_0_loc, i16 %buf_3_3_out_0_loc, i16 %buf_3_2_out_0_loc, i16 %buf_3_1_out_0_loc, i16 %buf_3_0_out_0_loc, i16 %buf_2_7_out_0_loc, i16 %buf_2_6_out_0_loc, i16 %buf_2_5_out_0_loc, i16 %buf_2_4_out_0_loc, i16 %buf_2_3_out_0_loc, i16 %buf_2_2_out_0_loc, i16 %buf_2_1_out_0_loc, i16 %buf_2_0_out_0_loc, i16 %buf_1_7_out_0_loc, i16 %buf_1_6_out_0_loc, i16 %buf_1_5_out_0_loc, i16 %buf_1_4_out_0_loc, i16 %buf_1_3_out_0_loc, i16 %buf_1_2_out_0_loc, i16 %buf_1_1_out_0_loc, i16 %buf_1_0_out_0_loc, i16 %buf_0_7_out_0_loc, i16 %buf_0_6_out_0_loc, i16 %buf_0_5_out_0_loc, i16 %buf_0_4_out_0_loc, i16 %buf_0_3_out_0_loc, i16 %buf_0_2_out_0_loc, i16 %buf_0_1_out_0_loc, i16 %buf_0_0_out_0_loc" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 212 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 72 <SV = 71> <Delay = 0.00>
+ST_72 : Operation 213 [1/2] (0.00ns)   --->   "%call_ln74 = call void @read_data_Pipeline_RD_Loop_Row, i512 %gmem, i58 %trunc_ln, i16 %buf_7_7_out_0_loc, i16 %buf_7_6_out_0_loc, i16 %buf_7_5_out_0_loc, i16 %buf_7_4_out_0_loc, i16 %buf_7_3_out_0_loc, i16 %buf_7_2_out_0_loc, i16 %buf_7_1_out_0_loc, i16 %buf_7_0_out_0_loc, i16 %buf_6_7_out_0_loc, i16 %buf_6_6_out_0_loc, i16 %buf_6_5_out_0_loc, i16 %buf_6_4_out_0_loc, i16 %buf_6_3_out_0_loc, i16 %buf_6_2_out_0_loc, i16 %buf_6_1_out_0_loc, i16 %buf_6_0_out_0_loc, i16 %buf_5_7_out_0_loc, i16 %buf_5_6_out_0_loc, i16 %buf_5_5_out_0_loc, i16 %buf_5_4_out_0_loc, i16 %buf_5_3_out_0_loc, i16 %buf_5_2_out_0_loc, i16 %buf_5_1_out_0_loc, i16 %buf_5_0_out_0_loc, i16 %buf_4_7_out_0_loc, i16 %buf_4_6_out_0_loc, i16 %buf_4_5_out_0_loc, i16 %buf_4_4_out_0_loc, i16 %buf_4_3_out_0_loc, i16 %buf_4_2_out_0_loc, i16 %buf_4_1_out_0_loc, i16 %buf_4_0_out_0_loc, i16 %buf_3_7_out_0_loc, i16 %buf_3_6_out_0_loc, i16 %buf_3_5_out_0_loc, i16 %buf_3_4_out_0_loc, i16 %buf_3_3_out_0_loc, i16 %buf_3_2_out_0_loc, i16 %buf_3_1_out_0_loc, i16 %buf_3_0_out_0_loc, i16 %buf_2_7_out_0_loc, i16 %buf_2_6_out_0_loc, i16 %buf_2_5_out_0_loc, i16 %buf_2_4_out_0_loc, i16 %buf_2_3_out_0_loc, i16 %buf_2_2_out_0_loc, i16 %buf_2_1_out_0_loc, i16 %buf_2_0_out_0_loc, i16 %buf_1_7_out_0_loc, i16 %buf_1_6_out_0_loc, i16 %buf_1_5_out_0_loc, i16 %buf_1_4_out_0_loc, i16 %buf_1_3_out_0_loc, i16 %buf_1_2_out_0_loc, i16 %buf_1_1_out_0_loc, i16 %buf_1_0_out_0_loc, i16 %buf_0_7_out_0_loc, i16 %buf_0_6_out_0_loc, i16 %buf_0_5_out_0_loc, i16 %buf_0_4_out_0_loc, i16 %buf_0_3_out_0_loc, i16 %buf_0_2_out_0_loc, i16 %buf_0_1_out_0_loc, i16 %buf_0_0_out_0_loc" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74]   --->   Operation 213 'call' 'call_ln74' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 73 <SV = 72> <Delay = 0.00>
+ST_73 : Operation 214 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_5, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_0, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 214 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 215 [1/1] (0.00ns)   --->   "%buf_7_7_out_0_loc_load = load i16 %buf_7_7_out_0_loc"   --->   Operation 215 'load' 'buf_7_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 216 [1/1] (0.00ns)   --->   "%buf_7_6_out_0_loc_load = load i16 %buf_7_6_out_0_loc"   --->   Operation 216 'load' 'buf_7_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 217 [1/1] (0.00ns)   --->   "%buf_7_5_out_0_loc_load = load i16 %buf_7_5_out_0_loc"   --->   Operation 217 'load' 'buf_7_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 218 [1/1] (0.00ns)   --->   "%buf_7_4_out_0_loc_load = load i16 %buf_7_4_out_0_loc"   --->   Operation 218 'load' 'buf_7_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 219 [1/1] (0.00ns)   --->   "%buf_7_3_out_0_loc_load = load i16 %buf_7_3_out_0_loc"   --->   Operation 219 'load' 'buf_7_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 220 [1/1] (0.00ns)   --->   "%buf_7_2_out_0_loc_load = load i16 %buf_7_2_out_0_loc"   --->   Operation 220 'load' 'buf_7_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 221 [1/1] (0.00ns)   --->   "%buf_7_1_out_0_loc_load = load i16 %buf_7_1_out_0_loc"   --->   Operation 221 'load' 'buf_7_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 222 [1/1] (0.00ns)   --->   "%buf_7_0_out_0_loc_load = load i16 %buf_7_0_out_0_loc"   --->   Operation 222 'load' 'buf_7_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 223 [1/1] (0.00ns)   --->   "%buf_6_7_out_0_loc_load = load i16 %buf_6_7_out_0_loc"   --->   Operation 223 'load' 'buf_6_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 224 [1/1] (0.00ns)   --->   "%buf_6_6_out_0_loc_load = load i16 %buf_6_6_out_0_loc"   --->   Operation 224 'load' 'buf_6_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 225 [1/1] (0.00ns)   --->   "%buf_6_5_out_0_loc_load = load i16 %buf_6_5_out_0_loc"   --->   Operation 225 'load' 'buf_6_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 226 [1/1] (0.00ns)   --->   "%buf_6_4_out_0_loc_load = load i16 %buf_6_4_out_0_loc"   --->   Operation 226 'load' 'buf_6_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 227 [1/1] (0.00ns)   --->   "%buf_6_3_out_0_loc_load = load i16 %buf_6_3_out_0_loc"   --->   Operation 227 'load' 'buf_6_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 228 [1/1] (0.00ns)   --->   "%buf_6_2_out_0_loc_load = load i16 %buf_6_2_out_0_loc"   --->   Operation 228 'load' 'buf_6_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 229 [1/1] (0.00ns)   --->   "%buf_6_1_out_0_loc_load = load i16 %buf_6_1_out_0_loc"   --->   Operation 229 'load' 'buf_6_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 230 [1/1] (0.00ns)   --->   "%buf_6_0_out_0_loc_load = load i16 %buf_6_0_out_0_loc"   --->   Operation 230 'load' 'buf_6_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 231 [1/1] (0.00ns)   --->   "%buf_5_7_out_0_loc_load = load i16 %buf_5_7_out_0_loc"   --->   Operation 231 'load' 'buf_5_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 232 [1/1] (0.00ns)   --->   "%buf_5_6_out_0_loc_load = load i16 %buf_5_6_out_0_loc"   --->   Operation 232 'load' 'buf_5_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 233 [1/1] (0.00ns)   --->   "%buf_5_5_out_0_loc_load = load i16 %buf_5_5_out_0_loc"   --->   Operation 233 'load' 'buf_5_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 234 [1/1] (0.00ns)   --->   "%buf_5_4_out_0_loc_load = load i16 %buf_5_4_out_0_loc"   --->   Operation 234 'load' 'buf_5_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 235 [1/1] (0.00ns)   --->   "%buf_5_3_out_0_loc_load = load i16 %buf_5_3_out_0_loc"   --->   Operation 235 'load' 'buf_5_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 236 [1/1] (0.00ns)   --->   "%buf_5_2_out_0_loc_load = load i16 %buf_5_2_out_0_loc"   --->   Operation 236 'load' 'buf_5_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 237 [1/1] (0.00ns)   --->   "%buf_5_1_out_0_loc_load = load i16 %buf_5_1_out_0_loc"   --->   Operation 237 'load' 'buf_5_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 238 [1/1] (0.00ns)   --->   "%buf_5_0_out_0_loc_load = load i16 %buf_5_0_out_0_loc"   --->   Operation 238 'load' 'buf_5_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 239 [1/1] (0.00ns)   --->   "%buf_4_7_out_0_loc_load = load i16 %buf_4_7_out_0_loc"   --->   Operation 239 'load' 'buf_4_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 240 [1/1] (0.00ns)   --->   "%buf_4_6_out_0_loc_load = load i16 %buf_4_6_out_0_loc"   --->   Operation 240 'load' 'buf_4_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 241 [1/1] (0.00ns)   --->   "%buf_4_5_out_0_loc_load = load i16 %buf_4_5_out_0_loc"   --->   Operation 241 'load' 'buf_4_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 242 [1/1] (0.00ns)   --->   "%buf_4_4_out_0_loc_load = load i16 %buf_4_4_out_0_loc"   --->   Operation 242 'load' 'buf_4_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 243 [1/1] (0.00ns)   --->   "%buf_4_3_out_0_loc_load = load i16 %buf_4_3_out_0_loc"   --->   Operation 243 'load' 'buf_4_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 244 [1/1] (0.00ns)   --->   "%buf_4_2_out_0_loc_load = load i16 %buf_4_2_out_0_loc"   --->   Operation 244 'load' 'buf_4_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 245 [1/1] (0.00ns)   --->   "%buf_4_1_out_0_loc_load = load i16 %buf_4_1_out_0_loc"   --->   Operation 245 'load' 'buf_4_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 246 [1/1] (0.00ns)   --->   "%buf_4_0_out_0_loc_load = load i16 %buf_4_0_out_0_loc"   --->   Operation 246 'load' 'buf_4_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 247 [1/1] (0.00ns)   --->   "%buf_3_7_out_0_loc_load = load i16 %buf_3_7_out_0_loc"   --->   Operation 247 'load' 'buf_3_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 248 [1/1] (0.00ns)   --->   "%buf_3_6_out_0_loc_load = load i16 %buf_3_6_out_0_loc"   --->   Operation 248 'load' 'buf_3_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 249 [1/1] (0.00ns)   --->   "%buf_3_5_out_0_loc_load = load i16 %buf_3_5_out_0_loc"   --->   Operation 249 'load' 'buf_3_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 250 [1/1] (0.00ns)   --->   "%buf_3_4_out_0_loc_load = load i16 %buf_3_4_out_0_loc"   --->   Operation 250 'load' 'buf_3_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 251 [1/1] (0.00ns)   --->   "%buf_3_3_out_0_loc_load = load i16 %buf_3_3_out_0_loc"   --->   Operation 251 'load' 'buf_3_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 252 [1/1] (0.00ns)   --->   "%buf_3_2_out_0_loc_load = load i16 %buf_3_2_out_0_loc"   --->   Operation 252 'load' 'buf_3_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 253 [1/1] (0.00ns)   --->   "%buf_3_1_out_0_loc_load = load i16 %buf_3_1_out_0_loc"   --->   Operation 253 'load' 'buf_3_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 254 [1/1] (0.00ns)   --->   "%buf_3_0_out_0_loc_load = load i16 %buf_3_0_out_0_loc"   --->   Operation 254 'load' 'buf_3_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 255 [1/1] (0.00ns)   --->   "%buf_2_7_out_0_loc_load = load i16 %buf_2_7_out_0_loc"   --->   Operation 255 'load' 'buf_2_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 256 [1/1] (0.00ns)   --->   "%buf_2_6_out_0_loc_load = load i16 %buf_2_6_out_0_loc"   --->   Operation 256 'load' 'buf_2_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 257 [1/1] (0.00ns)   --->   "%buf_2_5_out_0_loc_load = load i16 %buf_2_5_out_0_loc"   --->   Operation 257 'load' 'buf_2_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 258 [1/1] (0.00ns)   --->   "%buf_2_4_out_0_loc_load = load i16 %buf_2_4_out_0_loc"   --->   Operation 258 'load' 'buf_2_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 259 [1/1] (0.00ns)   --->   "%buf_2_3_out_0_loc_load = load i16 %buf_2_3_out_0_loc"   --->   Operation 259 'load' 'buf_2_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 260 [1/1] (0.00ns)   --->   "%buf_2_2_out_0_loc_load = load i16 %buf_2_2_out_0_loc"   --->   Operation 260 'load' 'buf_2_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 261 [1/1] (0.00ns)   --->   "%buf_2_1_out_0_loc_load = load i16 %buf_2_1_out_0_loc"   --->   Operation 261 'load' 'buf_2_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 262 [1/1] (0.00ns)   --->   "%buf_2_0_out_0_loc_load = load i16 %buf_2_0_out_0_loc"   --->   Operation 262 'load' 'buf_2_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 263 [1/1] (0.00ns)   --->   "%buf_1_7_out_0_loc_load = load i16 %buf_1_7_out_0_loc"   --->   Operation 263 'load' 'buf_1_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 264 [1/1] (0.00ns)   --->   "%buf_1_6_out_0_loc_load = load i16 %buf_1_6_out_0_loc"   --->   Operation 264 'load' 'buf_1_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 265 [1/1] (0.00ns)   --->   "%buf_1_5_out_0_loc_load = load i16 %buf_1_5_out_0_loc"   --->   Operation 265 'load' 'buf_1_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 266 [1/1] (0.00ns)   --->   "%buf_1_4_out_0_loc_load = load i16 %buf_1_4_out_0_loc"   --->   Operation 266 'load' 'buf_1_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 267 [1/1] (0.00ns)   --->   "%buf_1_3_out_0_loc_load = load i16 %buf_1_3_out_0_loc"   --->   Operation 267 'load' 'buf_1_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 268 [1/1] (0.00ns)   --->   "%buf_1_2_out_0_loc_load = load i16 %buf_1_2_out_0_loc"   --->   Operation 268 'load' 'buf_1_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 269 [1/1] (0.00ns)   --->   "%buf_1_1_out_0_loc_load = load i16 %buf_1_1_out_0_loc"   --->   Operation 269 'load' 'buf_1_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 270 [1/1] (0.00ns)   --->   "%buf_1_0_out_0_loc_load = load i16 %buf_1_0_out_0_loc"   --->   Operation 270 'load' 'buf_1_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 271 [1/1] (0.00ns)   --->   "%buf_0_7_out_0_loc_load = load i16 %buf_0_7_out_0_loc"   --->   Operation 271 'load' 'buf_0_7_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 272 [1/1] (0.00ns)   --->   "%buf_0_6_out_0_loc_load = load i16 %buf_0_6_out_0_loc"   --->   Operation 272 'load' 'buf_0_6_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 273 [1/1] (0.00ns)   --->   "%buf_0_5_out_0_loc_load = load i16 %buf_0_5_out_0_loc"   --->   Operation 273 'load' 'buf_0_5_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 274 [1/1] (0.00ns)   --->   "%buf_0_4_out_0_loc_load = load i16 %buf_0_4_out_0_loc"   --->   Operation 274 'load' 'buf_0_4_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 275 [1/1] (0.00ns)   --->   "%buf_0_3_out_0_loc_load = load i16 %buf_0_3_out_0_loc"   --->   Operation 275 'load' 'buf_0_3_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 276 [1/1] (0.00ns)   --->   "%buf_0_2_out_0_loc_load = load i16 %buf_0_2_out_0_loc"   --->   Operation 276 'load' 'buf_0_2_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 277 [1/1] (0.00ns)   --->   "%buf_0_1_out_0_loc_load = load i16 %buf_0_1_out_0_loc"   --->   Operation 277 'load' 'buf_0_1_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 278 [1/1] (0.00ns)   --->   "%buf_0_0_out_0_loc_load = load i16 %buf_0_0_out_0_loc"   --->   Operation 278 'load' 'buf_0_0_out_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 279 [1/1] (0.00ns)   --->   "%mrv = insertvalue i1024 <undef>, i16 %buf_0_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 279 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 280 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i1024 %mrv, i16 %buf_0_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 280 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 281 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i1024 %mrv_1, i16 %buf_0_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 281 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 282 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue i1024 %mrv_2, i16 %buf_0_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 282 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 283 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue i1024 %mrv_3, i16 %buf_0_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 283 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 284 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue i1024 %mrv_4, i16 %buf_0_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 284 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 285 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue i1024 %mrv_5, i16 %buf_0_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 285 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 286 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue i1024 %mrv_6, i16 %buf_0_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 286 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 287 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue i1024 %mrv_7, i16 %buf_1_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 287 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 288 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue i1024 %mrv_8, i16 %buf_1_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 288 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 289 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue i1024 %mrv_9, i16 %buf_1_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 289 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 290 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue i1024 %mrv_s, i16 %buf_1_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 290 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 291 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue i1024 %mrv_10, i16 %buf_1_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 291 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 292 [1/1] (0.00ns)   --->   "%mrv_12 = insertvalue i1024 %mrv_11, i16 %buf_1_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 292 'insertvalue' 'mrv_12' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 293 [1/1] (0.00ns)   --->   "%mrv_13 = insertvalue i1024 %mrv_12, i16 %buf_1_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 293 'insertvalue' 'mrv_13' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 294 [1/1] (0.00ns)   --->   "%mrv_14 = insertvalue i1024 %mrv_13, i16 %buf_1_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 294 'insertvalue' 'mrv_14' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 295 [1/1] (0.00ns)   --->   "%mrv_15 = insertvalue i1024 %mrv_14, i16 %buf_2_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 295 'insertvalue' 'mrv_15' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 296 [1/1] (0.00ns)   --->   "%mrv_16 = insertvalue i1024 %mrv_15, i16 %buf_2_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 296 'insertvalue' 'mrv_16' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 297 [1/1] (0.00ns)   --->   "%mrv_17 = insertvalue i1024 %mrv_16, i16 %buf_2_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 297 'insertvalue' 'mrv_17' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 298 [1/1] (0.00ns)   --->   "%mrv_18 = insertvalue i1024 %mrv_17, i16 %buf_2_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 298 'insertvalue' 'mrv_18' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 299 [1/1] (0.00ns)   --->   "%mrv_19 = insertvalue i1024 %mrv_18, i16 %buf_2_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 299 'insertvalue' 'mrv_19' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 300 [1/1] (0.00ns)   --->   "%mrv_20 = insertvalue i1024 %mrv_19, i16 %buf_2_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 300 'insertvalue' 'mrv_20' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 301 [1/1] (0.00ns)   --->   "%mrv_21 = insertvalue i1024 %mrv_20, i16 %buf_2_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 301 'insertvalue' 'mrv_21' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 302 [1/1] (0.00ns)   --->   "%mrv_22 = insertvalue i1024 %mrv_21, i16 %buf_2_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 302 'insertvalue' 'mrv_22' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 303 [1/1] (0.00ns)   --->   "%mrv_23 = insertvalue i1024 %mrv_22, i16 %buf_3_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 303 'insertvalue' 'mrv_23' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 304 [1/1] (0.00ns)   --->   "%mrv_24 = insertvalue i1024 %mrv_23, i16 %buf_3_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 304 'insertvalue' 'mrv_24' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 305 [1/1] (0.00ns)   --->   "%mrv_25 = insertvalue i1024 %mrv_24, i16 %buf_3_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 305 'insertvalue' 'mrv_25' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 306 [1/1] (0.00ns)   --->   "%mrv_26 = insertvalue i1024 %mrv_25, i16 %buf_3_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 306 'insertvalue' 'mrv_26' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 307 [1/1] (0.00ns)   --->   "%mrv_27 = insertvalue i1024 %mrv_26, i16 %buf_3_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 307 'insertvalue' 'mrv_27' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 308 [1/1] (0.00ns)   --->   "%mrv_28 = insertvalue i1024 %mrv_27, i16 %buf_3_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 308 'insertvalue' 'mrv_28' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 309 [1/1] (0.00ns)   --->   "%mrv_29 = insertvalue i1024 %mrv_28, i16 %buf_3_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 309 'insertvalue' 'mrv_29' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 310 [1/1] (0.00ns)   --->   "%mrv_30 = insertvalue i1024 %mrv_29, i16 %buf_3_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 310 'insertvalue' 'mrv_30' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 311 [1/1] (0.00ns)   --->   "%mrv_31 = insertvalue i1024 %mrv_30, i16 %buf_4_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 311 'insertvalue' 'mrv_31' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 312 [1/1] (0.00ns)   --->   "%mrv_32 = insertvalue i1024 %mrv_31, i16 %buf_4_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 312 'insertvalue' 'mrv_32' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 313 [1/1] (0.00ns)   --->   "%mrv_33 = insertvalue i1024 %mrv_32, i16 %buf_4_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 313 'insertvalue' 'mrv_33' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 314 [1/1] (0.00ns)   --->   "%mrv_34 = insertvalue i1024 %mrv_33, i16 %buf_4_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 314 'insertvalue' 'mrv_34' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 315 [1/1] (0.00ns)   --->   "%mrv_35 = insertvalue i1024 %mrv_34, i16 %buf_4_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 315 'insertvalue' 'mrv_35' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 316 [1/1] (0.00ns)   --->   "%mrv_36 = insertvalue i1024 %mrv_35, i16 %buf_4_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 316 'insertvalue' 'mrv_36' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 317 [1/1] (0.00ns)   --->   "%mrv_37 = insertvalue i1024 %mrv_36, i16 %buf_4_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 317 'insertvalue' 'mrv_37' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 318 [1/1] (0.00ns)   --->   "%mrv_38 = insertvalue i1024 %mrv_37, i16 %buf_4_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 318 'insertvalue' 'mrv_38' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 319 [1/1] (0.00ns)   --->   "%mrv_39 = insertvalue i1024 %mrv_38, i16 %buf_5_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 319 'insertvalue' 'mrv_39' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 320 [1/1] (0.00ns)   --->   "%mrv_40 = insertvalue i1024 %mrv_39, i16 %buf_5_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 320 'insertvalue' 'mrv_40' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 321 [1/1] (0.00ns)   --->   "%mrv_41 = insertvalue i1024 %mrv_40, i16 %buf_5_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 321 'insertvalue' 'mrv_41' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 322 [1/1] (0.00ns)   --->   "%mrv_42 = insertvalue i1024 %mrv_41, i16 %buf_5_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 322 'insertvalue' 'mrv_42' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 323 [1/1] (0.00ns)   --->   "%mrv_43 = insertvalue i1024 %mrv_42, i16 %buf_5_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 323 'insertvalue' 'mrv_43' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 324 [1/1] (0.00ns)   --->   "%mrv_44 = insertvalue i1024 %mrv_43, i16 %buf_5_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 324 'insertvalue' 'mrv_44' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 325 [1/1] (0.00ns)   --->   "%mrv_45 = insertvalue i1024 %mrv_44, i16 %buf_5_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 325 'insertvalue' 'mrv_45' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 326 [1/1] (0.00ns)   --->   "%mrv_46 = insertvalue i1024 %mrv_45, i16 %buf_5_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 326 'insertvalue' 'mrv_46' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 327 [1/1] (0.00ns)   --->   "%mrv_47 = insertvalue i1024 %mrv_46, i16 %buf_6_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 327 'insertvalue' 'mrv_47' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 328 [1/1] (0.00ns)   --->   "%mrv_48 = insertvalue i1024 %mrv_47, i16 %buf_6_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 328 'insertvalue' 'mrv_48' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 329 [1/1] (0.00ns)   --->   "%mrv_49 = insertvalue i1024 %mrv_48, i16 %buf_6_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 329 'insertvalue' 'mrv_49' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 330 [1/1] (0.00ns)   --->   "%mrv_50 = insertvalue i1024 %mrv_49, i16 %buf_6_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 330 'insertvalue' 'mrv_50' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 331 [1/1] (0.00ns)   --->   "%mrv_51 = insertvalue i1024 %mrv_50, i16 %buf_6_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 331 'insertvalue' 'mrv_51' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 332 [1/1] (0.00ns)   --->   "%mrv_52 = insertvalue i1024 %mrv_51, i16 %buf_6_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 332 'insertvalue' 'mrv_52' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 333 [1/1] (0.00ns)   --->   "%mrv_53 = insertvalue i1024 %mrv_52, i16 %buf_6_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 333 'insertvalue' 'mrv_53' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 334 [1/1] (0.00ns)   --->   "%mrv_54 = insertvalue i1024 %mrv_53, i16 %buf_6_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 334 'insertvalue' 'mrv_54' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 335 [1/1] (0.00ns)   --->   "%mrv_55 = insertvalue i1024 %mrv_54, i16 %buf_7_0_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 335 'insertvalue' 'mrv_55' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 336 [1/1] (0.00ns)   --->   "%mrv_56 = insertvalue i1024 %mrv_55, i16 %buf_7_1_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 336 'insertvalue' 'mrv_56' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 337 [1/1] (0.00ns)   --->   "%mrv_57 = insertvalue i1024 %mrv_56, i16 %buf_7_2_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 337 'insertvalue' 'mrv_57' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 338 [1/1] (0.00ns)   --->   "%mrv_58 = insertvalue i1024 %mrv_57, i16 %buf_7_3_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 338 'insertvalue' 'mrv_58' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 339 [1/1] (0.00ns)   --->   "%mrv_59 = insertvalue i1024 %mrv_58, i16 %buf_7_4_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 339 'insertvalue' 'mrv_59' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 340 [1/1] (0.00ns)   --->   "%mrv_60 = insertvalue i1024 %mrv_59, i16 %buf_7_5_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 340 'insertvalue' 'mrv_60' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 341 [1/1] (0.00ns)   --->   "%mrv_61 = insertvalue i1024 %mrv_60, i16 %buf_7_6_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 341 'insertvalue' 'mrv_61' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 342 [1/1] (0.00ns)   --->   "%mrv_62 = insertvalue i1024 %mrv_61, i16 %buf_7_7_out_0_loc_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 342 'insertvalue' 'mrv_62' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 343 [1/1] (0.00ns)   --->   "%ret_ln80 = ret i1024 %mrv_62" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:80]   --->   Operation 343 'ret' 'ret_ln80' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 7.3ns
+The critical path consists of the following:
+	wire read operation ('input_read') on port 'input_r' [3]  (0 ns)
+	'getelementptr' operation ('gmem_addr', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [71]  (0 ns)
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 3>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 4>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 5>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 7>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 8>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 9>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 10>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 11>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 12>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 13>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 14>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 15>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 16>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 17>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 18>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 19>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 20>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 21>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 22>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 23>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 24>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 25>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 26>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 27>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 28>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 29>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 30>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 31>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 32>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 33>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 34>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 35>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 36>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 37>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 38>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 39>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 40>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 41>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 42>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 43>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 44>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 45>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 46>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 47>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 48>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 49>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 50>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 51>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 52>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 53>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 54>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 55>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 56>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 57>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 58>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 59>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 60>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 61>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 62>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 63>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 64>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 65>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 66>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 67>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 68>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 69>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 70>: 7.3ns
+The critical path consists of the following:
+	bus request operation ('empty', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74) [72]  (7.3 ns)
+
+ <State 71>: 0ns
+The critical path consists of the following:
+
+ <State 72>: 0ns
+The critical path consists of the following:
+
+ <State 73>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

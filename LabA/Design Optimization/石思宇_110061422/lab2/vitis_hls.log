@@ -1,0 +1,94 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user '02.tObflU' on host 'HLS02' (Linux_x86_64 version 5.8.0-41-generic) on Sun Mar 12 18:04:32 CST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
+INFO: [HLS 200-10] In directory '/mnt/HLSNAS/02.tObflU/LabA/Design_Optimization/lab2'
+Sourcing Tcl script '/mnt/HLSNAS/02.tObflU/LabA/Design_Optimization/lab2/matrixmul_prj/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source /mnt/HLSNAS/02.tObflU/LabA/Design_Optimization/lab2/matrixmul_prj/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project matrixmul_prj 
+INFO: [HLS 200-10] Opening project '/mnt/HLSNAS/02.tObflU/LabA/Design_Optimization/lab2/matrixmul_prj'.
+INFO: [HLS 200-1510] Running: set_top matrixmul 
+INFO: [HLS 200-1510] Running: add_files matrixmul.cpp 
+INFO: [HLS 200-10] Adding design file 'matrixmul.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb matrixmul_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'matrixmul_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/mnt/HLSNAS/02.tObflU/LabA/Design_Optimization/lab2/matrixmul_prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_latency 0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.69 seconds. CPU system time: 0.2 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'Cache_Row' is marked as complete unroll implied by the pipeline pragma (matrixmul.cpp:71:20)
+INFO: [HLS 214-291] Loop 'Cache_Col' is marked as complete unroll implied by the pipeline pragma (matrixmul.cpp:76:24)
+INFO: [HLS 214-291] Loop 'Product' is marked as complete unroll implied by the pipeline pragma (matrixmul.cpp:79:16)
+INFO: [HLS 214-186] Unrolling loop 'Cache_Row' (matrixmul.cpp:71:20) in function 'matrixmul' completely with a factor of 3 (matrixmul.cpp:52:0)
+INFO: [HLS 214-186] Unrolling loop 'Cache_Col' (matrixmul.cpp:76:24) in function 'matrixmul' completely with a factor of 3 (matrixmul.cpp:52:0)
+INFO: [HLS 214-186] Unrolling loop 'Product' (matrixmul.cpp:79:16) in function 'matrixmul' completely with a factor of 3 (matrixmul.cpp:52:0)
+INFO: [HLS 214-248] Applying array_reshape to 'a': Complete reshaping on dimension 2. (matrixmul.cpp:52:0)
+INFO: [HLS 214-248] Applying array_reshape to 'b': Complete reshaping on dimension 1. (matrixmul.cpp:52:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'b_copy' due to pipeline pragma (matrixmul.cpp:66:9)
+INFO: [HLS 214-248] Applying array_partition to 'b_copy': Complete partitioning on dimension 1. (matrixmul.cpp:59:11)
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'a' (matrixmul.cpp:52:0)
+Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'b' (matrixmul.cpp:52:0)
+Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'res' (matrixmul.cpp:52:0)
+Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.9 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.39 seconds; current allocated memory: 462.668 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 462.668 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.258 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.340 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 485.195 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:58:10) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'b_copy' (matrixmul.cpp:77:29)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.195 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln82_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln82_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 485.195 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 485.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrixmul' pipeline 'Row_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16s_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 485.195 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_b_copy_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.39 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.58 seconds; current allocated memory: 485.195 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 488.375 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 349.41 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.31 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.09 seconds; current allocated memory: -1007.539 MB.
+INFO: [HLS 200-112] Total CPU user time: 5.1 seconds. Total CPU system time: 0.78 seconds. Total elapsed time: 5.36 seconds; peak allocated memory: 1.461 GB.

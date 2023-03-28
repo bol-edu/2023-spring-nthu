@@ -1,0 +1,309 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop'
+================================================================
+* Date:           Sat Mar 11 11:25:27 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        dct_prj
+* Solution:       solution1 (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.911 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       70|       70|  0.700 us|  0.700 us|   70|   70|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Row_DCT_Loop_DCT_Outer_Loop  |       68|       68|         6|          1|          1|    64|       yes|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.10>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%k = alloca i32 1"   --->   Operation 9 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 10 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 11 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.38ns)   --->   "%store_ln0 = store i7 0, i7 %indvar_flatten"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 13 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 0, i4 %i"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 14 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 0, i4 %k"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln0 = br void %DCT_Inner_Loop.i.i"   --->   Operation 15 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i7 %indvar_flatten" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 16 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 17 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.59ns)   --->   "%icmp_ln47 = icmp_eq  i7 %indvar_flatten_load, i7 64" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 18 'icmp' 'icmp_ln47' <Predicate = true> <Delay = 0.59> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.70ns)   --->   "%add_ln47_1 = add i7 %indvar_flatten_load, i7 1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 19 'add' 'add_ln47_1' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln47 = br i1 %icmp_ln47, void %_Z6dct_1dPsS_.exit.i, void %for.inc18.i.preheader.exitStub" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 20 'br' 'br_ln47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%k_load = load i4 %k" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 21 'load' 'k_load' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%i_load = load i4 %i" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 22 'load' 'i_load' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.70ns)   --->   "%add_ln47 = add i4 %i_load, i4 1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 23 'add' 'add_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.65ns)   --->   "%icmp_ln28 = icmp_eq  i4 %k_load, i4 8" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 24 'icmp' 'icmp_ln28' <Predicate = (!icmp_ln47)> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.35ns)   --->   "%select_ln47 = select i1 %icmp_ln28, i4 0, i4 %k_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 25 'select' 'select_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.35> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.35ns)   --->   "%select_ln47_1 = select i1 %icmp_ln28, i4 %add_ln47, i4 %i_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 26 'select' 'select_ln47_1' <Predicate = (!icmp_ln47)> <Delay = 0.35> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln34 = trunc i4 %select_ln47_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 27 'trunc' 'trunc_ln34' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i3.i3, i3 %trunc_ln34, i3 0" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 28 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln47 = trunc i4 %add_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 29 'trunc' 'trunc_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%trunc_ln47_1 = trunc i4 %i_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 30 'trunc' 'trunc_ln47_1' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.27ns)   --->   "%select_ln47_3 = select i1 %icmp_ln28, i3 %trunc_ln47, i3 %trunc_ln47_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 31 'select' 'select_ln47_3' <Predicate = (!icmp_ln47)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i3 %select_ln47_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 32 'zext' 'zext_ln47' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%buf_2d_in_1_addr = getelementptr i16 %buf_2d_in_1, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 33 'getelementptr' 'buf_2d_in_1_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 34 [2/2] (0.68ns)   --->   "%buf_2d_in_1_load = load i3 %buf_2d_in_1_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 34 'load' 'buf_2d_in_1_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%buf_2d_in_2_addr = getelementptr i16 %buf_2d_in_2, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 35 'getelementptr' 'buf_2d_in_2_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 36 [2/2] (0.68ns)   --->   "%buf_2d_in_2_load = load i3 %buf_2d_in_2_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 36 'load' 'buf_2d_in_2_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%buf_2d_in_4_addr = getelementptr i16 %buf_2d_in_4, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 37 'getelementptr' 'buf_2d_in_4_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 38 [2/2] (0.68ns)   --->   "%buf_2d_in_4_load = load i3 %buf_2d_in_4_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 38 'load' 'buf_2d_in_4_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%buf_2d_in_7_addr = getelementptr i16 %buf_2d_in_7, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 39 'getelementptr' 'buf_2d_in_7_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 40 [2/2] (0.68ns)   --->   "%buf_2d_in_7_load = load i3 %buf_2d_in_7_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 40 'load' 'buf_2d_in_7_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%k_cast = zext i4 %select_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 41 'zext' 'k_cast' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln34 = zext i4 %select_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 42 'zext' 'zext_ln34' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.70ns)   --->   "%add_ln34_1 = add i6 %tmp, i6 %zext_ln34" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 43 'add' 'add_ln34_1' <Predicate = (!icmp_ln47)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%dct_coeff_table_0_addr = getelementptr i14 %dct_coeff_table_0, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 44 'getelementptr' 'dct_coeff_table_0_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 45 [2/2] (0.68ns)   --->   "%dct_coeff_table_0_load = load i3 %dct_coeff_table_0_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 45 'load' 'dct_coeff_table_0_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 14> <Depth = 8> <ROM>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%dct_coeff_table_1_addr = getelementptr i15 %dct_coeff_table_1, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 46 'getelementptr' 'dct_coeff_table_1_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 47 [2/2] (0.68ns)   --->   "%dct_coeff_table_1_load = load i3 %dct_coeff_table_1_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 47 'load' 'dct_coeff_table_1_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%dct_coeff_table_2_addr = getelementptr i15 %dct_coeff_table_2, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 48 'getelementptr' 'dct_coeff_table_2_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 49 [2/2] (0.68ns)   --->   "%dct_coeff_table_2_load = load i3 %dct_coeff_table_2_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 49 'load' 'dct_coeff_table_2_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%dct_coeff_table_3_addr = getelementptr i15 %dct_coeff_table_3, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 50 'getelementptr' 'dct_coeff_table_3_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 51 [2/2] (0.68ns)   --->   "%dct_coeff_table_3_load = load i3 %dct_coeff_table_3_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 51 'load' 'dct_coeff_table_3_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%dct_coeff_table_4_addr = getelementptr i15 %dct_coeff_table_4, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 52 'getelementptr' 'dct_coeff_table_4_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 53 [2/2] (0.68ns)   --->   "%dct_coeff_table_4_load = load i3 %dct_coeff_table_4_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 53 'load' 'dct_coeff_table_4_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%dct_coeff_table_5_addr = getelementptr i15 %dct_coeff_table_5, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 54 'getelementptr' 'dct_coeff_table_5_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 55 [2/2] (0.68ns)   --->   "%dct_coeff_table_5_load = load i3 %dct_coeff_table_5_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 55 'load' 'dct_coeff_table_5_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%dct_coeff_table_6_addr = getelementptr i15 %dct_coeff_table_6, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 56 'getelementptr' 'dct_coeff_table_6_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 57 [2/2] (0.68ns)   --->   "%dct_coeff_table_6_load = load i3 %dct_coeff_table_6_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 57 'load' 'dct_coeff_table_6_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%dct_coeff_table_7_addr = getelementptr i15 %dct_coeff_table_7, i64 0, i64 %k_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 58 'getelementptr' 'dct_coeff_table_7_addr' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_1 : Operation 59 [2/2] (0.68ns)   --->   "%dct_coeff_table_7_load = load i3 %dct_coeff_table_7_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 59 'load' 'dct_coeff_table_7_load' <Predicate = (!icmp_ln47)> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_1 : Operation 60 [1/1] (0.70ns)   --->   "%add_ln28 = add i4 %select_ln47, i4 1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 60 'add' 'add_ln28' <Predicate = (!icmp_ln47)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 61 [1/1] (0.38ns)   --->   "%store_ln28 = store i7 %add_ln47_1, i7 %indvar_flatten" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 61 'store' 'store_ln28' <Predicate = (!icmp_ln47)> <Delay = 0.38>
+ST_1 : Operation 62 [1/1] (0.38ns)   --->   "%store_ln28 = store i4 %select_ln47_1, i4 %i" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 62 'store' 'store_ln28' <Predicate = (!icmp_ln47)> <Delay = 0.38>
+ST_1 : Operation 63 [1/1] (0.38ns)   --->   "%store_ln28 = store i4 %add_ln28, i4 %k" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 63 'store' 'store_ln28' <Predicate = (!icmp_ln47)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 1.67>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%buf_2d_in_0_addr = getelementptr i16 %buf_2d_in_0, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 64 'getelementptr' 'buf_2d_in_0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [2/2] (0.68ns)   --->   "%buf_2d_in_0_load = load i3 %buf_2d_in_0_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 65 'load' 'buf_2d_in_0_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 66 [1/2] (0.68ns)   --->   "%buf_2d_in_1_load = load i3 %buf_2d_in_1_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 66 'load' 'buf_2d_in_1_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%sext_ln47_1 = sext i16 %buf_2d_in_1_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 67 'sext' 'sext_ln47_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/2] (0.68ns)   --->   "%buf_2d_in_2_load = load i3 %buf_2d_in_2_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 68 'load' 'buf_2d_in_2_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%sext_ln47_2 = sext i16 %buf_2d_in_2_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 69 'sext' 'sext_ln47_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%buf_2d_in_3_addr = getelementptr i16 %buf_2d_in_3, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 70 'getelementptr' 'buf_2d_in_3_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [2/2] (0.68ns)   --->   "%buf_2d_in_3_load = load i3 %buf_2d_in_3_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 71 'load' 'buf_2d_in_3_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 72 [1/2] (0.68ns)   --->   "%buf_2d_in_4_load = load i3 %buf_2d_in_4_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 72 'load' 'buf_2d_in_4_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%sext_ln47_4 = sext i16 %buf_2d_in_4_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 73 'sext' 'sext_ln47_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%buf_2d_in_5_addr = getelementptr i16 %buf_2d_in_5, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 74 'getelementptr' 'buf_2d_in_5_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [2/2] (0.68ns)   --->   "%buf_2d_in_5_load = load i3 %buf_2d_in_5_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 75 'load' 'buf_2d_in_5_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%buf_2d_in_6_addr = getelementptr i16 %buf_2d_in_6, i64 0, i64 %zext_ln47" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:32]   --->   Operation 76 'getelementptr' 'buf_2d_in_6_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [2/2] (0.68ns)   --->   "%buf_2d_in_6_load = load i3 %buf_2d_in_6_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 77 'load' 'buf_2d_in_6_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 78 [1/2] (0.68ns)   --->   "%buf_2d_in_7_load = load i3 %buf_2d_in_7_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 78 'load' 'buf_2d_in_7_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%sext_ln47_7 = sext i16 %buf_2d_in_7_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 79 'sext' 'sext_ln47_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 80 [1/2] (0.68ns)   --->   "%dct_coeff_table_0_load = load i3 %dct_coeff_table_0_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 80 'load' 'dct_coeff_table_0_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 14> <Depth = 8> <ROM>
+ST_2 : Operation 81 [1/2] (0.68ns)   --->   "%dct_coeff_table_1_load = load i3 %dct_coeff_table_1_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 81 'load' 'dct_coeff_table_1_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%sext_ln31 = sext i15 %dct_coeff_table_1_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 82 'sext' 'sext_ln31' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [4/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_1 = mul i29 %sext_ln47_1, i29 %sext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 83 'mul' 'mul_ln31_1' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 84 [1/2] (0.68ns)   --->   "%dct_coeff_table_2_load = load i3 %dct_coeff_table_2_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 84 'load' 'dct_coeff_table_2_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%sext_ln31_1 = sext i15 %dct_coeff_table_2_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 85 'sext' 'sext_ln31_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [4/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_2 = mul i29 %sext_ln47_2, i29 %sext_ln31_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 86 'mul' 'mul_ln31_2' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 87 [1/2] (0.68ns)   --->   "%dct_coeff_table_3_load = load i3 %dct_coeff_table_3_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 87 'load' 'dct_coeff_table_3_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 88 [1/2] (0.68ns)   --->   "%dct_coeff_table_4_load = load i3 %dct_coeff_table_4_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 88 'load' 'dct_coeff_table_4_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%sext_ln31_3 = sext i15 %dct_coeff_table_4_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 89 'sext' 'sext_ln31_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 90 [4/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_4 = mul i29 %sext_ln47_4, i29 %sext_ln31_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 90 'mul' 'mul_ln31_4' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 91 [1/2] (0.68ns)   --->   "%dct_coeff_table_5_load = load i3 %dct_coeff_table_5_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 91 'load' 'dct_coeff_table_5_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 92 [1/2] (0.68ns)   --->   "%dct_coeff_table_6_load = load i3 %dct_coeff_table_6_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 92 'load' 'dct_coeff_table_6_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 93 [1/2] (0.68ns)   --->   "%dct_coeff_table_7_load = load i3 %dct_coeff_table_7_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 93 'load' 'dct_coeff_table_7_load' <Predicate = true> <Delay = 0.68> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 8> <ROM>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%sext_ln34 = sext i15 %dct_coeff_table_7_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 94 'sext' 'sext_ln34' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 95 [3/3] (0.99ns) (grouped into DSP with root node add_ln34_6)   --->   "%mul_ln34 = mul i29 %sext_ln47_7, i29 %sext_ln34" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 95 'mul' 'mul_ln34' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 3 <SV = 2> <Delay = 1.67>
+ST_3 : Operation 96 [1/2] (0.68ns)   --->   "%buf_2d_in_0_load = load i3 %buf_2d_in_0_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 96 'load' 'buf_2d_in_0_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%sext_ln47 = sext i16 %buf_2d_in_0_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 97 'sext' 'sext_ln47' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 98 [1/2] (0.68ns)   --->   "%buf_2d_in_3_load = load i3 %buf_2d_in_3_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 98 'load' 'buf_2d_in_3_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%sext_ln47_3 = sext i16 %buf_2d_in_3_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 99 'sext' 'sext_ln47_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 100 [1/2] (0.68ns)   --->   "%buf_2d_in_5_load = load i3 %buf_2d_in_5_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 100 'load' 'buf_2d_in_5_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%sext_ln47_5 = sext i16 %buf_2d_in_5_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 101 'sext' 'sext_ln47_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 102 [1/2] (0.68ns)   --->   "%buf_2d_in_6_load = load i3 %buf_2d_in_6_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 102 'load' 'buf_2d_in_6_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 8> <RAM>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%sext_ln47_6 = sext i16 %buf_2d_in_6_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47]   --->   Operation 103 'sext' 'sext_ln47_6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%zext_ln31 = zext i14 %dct_coeff_table_0_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 104 'zext' 'zext_ln31' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [3/3] (0.99ns) (grouped into DSP with root node add_ln34_2)   --->   "%mul_ln31 = mul i29 %sext_ln47, i29 %zext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 105 'mul' 'mul_ln31' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 106 [3/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_1 = mul i29 %sext_ln47_1, i29 %sext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 106 'mul' 'mul_ln31_1' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 107 [3/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_2 = mul i29 %sext_ln47_2, i29 %sext_ln31_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 107 'mul' 'mul_ln31_2' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%sext_ln31_2 = sext i15 %dct_coeff_table_3_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 108 'sext' 'sext_ln31_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 109 [3/3] (0.99ns) (grouped into DSP with root node add_ln34_3)   --->   "%mul_ln31_3 = mul i29 %sext_ln47_3, i29 %sext_ln31_2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 109 'mul' 'mul_ln31_3' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 110 [3/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_4 = mul i29 %sext_ln47_4, i29 %sext_ln31_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 110 'mul' 'mul_ln31_4' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%sext_ln31_4 = sext i15 %dct_coeff_table_5_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 111 'sext' 'sext_ln31_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 112 [3/3] (0.99ns) (grouped into DSP with root node add_ln34_5)   --->   "%mul_ln31_5 = mul i29 %sext_ln47_5, i29 %sext_ln31_4" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 112 'mul' 'mul_ln31_5' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%sext_ln31_5 = sext i15 %dct_coeff_table_6_load" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 113 'sext' 'sext_ln31_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 114 [3/3] (0.99ns) (grouped into DSP with root node add_ln34_7)   --->   "%mul_ln31_6 = mul i29 %sext_ln47_6, i29 %sext_ln31_5" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 114 'mul' 'mul_ln31_6' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 115 [2/3] (0.99ns) (grouped into DSP with root node add_ln34_6)   --->   "%mul_ln34 = mul i29 %sext_ln47_7, i29 %sext_ln34" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 115 'mul' 'mul_ln34' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 0.99>
+ST_4 : Operation 116 [2/3] (0.99ns) (grouped into DSP with root node add_ln34_2)   --->   "%mul_ln31 = mul i29 %sext_ln47, i29 %zext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 116 'mul' 'mul_ln31' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 117 [2/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_1 = mul i29 %sext_ln47_1, i29 %sext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 117 'mul' 'mul_ln31_1' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 118 [2/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_2 = mul i29 %sext_ln47_2, i29 %sext_ln31_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 118 'mul' 'mul_ln31_2' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 119 [2/3] (0.99ns) (grouped into DSP with root node add_ln34_3)   --->   "%mul_ln31_3 = mul i29 %sext_ln47_3, i29 %sext_ln31_2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 119 'mul' 'mul_ln31_3' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 120 [2/4] (0.53ns) (root node of the DSP)   --->   "%mul_ln31_4 = mul i29 %sext_ln47_4, i29 %sext_ln31_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 120 'mul' 'mul_ln31_4' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 121 [2/3] (0.99ns) (grouped into DSP with root node add_ln34_5)   --->   "%mul_ln31_5 = mul i29 %sext_ln47_5, i29 %sext_ln31_4" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 121 'mul' 'mul_ln31_5' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 122 [2/3] (0.99ns) (grouped into DSP with root node add_ln34_7)   --->   "%mul_ln31_6 = mul i29 %sext_ln47_6, i29 %sext_ln31_5" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 122 'mul' 'mul_ln31_6' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 123 [1/3] (0.00ns) (grouped into DSP with root node add_ln34_6)   --->   "%mul_ln34 = mul i29 %sext_ln47_7, i29 %sext_ln34" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 123 'mul' 'mul_ln34' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 124 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_6 = add i29 %mul_ln34, i29 4096" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 124 'add' 'add_ln34_6' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 1.29>
+ST_5 : Operation 125 [1/3] (0.00ns) (grouped into DSP with root node add_ln34_2)   --->   "%mul_ln31 = mul i29 %sext_ln47, i29 %zext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 125 'mul' 'mul_ln31' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 126 [1/4] (0.00ns) (root node of the DSP)   --->   "%mul_ln31_1 = mul i29 %sext_ln47_1, i29 %sext_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 126 'mul' 'mul_ln31_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 127 [1/4] (0.00ns) (root node of the DSP)   --->   "%mul_ln31_2 = mul i29 %sext_ln47_2, i29 %sext_ln31_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 127 'mul' 'mul_ln31_2' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 128 [1/3] (0.00ns) (grouped into DSP with root node add_ln34_3)   --->   "%mul_ln31_3 = mul i29 %sext_ln47_3, i29 %sext_ln31_2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 128 'mul' 'mul_ln31_3' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 129 [1/4] (0.00ns) (root node of the DSP)   --->   "%mul_ln31_4 = mul i29 %sext_ln47_4, i29 %sext_ln31_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 129 'mul' 'mul_ln31_4' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 130 [1/3] (0.00ns) (grouped into DSP with root node add_ln34_5)   --->   "%mul_ln31_5 = mul i29 %sext_ln47_5, i29 %sext_ln31_4" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 130 'mul' 'mul_ln31_5' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 131 [1/3] (0.00ns) (grouped into DSP with root node add_ln34_7)   --->   "%mul_ln31_6 = mul i29 %sext_ln47_6, i29 %sext_ln31_5" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31]   --->   Operation 131 'mul' 'mul_ln31_6' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 132 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_2 = add i29 %mul_ln31_1, i29 %mul_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 132 'add' 'add_ln34_2' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 133 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_3 = add i29 %mul_ln31_2, i29 %mul_ln31_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 133 'add' 'add_ln34_3' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 134 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_5 = add i29 %mul_ln31_4, i29 %mul_ln31_5" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 134 'add' 'add_ln34_5' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 135 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_6 = add i29 %mul_ln34, i29 4096" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 135 'add' 'add_ln34_6' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 136 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_7 = add i29 %add_ln34_6, i29 %mul_ln31_6" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 136 'add' 'add_ln34_7' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 153 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 153 'ret' 'ret_ln0' <Predicate = (icmp_ln47)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 2.91>
+ST_6 : Operation 137 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @Row_DCT_Loop_DCT_Outer_Loop_str"   --->   Operation 137 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 138 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64"   --->   Operation 138 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 139 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 139 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 140 [1/1] (0.00ns)   --->   "%zext_ln34_1 = zext i6 %add_ln34_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 140 'zext' 'zext_ln34_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 141 [1/1] (0.00ns)   --->   "%row_outbuf_addr = getelementptr i16 %row_outbuf, i64 0, i64 %zext_ln34_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 141 'getelementptr' 'row_outbuf_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 142 [1/1] (0.00ns)   --->   "%specloopname_ln21 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:21]   --->   Operation 142 'specloopname' 'specloopname_ln21' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 143 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_2 = add i29 %mul_ln31_1, i29 %mul_ln31" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 143 'add' 'add_ln34_2' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 144 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_3 = add i29 %mul_ln31_2, i29 %mul_ln31_3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 144 'add' 'add_ln34_3' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 145 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln34_4 = add i29 %add_ln34_3, i29 %add_ln34_2" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 145 'add' 'add_ln34_4' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 146 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_5 = add i29 %mul_ln31_4, i29 %mul_ln31_5" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 146 'add' 'add_ln34_5' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 147 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln34_7 = add i29 %add_ln34_6, i29 %mul_ln31_6" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 147 'add' 'add_ln34_7' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 148 [1/1] (0.86ns)   --->   "%add_ln34_8 = add i29 %add_ln34_7, i29 %add_ln34_5" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 148 'add' 'add_ln34_8' <Predicate = true> <Delay = 0.86> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 149 [1/1] (0.72ns) (root node of TernaryAdder)   --->   "%add_ln34 = add i29 %add_ln34_8, i29 %add_ln34_4" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 149 'add' 'add_ln34' <Predicate = true> <Delay = 0.72> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 150 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i16 @_ssdm_op_PartSelect.i16.i29.i32.i32, i29 %add_ln34, i32 13, i32 28" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 150 'partselect' 'trunc_ln2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 151 [1/1] (0.68ns)   --->   "%store_ln34 = store i16 %trunc_ln2, i6 %row_outbuf_addr" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34]   --->   Operation 151 'store' 'store_ln34' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 64> <RAM>
+ST_6 : Operation 152 [1/1] (0.00ns)   --->   "%br_ln28 = br void %DCT_Inner_Loop.i.i" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28]   --->   Operation 152 'br' 'br_ln28' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 2.1ns
+The critical path consists of the following:
+	'alloca' operation ('k') [18]  (0 ns)
+	'load' operation ('k_load', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28) on local variable 'k' [32]  (0 ns)
+	'icmp' operation ('icmp_ln28', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28) [37]  (0.656 ns)
+	'select' operation ('select_ln47', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47) [38]  (0.351 ns)
+	'add' operation ('add_ln28', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28) [119]  (0.708 ns)
+	'store' operation ('store_ln28', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28) of variable 'add_ln28', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28 on local variable 'k' [122]  (0.387 ns)
+
+ <State 2>: 1.68ns
+The critical path consists of the following:
+	'load' operation ('buf_2d_in_7_load', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47) on array 'buf_2d_in_7' [68]  (0.683 ns)
+	'mul' operation of DSP[113] ('mul_ln34', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) [108]  (0.996 ns)
+
+ <State 3>: 1.68ns
+The critical path consists of the following:
+	'load' operation ('buf_2d_in_0_load', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47) on array 'buf_2d_in_0' [47]  (0.683 ns)
+	'mul' operation of DSP[109] ('mul_ln31', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31) [80]  (0.996 ns)
+
+ <State 4>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[109] ('mul_ln31', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:31) [80]  (0.996 ns)
+
+ <State 5>: 1.29ns
+The critical path consists of the following:
+	'add' operation of DSP[113] ('add_ln34_6', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) [113]  (0.645 ns)
+	'add' operation of DSP[114] ('add_ln34_7', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) [114]  (0.645 ns)
+
+ <State 6>: 2.91ns
+The critical path consists of the following:
+	'add' operation of DSP[112] ('add_ln34_5', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) [112]  (0.645 ns)
+	'add' operation ('add_ln34_8', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) [115]  (0.862 ns)
+	'add' operation ('add_ln34', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) [116]  (0.721 ns)
+	'store' operation ('store_ln34', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34) of variable 'trunc_ln2', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34 on array 'row_outbuf' [118]  (0.683 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

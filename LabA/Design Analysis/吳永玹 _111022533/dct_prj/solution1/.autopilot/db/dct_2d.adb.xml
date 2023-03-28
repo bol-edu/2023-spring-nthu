@@ -1,0 +1,428 @@
+<stg><name>dct_2d</name>
+
+
+<trans_list>
+
+<trans id="21" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="22" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="23" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="24" from="4" to="5">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="25" from="5" to="6">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="26" from="6" to="7">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="27" from="7" to="8">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="16" op_0_bw="64">
+<![CDATA[
+entry:0 %row_outbuf = alloca i64 1
+
+]]></Node>
+<StgValue><ssdm name="row_outbuf"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="16" op_0_bw="64">
+<![CDATA[
+entry:1 %col_outbuf = alloca i64 1
+
+]]></Node>
+<StgValue><ssdm name="col_outbuf"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="16" op_0_bw="64">
+<![CDATA[
+entry:2 %col_inbuf = alloca i64 1
+
+]]></Node>
+<StgValue><ssdm name="col_inbuf"/><MemPortTyVec>2 1 1 1 1 1 1 1 3 3 3 3 3 3 3 3 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="14" op_4_bw="15" op_5_bw="15" op_6_bw="15" op_7_bw="15" op_8_bw="15" op_9_bw="15" op_10_bw="15">
+<![CDATA[
+entry:3 %call_ln0 = call void @dct_2d_Pipeline_Row_DCT_Loop_DCT_Outer_Loop, i16 %in_block, i16 %row_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="13" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="14" op_4_bw="15" op_5_bw="15" op_6_bw="15" op_7_bw="15" op_8_bw="15" op_9_bw="15" op_10_bw="15">
+<![CDATA[
+entry:3 %call_ln0 = call void @dct_2d_Pipeline_Row_DCT_Loop_DCT_Outer_Loop, i16 %in_block, i16 %row_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="14" st_id="3" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:4 %call_ln0 = call void @dct_2d_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop, i16 %row_outbuf, i16 %col_inbuf
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="15" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:4 %call_ln0 = call void @dct_2d_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop, i16 %row_outbuf, i16 %col_inbuf
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="16" st_id="5" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="14" op_4_bw="15" op_5_bw="15" op_6_bw="15" op_7_bw="15" op_8_bw="15" op_9_bw="15" op_10_bw="15" op_11_bw="0" op_12_bw="0">
+<![CDATA[
+entry:5 %call_ln0 = call void @dct_2d_Pipeline_Col_DCT_Loop_DCT_Outer_Loop, i16 %col_inbuf, i16 %col_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="6" st_id="6">
+
+<operation id="17" st_id="6" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="14" op_4_bw="15" op_5_bw="15" op_6_bw="15" op_7_bw="15" op_8_bw="15" op_9_bw="15" op_10_bw="15" op_11_bw="0" op_12_bw="0">
+<![CDATA[
+entry:5 %call_ln0 = call void @dct_2d_Pipeline_Col_DCT_Loop_DCT_Outer_Loop, i16 %col_inbuf, i16 %col_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="7" st_id="7">
+
+<operation id="18" st_id="7" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:6 %call_ln0 = call void @dct_2d_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop, i16 %out_block, i16 %col_outbuf
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="8" st_id="8">
+
+<operation id="19" st_id="8" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+entry:6 %call_ln0 = call void @dct_2d_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop, i16 %out_block, i16 %col_outbuf
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="20" st_id="8" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="0">
+<![CDATA[
+entry:7 %ret_ln69 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln69"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="28" name="in_block" dir="0" iftype="1">
+<core>RAM_1WnR</core><StgValue><ssdm name="in_block"/><MemPortTyVec>1 1 1 1 1 1 1 1 3 3 3 3 3 3 3 3 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="29" name="out_block" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="out_block"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="30" name="dct_coeff_table_0" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_0"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="31" name="dct_coeff_table_1" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="32" name="dct_coeff_table_2" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_2"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="33" name="dct_coeff_table_3" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_3"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="34" name="dct_coeff_table_4" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_4"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="35" name="dct_coeff_table_5" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_5"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="36" name="dct_coeff_table_6" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_6"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="37" name="dct_coeff_table_7" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="dct_coeff_table_7"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="39" from="StgValue_38" to="row_outbuf" fromId="38" toId="9">
+</dataflow>
+<dataflow id="40" from="StgValue_38" to="col_outbuf" fromId="38" toId="10">
+</dataflow>
+<dataflow id="41" from="StgValue_38" to="col_inbuf" fromId="38" toId="11">
+</dataflow>
+<dataflow id="43" from="dct_2d_Pipeline_Row_DCT_Loop_DCT_Outer_Loop" to="call_ln0" fromId="42" toId="12">
+</dataflow>
+<dataflow id="44" from="in_block" to="call_ln0" fromId="28" toId="12">
+</dataflow>
+<dataflow id="45" from="row_outbuf" to="call_ln0" fromId="9" toId="12">
+</dataflow>
+<dataflow id="46" from="dct_coeff_table_0" to="call_ln0" fromId="30" toId="12">
+</dataflow>
+<dataflow id="47" from="dct_coeff_table_1" to="call_ln0" fromId="31" toId="12">
+</dataflow>
+<dataflow id="48" from="dct_coeff_table_2" to="call_ln0" fromId="32" toId="12">
+</dataflow>
+<dataflow id="49" from="dct_coeff_table_3" to="call_ln0" fromId="33" toId="12">
+</dataflow>
+<dataflow id="50" from="dct_coeff_table_4" to="call_ln0" fromId="34" toId="12">
+</dataflow>
+<dataflow id="51" from="dct_coeff_table_5" to="call_ln0" fromId="35" toId="12">
+</dataflow>
+<dataflow id="52" from="dct_coeff_table_6" to="call_ln0" fromId="36" toId="12">
+</dataflow>
+<dataflow id="53" from="dct_coeff_table_7" to="call_ln0" fromId="37" toId="12">
+</dataflow>
+<dataflow id="54" from="dct_2d_Pipeline_Row_DCT_Loop_DCT_Outer_Loop" to="call_ln0" fromId="42" toId="13">
+</dataflow>
+<dataflow id="55" from="in_block" to="call_ln0" fromId="28" toId="13">
+</dataflow>
+<dataflow id="56" from="row_outbuf" to="call_ln0" fromId="9" toId="13">
+</dataflow>
+<dataflow id="57" from="dct_coeff_table_0" to="call_ln0" fromId="30" toId="13">
+</dataflow>
+<dataflow id="58" from="dct_coeff_table_1" to="call_ln0" fromId="31" toId="13">
+</dataflow>
+<dataflow id="59" from="dct_coeff_table_2" to="call_ln0" fromId="32" toId="13">
+</dataflow>
+<dataflow id="60" from="dct_coeff_table_3" to="call_ln0" fromId="33" toId="13">
+</dataflow>
+<dataflow id="61" from="dct_coeff_table_4" to="call_ln0" fromId="34" toId="13">
+</dataflow>
+<dataflow id="62" from="dct_coeff_table_5" to="call_ln0" fromId="35" toId="13">
+</dataflow>
+<dataflow id="63" from="dct_coeff_table_6" to="call_ln0" fromId="36" toId="13">
+</dataflow>
+<dataflow id="64" from="dct_coeff_table_7" to="call_ln0" fromId="37" toId="13">
+</dataflow>
+<dataflow id="66" from="dct_2d_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" to="call_ln0" fromId="65" toId="14">
+</dataflow>
+<dataflow id="67" from="row_outbuf" to="call_ln0" fromId="9" toId="14">
+</dataflow>
+<dataflow id="68" from="col_inbuf" to="call_ln0" fromId="11" toId="14">
+</dataflow>
+<dataflow id="69" from="dct_2d_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" to="call_ln0" fromId="65" toId="15">
+</dataflow>
+<dataflow id="70" from="row_outbuf" to="call_ln0" fromId="9" toId="15">
+</dataflow>
+<dataflow id="71" from="col_inbuf" to="call_ln0" fromId="11" toId="15">
+</dataflow>
+<dataflow id="73" from="dct_2d_Pipeline_Col_DCT_Loop_DCT_Outer_Loop" to="call_ln0" fromId="72" toId="16">
+</dataflow>
+<dataflow id="74" from="col_inbuf" to="call_ln0" fromId="11" toId="16">
+</dataflow>
+<dataflow id="75" from="col_outbuf" to="call_ln0" fromId="10" toId="16">
+</dataflow>
+<dataflow id="76" from="dct_coeff_table_0" to="call_ln0" fromId="30" toId="16">
+</dataflow>
+<dataflow id="77" from="dct_coeff_table_1" to="call_ln0" fromId="31" toId="16">
+</dataflow>
+<dataflow id="78" from="dct_coeff_table_2" to="call_ln0" fromId="32" toId="16">
+</dataflow>
+<dataflow id="79" from="dct_coeff_table_3" to="call_ln0" fromId="33" toId="16">
+</dataflow>
+<dataflow id="80" from="dct_coeff_table_4" to="call_ln0" fromId="34" toId="16">
+</dataflow>
+<dataflow id="81" from="dct_coeff_table_5" to="call_ln0" fromId="35" toId="16">
+</dataflow>
+<dataflow id="82" from="dct_coeff_table_6" to="call_ln0" fromId="36" toId="16">
+</dataflow>
+<dataflow id="83" from="dct_coeff_table_7" to="call_ln0" fromId="37" toId="16">
+</dataflow>
+<dataflow id="84" from="dct_2d_Pipeline_Col_DCT_Loop_DCT_Outer_Loop" to="call_ln0" fromId="72" toId="17">
+</dataflow>
+<dataflow id="85" from="col_inbuf" to="call_ln0" fromId="11" toId="17">
+</dataflow>
+<dataflow id="86" from="col_outbuf" to="call_ln0" fromId="10" toId="17">
+</dataflow>
+<dataflow id="87" from="dct_coeff_table_0" to="call_ln0" fromId="30" toId="17">
+</dataflow>
+<dataflow id="88" from="dct_coeff_table_1" to="call_ln0" fromId="31" toId="17">
+</dataflow>
+<dataflow id="89" from="dct_coeff_table_2" to="call_ln0" fromId="32" toId="17">
+</dataflow>
+<dataflow id="90" from="dct_coeff_table_3" to="call_ln0" fromId="33" toId="17">
+</dataflow>
+<dataflow id="91" from="dct_coeff_table_4" to="call_ln0" fromId="34" toId="17">
+</dataflow>
+<dataflow id="92" from="dct_coeff_table_5" to="call_ln0" fromId="35" toId="17">
+</dataflow>
+<dataflow id="93" from="dct_coeff_table_6" to="call_ln0" fromId="36" toId="17">
+</dataflow>
+<dataflow id="94" from="dct_coeff_table_7" to="call_ln0" fromId="37" toId="17">
+</dataflow>
+<dataflow id="96" from="dct_2d_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" to="call_ln0" fromId="95" toId="18">
+</dataflow>
+<dataflow id="97" from="out_block" to="call_ln0" fromId="29" toId="18">
+</dataflow>
+<dataflow id="98" from="col_outbuf" to="call_ln0" fromId="10" toId="18">
+</dataflow>
+<dataflow id="99" from="dct_2d_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" to="call_ln0" fromId="95" toId="19">
+</dataflow>
+<dataflow id="100" from="out_block" to="call_ln0" fromId="29" toId="19">
+</dataflow>
+<dataflow id="101" from="col_outbuf" to="call_ln0" fromId="10" toId="19">
+</dataflow>
+</dataflows>
+
+
+</stg>

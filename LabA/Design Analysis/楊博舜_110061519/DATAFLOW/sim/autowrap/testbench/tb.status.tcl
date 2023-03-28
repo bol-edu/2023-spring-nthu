@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/./sim/autowrap/testbench/dct.cpp_pre.cpp.tb.cpp

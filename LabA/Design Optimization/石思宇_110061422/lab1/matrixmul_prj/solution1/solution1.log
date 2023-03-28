@@ -1,0 +1,574 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.66 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.47 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.85 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.35 seconds; current allocated memory: 462.883 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 462.883 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.438 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.520 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:56) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:56) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:59) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 485.461 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:54:17) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 485.461 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln60_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln60_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.37 seconds; current allocated memory: 485.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.5 seconds. CPU system time: 0 seconds. Elapsed time: 0.55 seconds; current allocated memory: 485.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul' to 's_axilite & ap_ctrl_chain'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.67 seconds. CPU system time: 0.16 seconds. Elapsed time: 0.44 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.9 seconds. CPU system time: 0.25 seconds. Elapsed time: 2.33 seconds; current allocated memory: 462.777 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 462.777 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.340 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.340 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:56) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:56) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:59) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 485.340 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:54:17) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.340 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln60_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln60_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln60', matrixmul.cpp:60) on port 'gmem' (matrixmul.cpp:60) and bus write operation ('gmem_addr_write_ln57', matrixmul.cpp:57) on port 'gmem' (matrixmul.cpp:57).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.28 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.42 seconds; current allocated memory: 485.340 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.52 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 485.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul' to 's_axilite & ap_ctrl_chain'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+WARNING: [HLS 207-5570] unknown HLS pragma ignored (matrixmul.cpp:60:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.65 seconds. CPU system time: 0.19 seconds. Elapsed time: 0.44 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.91 seconds. CPU system time: 0.18 seconds. Elapsed time: 2.3 seconds; current allocated memory: 462.949 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 462.949 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.477 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.559 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:57) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:57) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:61) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 485.496 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:54:17) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.496 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln62_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln62_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.31 seconds; current allocated memory: 485.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.51 seconds. CPU system time: 0 seconds. Elapsed time: 0.57 seconds; current allocated memory: 485.496 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+WARNING: [HLS 207-5570] unknown HLS pragma ignored (matrixmul.cpp:60:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.58 seconds. CPU system time: 0.24 seconds. Elapsed time: 0.45 seconds; current allocated memory: 462.527 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.87 seconds. CPU system time: 0.16 seconds. Elapsed time: 2.29 seconds; current allocated memory: 462.840 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 462.840 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.371 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.453 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:57) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:57) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:61) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 485.391 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:54:17) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.391 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln62_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln62_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln62', matrixmul.cpp:62) on port 'gmem' (matrixmul.cpp:62) and bus write operation ('gmem_addr_write_ln58', matrixmul.cpp:58) on port 'gmem' (matrixmul.cpp:58).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.6 seconds; current allocated memory: 485.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.49 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 485.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul' to 's_axilite & ap_ctrl_chain'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+WARNING: [HLS 207-5552] unexpected pragma parameter 'OFF' (matrixmul.cpp:61:20)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.69 seconds. CPU system time: 0.17 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.86 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.29 seconds; current allocated memory: 462.965 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 462.965 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.484 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 463.566 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:62) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 485.496 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:55:17) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.496 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 485.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.51 seconds. CPU system time: 0 seconds. Elapsed time: 0.57 seconds; current allocated memory: 485.496 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:61:20)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.65 seconds. CPU system time: 0.2 seconds. Elapsed time: 0.45 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.92 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.4 seconds; current allocated memory: 462.965 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 462.965 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.480 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 463.562 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:62) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 485.496 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:55:17) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 485.496 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 485.496 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.52 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 485.496 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/res' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:53:20)
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:57:20)
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:61:20)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.66 seconds. CPU system time: 0.19 seconds. Elapsed time: 0.47 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.94 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.38 seconds; current allocated memory: 463.004 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 463.004 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.535 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 463.535 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:62) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 485.312 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:55:15) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.312 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 485.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.52 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 485.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1611] Setting target device to 'xcu50-fsvh2104-2L-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2L-e 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_alignment_byte_size 64 -m_axi_latency 64 -m_axi_max_widen_bitwidth 512 
+INFO: [HLS 200-1510] Running: config_rtl -register_reset_num 3 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-10] Analyzing design file 'matrixmul.cpp' ... 
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:53:20)
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:57:20)
+WARNING: [HLS 207-5552] unexpected pragma parameter 'off' (matrixmul.cpp:61:20)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.72 seconds. CPU system time: 0.18 seconds. Elapsed time: 0.51 seconds; current allocated memory: 1.461 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.86 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.28 seconds; current allocated memory: 463.004 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 463.004 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 463.535 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 463.535 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrixmul.cpp:58) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Product' (matrixmul.cpp:62) in function 'matrixmul' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 485.562 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrixmul.cpp:55:15) in function 'matrixmul'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 485.562 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln63_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 145, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 149, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to enforce a carried dependence constraint (II = 150, distance = 1, offset = 1) between bus write operation ('gmem_addr_write_ln63', matrixmul.cpp:63) on port 'gmem' (matrixmul.cpp:63) and bus write operation ('gmem_addr_write_ln59', matrixmul.cpp:59) on port 'gmem' (matrixmul.cpp:59).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 151, Depth = 221, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 485.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.5 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 485.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/a' to 's_axilite & ap_none'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================

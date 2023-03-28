@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1678609393857">
+  <ports id="1" name="a" type="PortType" coreName="RAM" coreId="62" bitwidth="24" iftype="IfTypeRegister" arraysize="3">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="b" type="PortType" coreName="RAM" coreId="0" bitwidth="24" iftype="IfTypeRegister" arraysize="3">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="3" name="res" type="PortType" originalName="res" coreName="RAM" coreId="0" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="9">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="85" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@ports.2"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="127" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="147" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="148" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="152" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="179" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="181" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="182" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="183" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="282" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="283" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="284" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="285" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="286" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="287" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="288" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="289" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="290" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <blocks id="18" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="j" originalName="j" coreId="108" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="i" originalName="i" coreId="108" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="indvar_flatten" coreId="0" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="indvar_flatten_write_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="108" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="i_write_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="1" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="j_write_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="543517794" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="108" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="Design_Optimization/lab1/matrixmul.cpp">
+      <validLinenumbers>54</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="72" name="for.end31" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="_ln65" lineNumber="65" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132107752" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="65" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="Design_Optimization/lab1/matrixmul.cpp">
+      <validLinenumbers>65</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="270" pipe_depth="6" RegionName="Row_Col">
+    <basic_blocks id="23" name="for.inc" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc29</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end31</controlOutputObjs>
+      <controlOutputObjs>for.inc29</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="indvar_flatten_load" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132137728" bitwidth="4" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="icmp_ln54_fu_131_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.65" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="add_ln54_1" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="add_ln54_1_fu_137_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="4" opcode="add" m_display="0" m_delay="0.7" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132055008" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc29</controlInputObjs>
+        <controlInputObjs>for.end31</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Design_Optimization/lab1/matrixmul.cpp">
+        <validLinenumbers>54</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="70" name="for.inc29" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="j_load" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="4294967295" bitwidth="2" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="i_load" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="0" bitwidth="2" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="add_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="add_ln54_fu_149_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="2" opcode="add" m_display="0" m_delay="0.43" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="icmp_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="icmp_ln56_fu_155_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.34" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="select_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="select_ln54_fu_161_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" bitwidth="2" opcode="select" m_display="0" m_delay="0.27" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="select_ln54_1" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="select_ln54_1_fu_169_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" bitwidth="2" opcode="select" m_display="0" m_delay="0.27" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="zext_ln54" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="zext_ln54_fu_177_p1" coreId="192" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="zext_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="zext_ln60_fu_282_p1" coreId="0" bitwidth="4" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_4" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="tmp_4_fu_285_p3" coreId="0" bitwidth="4" opcode="bitconcatenate" nodeLabel="5.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="sub_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="sub_ln60_fu_292_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" bitwidth="4" opcode="sub" nodeLabel="5.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="zext_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="zext_ln56_fu_182_p1" coreId="543649385" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="zext_ln60_1" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="zext_ln60_1_fu_298_p1" coreId="0" bitwidth="4" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="add_ln60_2" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="add_ln60_2_fu_301_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" bitwidth="4" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.37" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="zext_ln60_2" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="zext_ln60_2_fu_307_p1" coreId="3132063792" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="res_addr" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132052088" bitwidth="4" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>res</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="a_addr" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132117312" bitwidth="2" opcode="getelementptr" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>a</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="a_load" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" bitwidth="24" opcode="load" nodeLatency="1" m_display="0" m_delay="0.69" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="empty_8" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="empty_8_fu_208_p1" coreId="3131834368" bitwidth="8" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132092784" bitwidth="16" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="tmp" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="tmp_reg_380" coreId="3132065328" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sext_ln60_1" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132096792" bitwidth="16" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_s" lineNumber="54" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="tmp_s_fu_222_p4" coreId="3132097856" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="54" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="sext_ln60_2" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="176" bitwidth="16" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="b_addr" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132101680" bitwidth="2" opcode="getelementptr" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>b</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="b_load" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" bitwidth="24" opcode="load" nodeLatency="1" m_display="0" m_delay="0.69" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="trunc_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="trunc_ln60_fu_236_p1" coreId="96" bitwidth="8" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="sext_ln60_3" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="825368659" bitwidth="16" opcode="sext" nodeLabel="3.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="mul_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="mul_8s_8s_16_1_1_U1" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" bitwidth="16" opcode="mul" nodeLabel="3.0" m_display="0" m_delay="1.55" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="tmp_1" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="tmp_1_reg_395" coreId="0" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="sext_ln60_4" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="1207959680" bitwidth="16" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="mul_ln60_1" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="mac_muladd_8s_8s_16ns_16_4_1_U3" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" bitwidth="16" opcode="mul" nodeLabel="2.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="tmp_2" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="tmp_2_fu_250_p4" coreId="0" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="sext_ln60_5" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132088544" bitwidth="16" opcode="sext" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="mul_ln60_2" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="mac_muladd_8s_8s_16s_16_4_1_U2" coreName="DSP48" implIndex="dsp48" control="no" opType="mul" coreId="127" bitwidth="16" opcode="mul" nodeLabel="1.0" nodeLatency="2" m_display="0" m_delay="0.99" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="add_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="mac_muladd_8s_8s_16s_16_4_1_U2" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" bitwidth="16" opcode="add" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="add_ln60_1" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="mac_muladd_8s_8s_16ns_16_4_1_U3" coreName="DSP48" implIndex="dsp48" control="no" opType="add" coreId="127" bitwidth="16" opcode="add" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="0.64" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="res_addr_write_ln60" lineNumber="60" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" opcode="store" nodeLabel="5.0" m_display="0" m_delay="0.68" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="60" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="add_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." rtlName="add_ln56_fu_187_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="2" opcode="add" m_display="0" m_delay="0.43" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="indvar_flatten_write_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3131829744" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="i_write_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132105032" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="j_write_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132105512" opcode="store" m_display="0" m_delay="0.38" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="br_ln56" lineNumber="56" fileName="Design_Optimization/lab1/matrixmul.cpp" fileDirectory=".." coreId="3132106720" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Design_Optimization/lab1/matrixmul.cpp" linenumber="56" fileDirectory="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Design_Optimization/lab1/matrixmul.cpp">
+        <validLinenumbers>56</validLinenumbers>
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="sext_ln60_5_reg_400">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_380">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln54_reg_350">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_329">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln60_reg_415">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_8_reg_375">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln60_4_reg_410">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="a_addr_reg_365">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln60_reg_390">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="b_addr_reg_370">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln54_1_reg_359">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_336">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln60_reg_420">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln54_reg_354">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln60_1_reg_405">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln60_2_reg_385">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_343">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_reg_395">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <expressionNodes realName="a_addr_gep_fu_74">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln60_fu_276">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_2_fu_232">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln60_2_fu_301">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_212">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_66">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_fu_70">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln54_fu_177">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_250">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_addr_gep_fu_100">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln56_fu_187">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln56_fu_155">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_222">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln54_fu_131">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln54_fu_161">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_62">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln60_fu_236">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln56_fu_182">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_5_fu_260">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_1_fu_264">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_4_fu_267">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_fu_282">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_1_fu_298">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_1_fu_137">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_fu_149">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_fu_270">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_240">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_285">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln60_fu_292">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="b_addr_gep_fu_87">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln54_1_fu_169">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln60_3_fu_273">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_8_fu_208">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_2_fu_307">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_312">
+    <nodeIds>61</nodeIds>
+    <nodeIds>62</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_320">
+    <nodeIds>58</nodeIds>
+    <nodeIds>63</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln54_store_fu_113">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="j_load_load_fu_143">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln54_store_fu_123">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_198">
+    <nodeIds>67</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln54_store_fu_118">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_193">
+    <nodeIds>66</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_load_fu_146">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten_load_load_fu_128">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln56_store_fu_203">
+    <nodeIds>68</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="a">
+    <nodeIds>42</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="b">
+    <nodeIds>52</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="res">
+    <nodeIds>64</nodeIds>
+  </memoryPorts>
+  <ioPorts name="a(p0)">
+    <contents name="load">
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b(p0)">
+    <contents name="load">
+      <nodeIds>52</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="res(p0)">
+    <contents name="store">
+      <nodeIds>64</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="2" latency="2"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="2" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="42" stage="1" latency="2"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="2"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="3" latency="3"/>
+    </states>
+    <states id="3">
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="3" latency="3"/>
+      <operations id="61" stage="2" latency="3"/>
+    </states>
+    <states id="4">
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="58" stage="2" latency="3"/>
+      <operations id="61" stage="1" latency="3"/>
+      <operations id="62" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="58" stage="1" latency="3"/>
+      <operations id="62" stage="1" latency="2"/>
+      <operations id="63" stage="2" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="matrixmul" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="15" mMaxLatency="15">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Row_Col" mII="1" mDepth="6" mMinTripCount="9" mMaxTripCount="9" mMinLatency="13" mMaxLatency="13" mType="1">
+      <basicBlocks>23</basicBlocks>
+      <basicBlocks>70</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>72</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

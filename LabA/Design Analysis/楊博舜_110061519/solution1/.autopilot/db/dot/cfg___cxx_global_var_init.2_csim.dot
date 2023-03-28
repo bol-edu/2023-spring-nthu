@@ -1,0 +1,7 @@
+digraph "CFG for '__cxx_global_var_init.2' function" {
+	label="CFG for '__cxx_global_var_init.2' function";
+
+	Node0x47fcd70 [shape=record,filename="/opt/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream",linenumber="74",label="{entry.predFake}"];
+	Node0x47fcd70 -> Node0x47a5640[ callList="" memoryops="" filename="/opt/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" execusionnum="0"];
+	Node0x47a5640 [shape=record,filename="/opt/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream",linenumber="74",label="{entry.succFake}"];
+}

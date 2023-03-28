@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.212 GB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 2.05 seconds. CPU system time: 0.25 seconds. Elapsed time: 1.35 seconds; current allocated memory: 207.824 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-777]" key="HLS 200-777" tag="" content="Using interface defaults for &apos;Vitis&apos; flow target." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;Xpose_Col_Outer_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:63:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;Xpose_Col_Inner_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:65:7)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;Col_DCT_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:58:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;Xpose_Row_Outer_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:52:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;Xpose_Row_Inner_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:54:7)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;Row_DCT_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;DCT_Outer_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-291]" key="HLS 214-291" tag="" content="Loop &apos;DCT_Inner_Loop&apos; is marked as complete unroll implied by the pipeline pragma (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:30:7)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;Xpose_Col_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:63:4) in function &apos;dct_2d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;Xpose_Col_Inner_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:65:7) in function &apos;dct_2d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;Col_DCT_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:58:4) in function &apos;dct_2d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;Xpose_Row_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:52:4) in function &apos;dct_2d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;Xpose_Row_Inner_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:54:7) in function &apos;dct_2d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;Row_DCT_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47:4) in function &apos;dct_2d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;DCT_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28:4) in function &apos;dct_1d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:20:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-186]" key="HLS 214-186" tag="" content="Unrolling loop &apos;DCT_Inner_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:30:7) in function &apos;dct_1d&apos; completely with a factor of 8 (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:20:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=1&apos; for array &apos;row_outbuf&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=2&apos; for array &apos;row_outbuf&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=1&apos; for array &apos;col_inbuf&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=2&apos; for array &apos;col_inbuf&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=1&apos; for array &apos;col_outbuf&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=2&apos; for array &apos;col_outbuf&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=1&apos; for array &apos;buf_2d_in&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=2&apos; for array &apos;buf_2d_in&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=1&apos; for array &apos;buf_2d_out&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-270]" key="HLS 214-270" tag="" content="Inferring pragma &apos;array_partition type=complete dim=2&apos; for array &apos;buf_2d_out&apos; due to pipeline pragma (/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-248]" key="HLS 214-248" tag="" content="Applying array_partition to &apos;row_outbuf&apos;: Complete partitioning on dimension 1. Complete partitioning on dimension 2. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:41:15)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-248]" key="HLS 214-248" tag="" content="Applying array_partition to &apos;col_outbuf&apos;: Complete partitioning on dimension 1. Complete partitioning on dimension 2. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:15)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-248]" key="HLS 214-248" tag="" content="Applying array_partition to &apos;col_inbuf&apos;: Complete partitioning on dimension 1. Complete partitioning on dimension 2. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:33)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-248]" key="HLS 214-248" tag="" content="Applying array_partition to &apos;buf_2d_in&apos;: Complete partitioning on dimension 1. Complete partitioning on dimension 2. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97:10)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-248]" key="HLS 214-248" tag="" content="Applying array_partition to &apos;buf_2d_out&apos;: Complete partitioning on dimension 1. Complete partitioning on dimension 2. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:98:10)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst reads of length 2 and bit width 512 has been inferred on bundle &apos;gmem&apos;. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst writes of length 2 and bit width 512 has been inferred on bundle &apos;gmem&apos;. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Compiling Optimization and Transform: CPU user time: 2.26 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.82 seconds; current allocated memory: 209.164 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 209.164 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 211.945 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 214.348 MB." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;WR_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84) in function &apos;write_data&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;RD_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71) in function &apos;read_data&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;WR_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84) in function &apos;write_data&apos; for pipelining." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;RD_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71) in function &apos;read_data&apos; for pipelining." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;WR_Loop_Col&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84) in function &apos;write_data&apos; completely with a factor of 8." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;RD_Loop_Col&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71) in function &apos;read_data&apos; completely with a factor of 8." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;dct&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94), detected/extracted 4 process function(s): 
+	 &apos;entry_proc&apos;
+	 &apos;read_data&apos;
+	 &apos;dct_2d&apos;
+	 &apos;write_data&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:76:7) to (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74:4) in function &apos;read_data&apos;... converting 9 basic blocks." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;read_data&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71:4)...11 expression(s) balanced." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;dct_1d&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:22:1)...24 expression(s) balanced." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Loop, function and other optimizations: CPU user time: 0.55 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.67 seconds; current allocated memory: 239.516 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Architecture Synthesis: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 304.195 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;dct&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;entry_proc&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 304.980 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 305.090 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;read_data_Pipeline_RD_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;RD_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop &apos;RD_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 309.773 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 309.773 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;read_data&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 309.777 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 309.777 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_1d&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_7) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=tmp59) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_6) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_12) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_13) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_11) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=tmp49) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_5) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_4) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_10) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_3) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_9) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=tmp41) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_8) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_7) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_2) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_4) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=tmp30) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_6) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_5) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=tmp21) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32_1) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_3) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_2) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=tmp12) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln32) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln22_1) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_46" tag="" content="Pipelining function &apos;dct_1d&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = 0, Final II = 1, Depth = 6, function &apos;dct_1d&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.2 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 311.496 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 311.496 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_2d&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_46" tag="" content="Pipelining function &apos;dct_2d&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = 2, Final II = 2, Depth = 14, function &apos;dct_2d&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 312.375 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 313.156 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;write_data_Pipeline_WR_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;WR_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop &apos;WR_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 315.348 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 315.348 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;write_data&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 315.348 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 315.348 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-1020]" key="HLS 200-1020" tag="" content="Increasing the depth of FIFO output_r_c (from entry_proc_U0 to write_data_U0) to 9 to improve performance and/or avoid deadlocks." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 316.883 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.26 seconds; current allocated memory: 316.883 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;entry_proc&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;entry_proc&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.52 seconds. CPU system time: 0 seconds. Elapsed time: 0.59 seconds; current allocated memory: 316.996 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;read_data_Pipeline_RD_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;read_data_Pipeline_RD_Loop_Row&apos; pipeline &apos;RD_Loop_Row&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARVALID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARADDR&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARLEN&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARSIZE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARBURST&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARLOCK&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARCACHE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARPROT&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARQOS&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARREGION&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;read_data_Pipeline_RD_Loop_Row/m_axi_gmem_ARUSER&apos; to 0." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;read_data_Pipeline_RD_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 319.852 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;read_data&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;read_data&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.52 seconds; current allocated memory: 341.656 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_1d&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;ama_addmuladd_18s_16s_13ns_29ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;ama_submuladd_16s_16s_12ns_29s_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;ama_submuladd_16s_16s_13ns_29s_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;ama_submuladd_18s_16s_14ns_29ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_14ns_29ns_29_4_0&apos;: 3 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_14ns_29s_29_4_0&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_13ns_29_4_0&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_29ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_29s_29_4_0&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_17s_12ns_13ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_17s_12ns_29s_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_17s_13ns_13ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_17s_13ns_29s_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_18s_13ns_13ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_18s_14ns_13ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mul_mul_16s_14ns_29_4_0&apos;: 3 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mul_mul_16s_15s_29_4_0&apos;: 3 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mul_mul_17s_12ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mul_mul_17s_13ns_29_4_0&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_1d&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.43 seconds; current allocated memory: 343.020 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_2d&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_2d&apos; pipeline &apos;dct_2d&apos; pipeline type &apos;function pipeline&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1552]" key="HLS 200-1552" tag="" content="Enabling free running pipeline (frp) architecture on pipeline &apos;dct_2d&apos; in module &apos;dct_2d&apos;. Estimated max control fanout for pipeline is 8192." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_2d&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0 seconds. Elapsed time: 0.37 seconds; current allocated memory: 364.961 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;write_data_Pipeline_WR_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;write_data_Pipeline_WR_Loop_Row&apos; pipeline &apos;WR_Loop_Row&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWVALID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWADDR&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWLEN&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWSIZE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWBURST&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWLOCK&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWCACHE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWPROT&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWQOS&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWREGION&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_AWUSER&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;write_data_Pipeline_WR_Loop_Row/m_axi_gmem_BREADY&apos; to 0." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mux_84_16_1_1&apos;: 8 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;write_data_Pipeline_WR_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.5 seconds. CPU system time: 0 seconds. Elapsed time: 0.67 seconds; current allocated memory: 367.969 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;write_data&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;write_data&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 369.723 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_918" tag="" content="Design contains AXI ports. Reset is fixed to synchronous and active low." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;dct/gmem&apos; to &apos;m_axi&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;dct/input_r&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;dct/output_r&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;dct&apos; to &apos;s_axilite &amp; ap_ctrl_chain&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;input_r&apos;, &apos;output_r&apos; and &apos;return&apos; to AXI-Lite port control." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 377.934 MB." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;output_r_c_U(dct_fifo_w64_d9_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_1_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_2_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_3_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_4_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_5_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_6_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_7_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_8_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_9_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_10_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_11_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_12_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_13_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_14_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_15_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_16_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_17_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_18_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_19_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_20_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_21_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_22_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_23_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_24_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_25_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_26_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_27_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_28_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_29_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_30_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_31_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_32_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_33_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_34_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_35_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_36_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_37_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_38_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_39_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_40_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_41_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_42_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_43_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_44_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_45_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_46_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_47_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_48_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_49_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_50_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_51_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_52_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_53_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_54_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_55_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_56_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_57_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_58_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_59_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_60_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_61_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_62_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_in_63_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_1_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_2_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_3_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_4_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_5_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_6_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_7_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_8_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_9_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_10_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_11_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_12_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_13_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_14_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_15_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_16_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_17_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_18_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_19_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_20_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_21_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_22_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_23_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_24_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_25_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_26_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_27_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_28_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_29_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_30_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_31_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_32_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_33_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_34_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_35_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_36_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_37_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_38_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_39_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_40_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_41_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_42_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_43_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_44_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_45_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_46_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_47_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_48_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_49_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_50_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_51_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_52_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_53_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_54_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_55_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_56_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_57_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_58_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_59_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_60_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_61_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_62_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;buf_2d_out_63_U(dct_fifo_w16_d2_S)&apos; using Shift Registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Generating all RTL models: CPU user time: 3.41 seconds. CPU system time: 0.14 seconds. Elapsed time: 6.64 seconds; current allocated memory: 388.215 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1603]" key="HLS 200-1603" tag="VITIS_INTERFACE" content="Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Updating report files: CPU user time: 0.37 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.44 seconds; current allocated memory: 401.625 MB." resolution=""/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for dct." resolution=""/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for dct." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,VITIS_KERNEL" content="**** Estimated Fmax: 136.99 MHz" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 13.55 seconds. CPU system time: 0.68 seconds. Elapsed time: 18.67 seconds; current allocated memory: -839.754 MB." resolution=""/>
+</Messages>

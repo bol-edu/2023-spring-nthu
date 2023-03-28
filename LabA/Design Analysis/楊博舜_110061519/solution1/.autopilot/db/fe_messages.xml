@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Inlining function 'dct_1d(short*, short*)' into 'dct_2d(short (*) [8], short (*) [8])'">
+        <args Callee="dct_1d(short*, short*)" Caller="dct_2d(short (*) [8], short (*) [8])"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94:0" msg_body="Inlining function 'read_data(short*, short (*) [8])' into 'dct'">
+        <args Callee="read_data(short*, short (*) [8])" Caller="dct"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94:0" msg_body="Inlining function 'dct_2d(short (*) [8], short (*) [8])' into 'dct'">
+        <args Callee="dct_2d(short (*) [8], short (*) [8])" Caller="dct"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94:0" msg_body="Inlining function 'write_data(short (*) [8], short*)' into 'dct'">
+        <args Callee="write_data(short (*) [8], short*)" Caller="dct"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

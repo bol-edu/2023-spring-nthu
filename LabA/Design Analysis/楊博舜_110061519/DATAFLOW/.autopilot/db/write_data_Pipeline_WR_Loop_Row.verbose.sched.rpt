@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vitis HLS Report for 'write_data_Pipeline_WR_Loop_Row'
+================================================================
+* Date:           Sat Mar 11 11:25:43 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        dct_prj
+* Solution:       DATAFLOW (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- WR_Loop_Row  |        8|        8|         2|          1|          1|     8|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.09>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%phi_ln87 = alloca i32 1"   --->   Operation 5 'alloca' 'phi_ln87' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%r = alloca i32 1"   --->   Operation 6 'alloca' 'r' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%buf_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_126"   --->   Operation 7 'read' 'buf_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%buf_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_118"   --->   Operation 8 'read' 'buf_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%buf_read_3 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_110"   --->   Operation 9 'read' 'buf_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%buf_read_4 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_102"   --->   Operation 10 'read' 'buf_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%buf_read_5 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_94"   --->   Operation 11 'read' 'buf_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%buf_read_6 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_86"   --->   Operation 12 'read' 'buf_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%buf_read_7 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_78"   --->   Operation 13 'read' 'buf_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%buf_read_8 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_70"   --->   Operation 14 'read' 'buf_read_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%buf_read_9 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_125"   --->   Operation 15 'read' 'buf_read_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%buf_read_10 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_117"   --->   Operation 16 'read' 'buf_read_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%buf_read_11 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_109"   --->   Operation 17 'read' 'buf_read_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%buf_read_12 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_101"   --->   Operation 18 'read' 'buf_read_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%buf_read_13 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_93"   --->   Operation 19 'read' 'buf_read_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%buf_read_14 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_85"   --->   Operation 20 'read' 'buf_read_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%buf_read_15 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_77"   --->   Operation 21 'read' 'buf_read_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%buf_read_16 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_69"   --->   Operation 22 'read' 'buf_read_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%buf_read_17 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_124"   --->   Operation 23 'read' 'buf_read_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%buf_read_18 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_116"   --->   Operation 24 'read' 'buf_read_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%buf_read_19 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_108"   --->   Operation 25 'read' 'buf_read_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%buf_read_20 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_100"   --->   Operation 26 'read' 'buf_read_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%buf_read_21 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_92"   --->   Operation 27 'read' 'buf_read_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%buf_read_22 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_84"   --->   Operation 28 'read' 'buf_read_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%buf_read_23 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_76"   --->   Operation 29 'read' 'buf_read_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%buf_read_24 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_68"   --->   Operation 30 'read' 'buf_read_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%buf_read_25 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_123"   --->   Operation 31 'read' 'buf_read_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%buf_read_26 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_115"   --->   Operation 32 'read' 'buf_read_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%buf_read_27 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_107"   --->   Operation 33 'read' 'buf_read_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%buf_read_28 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_99"   --->   Operation 34 'read' 'buf_read_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%buf_read_29 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_91"   --->   Operation 35 'read' 'buf_read_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%buf_read_30 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_83"   --->   Operation 36 'read' 'buf_read_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%buf_read_31 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_75"   --->   Operation 37 'read' 'buf_read_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%buf_read_32 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_67"   --->   Operation 38 'read' 'buf_read_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%buf_read_33 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_122"   --->   Operation 39 'read' 'buf_read_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%buf_read_34 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_114"   --->   Operation 40 'read' 'buf_read_34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%buf_read_35 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_106"   --->   Operation 41 'read' 'buf_read_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%buf_read_36 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_98"   --->   Operation 42 'read' 'buf_read_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%buf_read_37 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_90"   --->   Operation 43 'read' 'buf_read_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%buf_read_38 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_82"   --->   Operation 44 'read' 'buf_read_38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%buf_read_39 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_74"   --->   Operation 45 'read' 'buf_read_39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%buf_read_40 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_66"   --->   Operation 46 'read' 'buf_read_40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%buf_read_41 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_121"   --->   Operation 47 'read' 'buf_read_41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%buf_read_42 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_113"   --->   Operation 48 'read' 'buf_read_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%buf_read_43 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_105"   --->   Operation 49 'read' 'buf_read_43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%buf_read_44 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_97"   --->   Operation 50 'read' 'buf_read_44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%buf_read_45 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_89"   --->   Operation 51 'read' 'buf_read_45' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%buf_read_46 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_81"   --->   Operation 52 'read' 'buf_read_46' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%buf_read_47 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_73"   --->   Operation 53 'read' 'buf_read_47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%buf_read_48 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_65"   --->   Operation 54 'read' 'buf_read_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%buf_read_49 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_120"   --->   Operation 55 'read' 'buf_read_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%buf_read_50 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_112"   --->   Operation 56 'read' 'buf_read_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%buf_read_51 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_104"   --->   Operation 57 'read' 'buf_read_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%buf_read_52 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_96"   --->   Operation 58 'read' 'buf_read_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%buf_read_53 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_88"   --->   Operation 59 'read' 'buf_read_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%buf_read_54 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_80"   --->   Operation 60 'read' 'buf_read_54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%buf_read_55 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_72"   --->   Operation 61 'read' 'buf_read_55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%buf_read_56 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_64"   --->   Operation 62 'read' 'buf_read_56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%buf_read_57 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_119"   --->   Operation 63 'read' 'buf_read_57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%buf_read_58 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_111"   --->   Operation 64 'read' 'buf_read_58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%buf_read_59 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_103"   --->   Operation 65 'read' 'buf_read_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%buf_read_60 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_95"   --->   Operation 66 'read' 'buf_read_60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%buf_read_61 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_87"   --->   Operation 67 'read' 'buf_read_61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%buf_read_62 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_79"   --->   Operation 68 'read' 'buf_read_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%buf_read_63 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read_71"   --->   Operation 69 'read' 'buf_read_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%buf_read_127 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %buf_read"   --->   Operation 70 'read' 'buf_read_127' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%sext_ln87_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %sext_ln87"   --->   Operation 71 'read' 'sext_ln87_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%sext_ln87_cast = sext i58 %sext_ln87_read"   --->   Operation 72 'sext' 'sext_ln87_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_5, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_0, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.38ns)   --->   "%store_ln0 = store i4 0, i4 %r"   --->   Operation 74 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 75 [1/1] (0.38ns)   --->   "%store_ln0 = store i384 0, i384 %phi_ln87"   --->   Operation 75 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln0 = br void %WR_Loop_Col"   --->   Operation 76 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%r_1 = load i4 %r"   --->   Operation 77 'load' 'r_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i512 %gmem, i64 %sext_ln87_cast" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 78 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 1, i32 0, void @p_str"   --->   Operation 79 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.65ns)   --->   "%icmp_ln87 = icmp_eq  i4 %r_1, i4 8" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 80 'icmp' 'icmp_ln87' <Predicate = true> <Delay = 0.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.65> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8"   --->   Operation 81 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.70ns)   --->   "%add_ln87 = add i4 %r_1, i4 1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 82 'add' 'add_ln87' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln87 = br i1 %icmp_ln87, void %WR_Loop_Col.split, void %for.end10.exitStub" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 83 'br' 'br_ln87' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%empty_25 = trunc i4 %r_1"   --->   Operation 84 'trunc' 'empty_25' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.58ns)   --->   "%tmp_8 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_127, i16 %buf_read_63, i16 %buf_read_62, i16 %buf_read_61, i16 %buf_read_60, i16 %buf_read_59, i16 %buf_read_58, i16 %buf_read_57, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 85 'mux' 'tmp_8' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 86 [1/1] (0.58ns)   --->   "%tmp_8_1 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_56, i16 %buf_read_55, i16 %buf_read_54, i16 %buf_read_53, i16 %buf_read_52, i16 %buf_read_51, i16 %buf_read_50, i16 %buf_read_49, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 86 'mux' 'tmp_8_1' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 87 [1/1] (0.58ns)   --->   "%tmp_8_2 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_48, i16 %buf_read_47, i16 %buf_read_46, i16 %buf_read_45, i16 %buf_read_44, i16 %buf_read_43, i16 %buf_read_42, i16 %buf_read_41, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 87 'mux' 'tmp_8_2' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 88 [1/1] (0.58ns)   --->   "%tmp_8_3 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_40, i16 %buf_read_39, i16 %buf_read_38, i16 %buf_read_37, i16 %buf_read_36, i16 %buf_read_35, i16 %buf_read_34, i16 %buf_read_33, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 88 'mux' 'tmp_8_3' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.58ns)   --->   "%tmp_8_4 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_32, i16 %buf_read_31, i16 %buf_read_30, i16 %buf_read_29, i16 %buf_read_28, i16 %buf_read_27, i16 %buf_read_26, i16 %buf_read_25, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 89 'mux' 'tmp_8_4' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 90 [1/1] (0.58ns)   --->   "%tmp_8_5 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_24, i16 %buf_read_23, i16 %buf_read_22, i16 %buf_read_21, i16 %buf_read_20, i16 %buf_read_19, i16 %buf_read_18, i16 %buf_read_17, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 90 'mux' 'tmp_8_5' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 91 [1/1] (0.58ns)   --->   "%tmp_8_6 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_16, i16 %buf_read_15, i16 %buf_read_14, i16 %buf_read_13, i16 %buf_read_12, i16 %buf_read_11, i16 %buf_read_10, i16 %buf_read_9, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 91 'mux' 'tmp_8_6' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (0.58ns)   --->   "%tmp_8_7 = mux i16 @_ssdm_op_Mux.ap_auto.8i16.i4, i16 %buf_read_8, i16 %buf_read_7, i16 %buf_read_6, i16 %buf_read_5, i16 %buf_read_4, i16 %buf_read_3, i16 %buf_read_2, i16 %buf_read_1, i4 %r_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:90]   --->   Operation 92 'mux' 'tmp_8_7' <Predicate = (!icmp_ln87)> <Delay = 0.58> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 93 [1/1] (0.34ns)   --->   "%icmp_ln87_1 = icmp_eq  i2 %empty_25, i2 3" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 93 'icmp' 'icmp_ln87_1' <Predicate = (!icmp_ln87)> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%br_ln87 = br i1 %icmp_ln87_1, void %for.inc8._crit_edge, void" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 94 'br' 'br_ln87' <Predicate = (!icmp_ln87)> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.38ns)   --->   "%store_ln87 = store i4 %add_ln87, i4 %r" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 95 'store' 'store_ln87' <Predicate = (!icmp_ln87)> <Delay = 0.38>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 107 'ret' 'ret_ln0' <Predicate = (icmp_ln87)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%phi_ln87_load_1 = load i384 %phi_ln87" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 96 'load' 'phi_ln87_load_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%specloopname_ln84 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84]   --->   Operation 97 'specloopname' 'specloopname_ln84' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i16.i16.i16.i16.i16.i16.i16.i16.i384, i16 %tmp_8_7, i16 %tmp_8_6, i16 %tmp_8_5, i16 %tmp_8_4, i16 %tmp_8_3, i16 %tmp_8_2, i16 %tmp_8_1, i16 %tmp_8, i384 %phi_ln87_load_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 98 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (7.30ns)   --->   "%write_ln87 = write void @_ssdm_op_Write.m_axi.p1i512, i512 %gmem_addr, i512 %or_ln, i64 18446744073709551615" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 99 'write' 'write_ln87' <Predicate = (icmp_ln87_1)> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 100 [1/1] (0.00ns)   --->   "%br_ln87 = br void %for.inc8._crit_edge" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 100 'br' 'br_ln87' <Predicate = (icmp_ln87_1)> <Delay = 0.00>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%phi_ln87_load = load i384 %phi_ln87" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 101 'load' 'phi_ln87_load' <Predicate = (!icmp_ln87_1)> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%tmp = partselect i256 @_ssdm_op_PartSelect.i256.i384.i32.i32, i384 %phi_ln87_load, i32 128, i32 383" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 102 'partselect' 'tmp' <Predicate = (!icmp_ln87_1)> <Delay = 0.00>
+ST_2 : Operation 103 [1/1] (0.00ns)   --->   "%tmp_1 = bitconcatenate i384 @_ssdm_op_BitConcatenate.i384.i16.i16.i16.i16.i16.i16.i16.i16.i256, i16 %tmp_8_7, i16 %tmp_8_6, i16 %tmp_8_5, i16 %tmp_8_4, i16 %tmp_8_3, i16 %tmp_8_2, i16 %tmp_8_1, i16 %tmp_8, i256 %tmp" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 103 'bitconcatenate' 'tmp_1' <Predicate = (!icmp_ln87_1)> <Delay = 0.00>
+ST_2 : Operation 104 [1/1] (0.46ns)   --->   "%select_ln87 = select i1 %icmp_ln87_1, i384 0, i384 %tmp_1" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 104 'select' 'select_ln87' <Predicate = true> <Delay = 0.46> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.46> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 105 [1/1] (0.38ns)   --->   "%store_ln87 = store i384 %select_ln87, i384 %phi_ln87" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 105 'store' 'store_ln87' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 106 [1/1] (0.00ns)   --->   "%br_ln87 = br void %WR_Loop_Col" [Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87]   --->   Operation 106 'br' 'br_ln87' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.09ns
+The critical path consists of the following:
+	'alloca' operation ('r') [68]  (0 ns)
+	'load' operation ('r') on local variable 'r' [140]  (0 ns)
+	'add' operation ('add_ln87', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87) [145]  (0.708 ns)
+	'store' operation ('store_ln87', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87) of variable 'add_ln87', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87 on local variable 'r' [170]  (0.387 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	'load' operation ('phi_ln87_load_1', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87) on local variable 'phi_ln87' [148]  (0 ns)
+	bus write operation ('write_ln87', Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87) on port 'gmem' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87) [163]  (7.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

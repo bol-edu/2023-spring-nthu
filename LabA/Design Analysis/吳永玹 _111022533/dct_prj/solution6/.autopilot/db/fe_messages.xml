@@ -1,0 +1,61 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:14:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_1d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=col_inbuf complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buf_2d_in complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-273" msg_severity="WARNING" msg_loc="dct.cpp:39:0" msg_body="In function 'dct_2d(short (*) [8], short (*) [8])', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form">
+        <args Function="dct_2d(short (*) [8], short (*) [8])"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="dct.cpp:119:4" msg_body="Inlining function 'dct_2d(short (*) [8], short (*) [8])' into 'dct(short*, short*)'">
+        <args Callee="dct_2d(short (*) [8], short (*) [8])" Caller="dct(short*, short*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="dct.cpp:25:7" msg_body="Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="dct.cpp:12:0" msg_body="Unrolling loop 'DCT_Inner_Loop' (dct.cpp:25:7) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="dct.cpp:25:7" LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="dct.cpp:41:33" msg_body="Applying array_partition to 'col_inbuf.i': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="col_inbuf.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="dct.cpp:113:10" msg_body="Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="buf_2d_in"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/directives.tcl:11:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'dct_1d(short*, short*)::dct_coeff_table' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="dct_1d(short*, short*)::dct_coeff_table" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="dct.cpp:16:0" msg_body="Applying array_partition to '_ZZ6dct_1dPsS_E15dct_coeff_table': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="_ZZ6dct_1dPsS_E15dct_coeff_table"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct_2d'
+================================================================
+* Date:           Tue Mar  7 22:13:00 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        dct_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.508 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      285|      285|  2.850 us|  2.850 us|  285|  285|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%row_outbuf = alloca i64 1" [dct.cpp:35]   --->   Operation 9 'alloca' 'row_outbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%col_outbuf = alloca i64 1" [dct.cpp:36]   --->   Operation 10 'alloca' 'col_outbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%col_inbuf = alloca i64 1" [dct.cpp:36]   --->   Operation 11 'alloca' 'col_inbuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Row_DCT_Loop_DCT_Outer_Loop, i16 %in_block, i16 %row_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7"   --->   Operation 12 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Row_DCT_Loop_DCT_Outer_Loop, i16 %in_block, i16 %row_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop, i16 %row_outbuf, i16 %col_inbuf"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop, i16 %row_outbuf, i16 %col_inbuf"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Col_DCT_Loop_DCT_Outer_Loop, i16 %col_inbuf, i16 %col_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7"   --->   Operation 16 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Col_DCT_Loop_DCT_Outer_Loop, i16 %col_inbuf, i16 %col_outbuf, i14 %dct_coeff_table_0, i15 %dct_coeff_table_1, i15 %dct_coeff_table_2, i15 %dct_coeff_table_3, i15 %dct_coeff_table_4, i15 %dct_coeff_table_5, i15 %dct_coeff_table_6, i15 %dct_coeff_table_7"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop, i16 %out_block, i16 %col_outbuf"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dct_2d_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop, i16 %out_block, i16 %col_outbuf"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln69 = ret" [dct.cpp:69]   --->   Operation 20 'ret' 'ret_ln69' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln56_fu_109_p2" SOURCE="matrixmul.cpp:56" VARIABLE="icmp_ln56" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln56_fu_115_p2" SOURCE="matrixmul.cpp:56" VARIABLE="add_ln56" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16ns_16_4_1_U3" SOURCE="matrixmul.cpp:61" VARIABLE="mul_ln61" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="0" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8s_8s_16_1_1_U1" SOURCE="matrixmul.cpp:61" VARIABLE="mul_ln61_1" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U2" SOURCE="matrixmul.cpp:61" VARIABLE="mul_ln61_2" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_16_4_1_U2" SOURCE="matrixmul.cpp:61" VARIABLE="add_ln61" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="dsp48" LATENCY="3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16ns_16_4_1_U3" SOURCE="matrixmul.cpp:61" VARIABLE="add_ln61_1" MODULE="matrixmul_Pipeline_Col" LOOP="Col" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln54_fu_83_p2" SOURCE="matrixmul.cpp:54" VARIABLE="icmp_ln54" MODULE="matrixmul" LOOP="Row" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln54_fu_89_p2" SOURCE="matrixmul.cpp:54" VARIABLE="add_ln54" MODULE="matrixmul" LOOP="Row" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

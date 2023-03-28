@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_7_write_ln60', Design_Optimization/lab1/matrixmul.cpp:60) of variable 'add_ln60_15', Design_Optimization/lab1/matrixmul.cpp:60 on array 'res' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'res'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul" solutionName="solution6" date="2023-03-12T16:50:54.336+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_5_write_ln60', Design_Optimization/lab1/matrixmul.cpp:60) of variable 'add_ln60_11', Design_Optimization/lab1/matrixmul.cpp:60 on array 'res' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'res'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul" solutionName="solution6" date="2023-03-12T16:50:54.304+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'store' operation ('res_addr_3_write_ln60', Design_Optimization/lab1/matrixmul.cpp:60) of variable 'add_ln60_7', Design_Optimization/lab1/matrixmul.cpp:60 on array 'res' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'res'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul" solutionName="solution6" date="2023-03-12T16:50:54.277+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (function 'matrixmul'): Unable to schedule 'load' operation ('b_0_load_1', Design_Optimization/lab1/matrixmul.cpp:60) on array 'b_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'b_0'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul" solutionName="solution6" date="2023-03-12T16:50:54.263+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'res' (Design_Optimization/lab1/matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul" solutionName="solution5" date="2023-03-12T16:25:12.953+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'b' (Design_Optimization/lab1/matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul" solutionName="solution5" date="2023-03-12T16:25:12.945+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'a' (Design_Optimization/lab1/matrixmul.cpp:52:0)&#xA;Resolution: For help on HLS 214-142 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=214-142.html" projectName="matrixmul" solutionName="solution5" date="2023-03-12T16:25:12.941+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-885] The II Violation in module 'matrixmul' (loop 'Row_Col'): Unable to schedule 'load' operation ('a_load_1', Design_Optimization/lab1/matrixmul.cpp:54) on array 'a' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'a'.&#xA;Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-885.html" projectName="matrixmul" solutionName="solution3" date="2023-03-12T16:21:21.959+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

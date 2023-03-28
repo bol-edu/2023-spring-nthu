@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution1/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="read_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution1/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="write_data" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="dct.cpp:34:0" msg_body="Inlining function 'dct_1d(short*, short*)' into 'dct_2d(short (*) [8], short (*) [8])'">
+        <args Callee="dct_1d(short*, short*)" Caller="dct_2d(short (*) [8], short (*) [8])"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

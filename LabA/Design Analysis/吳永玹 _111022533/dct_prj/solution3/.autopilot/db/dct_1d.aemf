@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1678076483174">
+  <ports id="1" name="src" type="PortType" originalName="src" coreName="RAM" coreId="2035498016" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="src_offset" type="PortType" coreId="1031040613" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="dst" type="PortType" originalName="dst" coreName="RAM" coreId="1853444924" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="dst_offset" type="PortType" coreId="1853444924" bitwidth="3">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="53" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="55" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="65" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="72" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="73" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="76" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="79" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="80" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="82" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="83" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="87" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="89" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="94" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="96" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="101" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="104" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="107" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="108" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="111" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="114" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="115" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="119" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="120" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="124" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="125" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.34"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.35" sink_obj="//@ports.2"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="132" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.34" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="138" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="139" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="140" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="141" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="142" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="143" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="144" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="145" sink_obj="//@blocks.0/@node_objs.35"/>
+  <blocks id="50" name="dct_1d" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="dst_offset_read" lineNumber="22" fileName="dct.cpp" fileDirectory=".." coreId="0" bitwidth="3" opcode="read" nodeLabel="4.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="22" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>dst_offset</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="src_offset_read" lineNumber="22" fileName="dct.cpp" fileDirectory=".." coreId="1868767232" bitwidth="3" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="22" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>src_offset</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="tmp" lineNumber="22" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_fu_250_p3" coreId="0" bitwidth="6" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="22" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_1" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_1_fu_166_p3" coreId="1986360064" contextFuncName="dct_1d" bitwidth="6" opcode="bitconcatenate" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="zext_ln4" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="zext_ln4_fu_174_p1" coreId="842886505" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="src_addr" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="543649385" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp_2" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_2_fu_179_p2" coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="or" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_2_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_2_cast_fu_185_p1" coreId="0" contextFuncName="dct_1d" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="src_addr_1" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="1819231071" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="tmp_3" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_3_fu_190_p2" coreId="4294967295" contextFuncName="dct_1d" bitwidth="6" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_3_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_3_cast_fu_195_p1" coreId="0" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="src_addr_2" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="tmp_4" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_4_fu_200_p2" coreId="2500059784" contextFuncName="dct_1d" bitwidth="6" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_4_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_4_cast_fu_205_p1" coreId="2421537472" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="src_addr_3" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="2421533768" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp_5" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_5_fu_210_p2" coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="tmp_5_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_5_cast_fu_215_p1" coreId="0" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="src_addr_4" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_6" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_6_fu_220_p2" coreId="1215669184" contextFuncName="dct_1d" bitwidth="6" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_6_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_6_cast_fu_225_p1" coreId="2498926208" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="src_addr_5" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_7" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_7_fu_230_p2" coreId="2552938040" contextFuncName="dct_1d" bitwidth="6" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp_7_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_7_cast_fu_235_p1" coreId="1215669184" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="src_addr_6" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="tmp_8" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_8_fu_240_p2" coreId="3075768411" contextFuncName="dct_1d" bitwidth="6" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_8_cast" lineNumber="4" fileName="dct.cpp" fileDirectory=".." rtlName="tmp_8_cast_fu_245_p1" coreId="2551734240" contextFuncName="dct_1d" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="src_addr_7" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreId="16" contextFuncName="dct_1d" bitwidth="6" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>src</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="src_load" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="src_load_1" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="src_load_2" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="src_load_3" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="src_load_4" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="src_load_5" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="src_load_6" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="src_load_7" lineNumber="4" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="4" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="_ln22" lineNumber="22" fileName="dct.cpp" fileDirectory=".." rtlName="grp_dct_1d_Pipeline_DCT_Outer_Loop_fu_133" coreId="3125530544" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="22" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>dst</dataOutputObjs>
+      <constName>dct_1d_Pipeline_DCT_Outer_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="_ln24" lineNumber="24" fileName="dct.cpp" fileDirectory=".." coreId="0" contextFuncName="dct_1d" opcode="ret" nodeLabel="5.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="24" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_1d"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="src_addr_reg_269">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_6_reg_344">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_7_reg_349">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_3_reg_284">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_reg_259">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_5_reg_304">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_2_reg_309">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_4_reg_299">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_4_reg_329">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_3_reg_314">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_1_reg_274">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_2_reg_279">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_6_reg_319">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_5_reg_334">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_reg_289">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_339">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="src_load_1_reg_294">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_7_reg_324">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_6_cast_fu_225">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_cast_fu_185">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_179">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_cast_fu_205">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_cast_fu_245">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_250">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_210">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_240">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_190">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_6_gep_fu_117">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_220">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_1_gep_fu_67">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_5_gep_fu_108">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_cast_fu_195">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_cast_fu_215">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_200">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_gep_fu_60">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_166">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_cast_fu_235">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_230">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_4_gep_fu_101">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln4_fu_174">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_7_gep_fu_124">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_2_gep_fu_85">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_3_gep_fu_92">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dct_1d_Pipeline_DCT_Outer_Loop_fu_133">
+    <nodeIds>48</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="src_offset_read_read_fu_48">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="dst_offset_read_read_fu_54">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_1" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_2" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_3" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_4" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_5" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_6" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_7" portID="100">
+    <nodeIds>48</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="src">
+    <nodeIds>41</nodeIds>
+    <nodeIds>43</nodeIds>
+    <nodeIds>45</nodeIds>
+    <nodeIds>47</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="src" portID="1">
+    <nodeIds>40</nodeIds>
+    <nodeIds>42</nodeIds>
+    <nodeIds>44</nodeIds>
+    <nodeIds>46</nodeIds>
+  </memoryPorts>
+  <ioPorts name="dst_offset">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src(p0)">
+    <contents name="load">
+      <nodeIds>41</nodeIds>
+      <nodeIds>43</nodeIds>
+      <nodeIds>45</nodeIds>
+      <nodeIds>47</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src(p1)">
+    <contents name="load">
+      <nodeIds>40</nodeIds>
+      <nodeIds>42</nodeIds>
+      <nodeIds>44</nodeIds>
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_offset">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="40" stage="2" latency="2"/>
+      <operations id="41" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="2"/>
+      <operations id="41" stage="1" latency="2"/>
+      <operations id="42" stage="2" latency="2"/>
+      <operations id="43" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="2"/>
+      <operations id="43" stage="1" latency="2"/>
+      <operations id="44" stage="2" latency="2"/>
+      <operations id="45" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="2"/>
+      <operations id="45" stage="1" latency="2"/>
+      <operations id="46" stage="2" latency="2"/>
+      <operations id="47" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="2"/>
+      <operations id="48" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="48" stage="1" latency="2"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct_1d" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="21" mMaxLatency="21">
+      <basicBlocks>50</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

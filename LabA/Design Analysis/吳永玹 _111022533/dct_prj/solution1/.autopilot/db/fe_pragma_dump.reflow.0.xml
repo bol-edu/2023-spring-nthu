@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="dct.cpp" line="9" pragmaType="inline" parentfunction="write_data" off="1" region="0" recursive="0"/>
+<pragma file="dct.cpp" line="8" pragmaType="inline" parentfunction="read_data" off="1" region="0" recursive="0"/>
+<pragma file="dct.cpp" line="7" pragmaType="inline" parentfunction="dct_2d" off="1" region="0" recursive="0"/>
+</pragmas>

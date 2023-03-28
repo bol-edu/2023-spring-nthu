@@ -1,0 +1,7 @@
+,read_data_U0,stalling1.csv,status1.csv
+,Loop_Row_DCT_Loop_proc_U0,stalling2.csv,status2.csv
+,Loop_Xpose_Row_Outer_Loop_proc_U0,stalling3.csv,status3.csv
+,Loop_Col_DCT_Loop_proc_U0,stalling4.csv,status4.csv
+,Loop_Xpose_Col_Outer_Loop_proc_U0,stalling5.csv,status5.csv
+,write_data_U0,stalling6.csv,status6.csv
+,AESL_inst_dct,,module_status1.csv

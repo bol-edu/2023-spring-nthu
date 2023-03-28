@@ -1,0 +1,2141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dct.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_dataflow_monitor_sv " />
+            <top_module name="apatb_dct_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="HLS Process Summary Group" type="group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct//AESL_inst_dct_activity" type="group">
+         <obj_property name="label">AESL_inst_dct_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_dct_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_dct_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct//AESL_inst_dct_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct//AESL_inst_dct_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct//AESL_inst_dct_activity.dataflowTxTooltipData</obj_property>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/read_data_U0_activity" type="group">
+            <obj_property name="label">read_data_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">read_data_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">read_data_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct/read_data_U0/read_data_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct/read_data_U0/read_data_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct/read_data_U0/read_data_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/Loop_Row_DCT_Loop_proc_U0_activity" type="group">
+            <obj_property name="label">Loop_Row_DCT_Loop_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_Row_DCT_Loop_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_Row_DCT_Loop_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/Loop_Row_DCT_Loop_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/Loop_Row_DCT_Loop_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/Loop_Row_DCT_Loop_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/Loop_Xpose_Row_Outer_Loop_proc_U0_activity" type="group">
+            <obj_property name="label">Loop_Xpose_Row_Outer_Loop_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_Xpose_Row_Outer_Loop_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_Xpose_Row_Outer_Loop_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/Loop_Xpose_Row_Outer_Loop_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/Loop_Xpose_Row_Outer_Loop_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/Loop_Xpose_Row_Outer_Loop_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/Loop_Col_DCT_Loop_proc_U0_activity" type="group">
+            <obj_property name="label">Loop_Col_DCT_Loop_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_Col_DCT_Loop_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_Col_DCT_Loop_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/Loop_Col_DCT_Loop_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/Loop_Col_DCT_Loop_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/Loop_Col_DCT_Loop_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/Loop_Xpose_Col_Outer_Loop_proc_U0_activity" type="group">
+            <obj_property name="label">Loop_Xpose_Col_Outer_Loop_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_Xpose_Col_Outer_Loop_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_Xpose_Col_Outer_Loop_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/Loop_Xpose_Col_Outer_Loop_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/Loop_Xpose_Col_Outer_Loop_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/Loop_Xpose_Col_Outer_Loop_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/write_data_U0_activity" type="group">
+            <obj_property name="label">write_data_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">write_data_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">write_data_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_dct_top/AESL_inst_dct/write_data_U0/write_data_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_dct_top/AESL_inst_dct/write_data_U0/write_data_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_dct_top/AESL_inst_dct/write_data_U0/write_data_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/AESL_inst_dct_activity" type="protoinst">
+      <obj_property name="ElementShortName">AESL_inst_dct_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_dct_activity</obj_property>
+   </wvobject>
+   <wvobject fp_name="AESL_inst_dct_group" type="group">
+      <obj_property name="label">AESL_inst_dct</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/read_data_U0_activity" type="protoinst">
+         <obj_property name="ElementShortName">read_data_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">read_data_U0_activity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/Loop_Row_DCT_Loop_proc_U0_activity" type="protoinst">
+         <obj_property name="ElementShortName">Loop_Row_DCT_Loop_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_Row_DCT_Loop_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/Loop_Xpose_Row_Outer_Loop_proc_U0_activity" type="protoinst">
+         <obj_property name="ElementShortName">Loop_Xpose_Row_Outer_Loop_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_Xpose_Row_Outer_Loop_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/Loop_Col_DCT_Loop_proc_U0_activity" type="protoinst">
+         <obj_property name="ElementShortName">Loop_Col_DCT_Loop_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_Col_DCT_Loop_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/Loop_Xpose_Col_Outer_Loop_proc_U0_activity" type="protoinst">
+         <obj_property name="ElementShortName">Loop_Xpose_Col_Outer_Loop_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_Xpose_Col_Outer_Loop_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/write_data_U0_activity" type="protoinst">
+         <obj_property name="ElementShortName">write_data_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">write_data_U0_activity</obj_property>
+      </wvobject>
+      <wvobject fp_name="AESL_inst_dct_Handshake_group" type="group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="read_data_U0_group" type="group">
+         <obj_property name="label">read_data_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="read_data_U0_Input_group" type="group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="input_r_group" type="group">
+               <obj_property name="label">input_r(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/input_r_address0" type="array">
+                  <obj_property name="ElementShortName">input_r_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">input_r_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/input_r_q0" type="array">
+                  <obj_property name="ElementShortName">input_r_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">input_r_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/input_r_ce0" type="logic">
+                  <obj_property name="ElementShortName">input_r_ce0</obj_property>
+                  <obj_property name="ObjectShortName">input_r_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="read_data_U0_Handshake_group" type="group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_start" type="logic">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_ready" type="logic">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="read_data_U0_Output_group" type="group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="buf_0_group" type="group">
+               <obj_property name="label">buf_0(buf_2d_in_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_0_address0" type="array">
+                  <obj_property name="ElementShortName">buf_0_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_0_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_0_d0" type="array">
+                  <obj_property name="ElementShortName">buf_0_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_0_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_0_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_0_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_0_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_0_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_0_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_1_group" type="group">
+               <obj_property name="label">buf_1(buf_2d_in_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_1_address0" type="array">
+                  <obj_property name="ElementShortName">buf_1_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_1_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_1_d0" type="array">
+                  <obj_property name="ElementShortName">buf_1_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_1_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_1_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_1_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_1_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_1_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_1_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2_group" type="group">
+               <obj_property name="label">buf_2(buf_2d_in_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_2_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_2_d0" type="array">
+                  <obj_property name="ElementShortName">buf_2_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_2_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_2_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_2_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_3_group" type="group">
+               <obj_property name="label">buf_3(buf_2d_in_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_3_address0" type="array">
+                  <obj_property name="ElementShortName">buf_3_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_3_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_3_d0" type="array">
+                  <obj_property name="ElementShortName">buf_3_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_3_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_3_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_3_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_3_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_3_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_3_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_4_group" type="group">
+               <obj_property name="label">buf_4(buf_2d_in_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_4_address0" type="array">
+                  <obj_property name="ElementShortName">buf_4_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_4_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_4_d0" type="array">
+                  <obj_property name="ElementShortName">buf_4_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_4_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_4_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_4_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_4_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_4_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_4_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_5_group" type="group">
+               <obj_property name="label">buf_5(buf_2d_in_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_5_address0" type="array">
+                  <obj_property name="ElementShortName">buf_5_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_5_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_5_d0" type="array">
+                  <obj_property name="ElementShortName">buf_5_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_5_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_5_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_5_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_5_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_5_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_5_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_6_group" type="group">
+               <obj_property name="label">buf_6(buf_2d_in_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_6_address0" type="array">
+                  <obj_property name="ElementShortName">buf_6_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_6_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_6_d0" type="array">
+                  <obj_property name="ElementShortName">buf_6_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_6_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_6_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_6_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_6_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_6_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_6_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_7_group" type="group">
+               <obj_property name="label">buf_7(buf_2d_in_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_7_address0" type="array">
+                  <obj_property name="ElementShortName">buf_7_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_7_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_7_d0" type="array">
+                  <obj_property name="ElementShortName">buf_7_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_7_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_7_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_7_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/buf_7_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_7_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_7_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/read_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="Loop_Row_DCT_Loop_proc_U0_group" type="group">
+         <obj_property name="label">Loop_Row_DCT_Loop_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="Loop_Row_DCT_Loop_proc_U0_Input_group" type="group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="buf_2d_in_group" type="group">
+               <obj_property name="label">buf_2d_in(buf_2d_in_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_8_group" type="group">
+               <obj_property name="label">buf_2d_in_8(buf_2d_in_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_8_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_8_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_8_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_8_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_8_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_8_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_8_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_8_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_8_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_9_group" type="group">
+               <obj_property name="label">buf_2d_in_9(buf_2d_in_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_9_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_9_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_9_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_9_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_9_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_9_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_9_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_9_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_9_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_10_group" type="group">
+               <obj_property name="label">buf_2d_in_10(buf_2d_in_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_10_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_10_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_10_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_10_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_10_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_10_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_10_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_10_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_10_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_11_group" type="group">
+               <obj_property name="label">buf_2d_in_11(buf_2d_in_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_11_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_11_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_11_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_11_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_11_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_11_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_11_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_11_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_11_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_12_group" type="group">
+               <obj_property name="label">buf_2d_in_12(buf_2d_in_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_12_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_12_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_12_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_12_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_12_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_12_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_12_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_12_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_12_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_13_group" type="group">
+               <obj_property name="label">buf_2d_in_13(buf_2d_in_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_13_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_13_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_13_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_13_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_13_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_13_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_13_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_13_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_13_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="buf_2d_in_14_group" type="group">
+               <obj_property name="label">buf_2d_in_14(buf_2d_in_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_14_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_14_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_14_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_14_q0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_in_14_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_14_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/buf_2d_in_14_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_in_14_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_in_14_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_q0[13:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_q0[13:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_1_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_1_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_1_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_1_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_1_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_1_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_1_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_1_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_1_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_2_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_2_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_2_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_2_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_2_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_2_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_2_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_2_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_2_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_3_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_3_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_3_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_3_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_3_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_3_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_3_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_3_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_3_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_4_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_4(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_4_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_4_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_4_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_4_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_4_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_4_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_4_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_4_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_5_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_5(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_5_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_5_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_5_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_5_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_5_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_5_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_5_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_5_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_6_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_6(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_6_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_6_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_6_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_6_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_6_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_6_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_6_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_6_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_7_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_7(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_7_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_7_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_7_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_7_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_7_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_7_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_7_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_7_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Row_DCT_Loop_proc_U0_Handshake_group" type="group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_start" type="logic">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_ready" type="logic">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_done" type="logic">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_continue" type="logic">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Row_DCT_Loop_proc_U0_Output_group" type="group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="row_outbuf_group" type="group">
+               <obj_property name="label">row_outbuf(row_outbuf_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/row_outbuf_address0" type="array">
+                  <obj_property name="ElementShortName">row_outbuf_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/row_outbuf_d0" type="array">
+                  <obj_property name="ElementShortName">row_outbuf_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/row_outbuf_ce0" type="logic">
+                  <obj_property name="ElementShortName">row_outbuf_ce0</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/row_outbuf_we0" type="logic">
+                  <obj_property name="ElementShortName">row_outbuf_we0</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="Loop_Xpose_Row_Outer_Loop_proc_U0_group" type="group">
+         <obj_property name="label">Loop_Xpose_Row_Outer_Loop_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="Loop_Xpose_Row_Outer_Loop_proc_U0_Input_group" type="group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="row_outbuf_group" type="group">
+               <obj_property name="label">row_outbuf(row_outbuf_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/row_outbuf_address0" type="array">
+                  <obj_property name="ElementShortName">row_outbuf_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/row_outbuf_q0" type="array">
+                  <obj_property name="ElementShortName">row_outbuf_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/row_outbuf_ce0" type="logic">
+                  <obj_property name="ElementShortName">row_outbuf_ce0</obj_property>
+                  <obj_property name="ObjectShortName">row_outbuf_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Xpose_Row_Outer_Loop_proc_U0_Handshake_group" type="group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_start" type="logic">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_ready" type="logic">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Xpose_Row_Outer_Loop_proc_U0_Output_group" type="group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="col_inbuf_group" type="group">
+               <obj_property name="label">col_inbuf(col_inbuf_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_1_group" type="group">
+               <obj_property name="label">col_inbuf_1(col_inbuf_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_1_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_1_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_1_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_1_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_1_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_1_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_1_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_2_group" type="group">
+               <obj_property name="label">col_inbuf_2(col_inbuf_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_2_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_2_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_2_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_2_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_2_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_2_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_2_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_3_group" type="group">
+               <obj_property name="label">col_inbuf_3(col_inbuf_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_3_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_3_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_3_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_3_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_3_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_3_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_3_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_4_group" type="group">
+               <obj_property name="label">col_inbuf_4(col_inbuf_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_4_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_4_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_4_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_4_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_4_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_4_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_4_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_5_group" type="group">
+               <obj_property name="label">col_inbuf_5(col_inbuf_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_5_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_5_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_5_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_5_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_5_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_5_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_5_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_6_group" type="group">
+               <obj_property name="label">col_inbuf_6(col_inbuf_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_6_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_6_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_6_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_6_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_6_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_6_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_6_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_7_group" type="group">
+               <obj_property name="label">col_inbuf_7(col_inbuf_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_7_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_7_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_7_d0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_7_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_7_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/col_inbuf_7_we0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_7_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="Loop_Col_DCT_Loop_proc_U0_group" type="group">
+         <obj_property name="label">Loop_Col_DCT_Loop_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="Loop_Col_DCT_Loop_proc_U0_Input_group" type="group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="col_inbuf_group" type="group">
+               <obj_property name="label">col_inbuf(col_inbuf_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_1_group" type="group">
+               <obj_property name="label">col_inbuf_1(col_inbuf_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_1_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_1_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_1_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_1_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_1_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_1_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_2_group" type="group">
+               <obj_property name="label">col_inbuf_2(col_inbuf_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_2_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_2_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_2_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_2_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_2_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_2_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_3_group" type="group">
+               <obj_property name="label">col_inbuf_3(col_inbuf_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_3_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_3_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_3_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_3_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_3_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_3_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_4_group" type="group">
+               <obj_property name="label">col_inbuf_4(col_inbuf_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_4_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_4_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_4_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_4_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_4_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_4_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_5_group" type="group">
+               <obj_property name="label">col_inbuf_5(col_inbuf_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_5_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_5_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_5_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_5_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_5_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_5_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_6_group" type="group">
+               <obj_property name="label">col_inbuf_6(col_inbuf_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_6_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_6_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_6_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_6_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_6_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_6_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="col_inbuf_7_group" type="group">
+               <obj_property name="label">col_inbuf_7(col_inbuf_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_7_address0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_7_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_7_q0" type="array">
+                  <obj_property name="ElementShortName">col_inbuf_7_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_inbuf_7_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_inbuf_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_inbuf_7_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_q0[13:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_q0[13:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_1_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_1_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_1_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_1_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_1_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_1_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_1_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_1_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_1_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_2_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_2_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_2_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_2_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_2_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_2_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_2_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_2_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_2_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_3_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_3_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_3_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_3_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_3_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_3_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_3_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_3_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_3_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_4_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_4(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_4_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_4_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_4_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_4_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_4_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_4_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_4_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_4_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_5_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_5(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_5_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_5_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_5_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_5_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_5_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_5_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_5_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_5_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_6_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_6(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_6_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_6_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_6_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_6_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_6_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_6_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_6_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_6_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject fp_name="dct_1d_short_short_dct_coeff_table_7_group" type="group">
+               <obj_property name="label">dct_1d_short_short_dct_coeff_table_7(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_7_address0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_7_address0[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_7_address0[2:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_7_q0" type="array">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_7_q0[14:0]</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_7_q0[14:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/dct_1d_short_short_dct_coeff_table_7_ce0" type="logic">
+                  <obj_property name="ElementShortName">dct_1d_short_short_dct_coeff_table_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dct_1d_short_short_dct_coeff_table_7_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Col_DCT_Loop_proc_U0_Handshake_group" type="group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_start" type="logic">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_ready" type="logic">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_done" type="logic">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_continue" type="logic">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Col_DCT_Loop_proc_U0_Output_group" type="group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="col_outbuf_group" type="group">
+               <obj_property name="label">col_outbuf(col_outbuf_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_outbuf_address0" type="array">
+                  <obj_property name="ElementShortName">col_outbuf_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_outbuf_d0" type="array">
+                  <obj_property name="ElementShortName">col_outbuf_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_outbuf_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_outbuf_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/col_outbuf_we0" type="logic">
+                  <obj_property name="ElementShortName">col_outbuf_we0</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="Loop_Xpose_Col_Outer_Loop_proc_U0_group" type="group">
+         <obj_property name="label">Loop_Xpose_Col_Outer_Loop_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="Loop_Xpose_Col_Outer_Loop_proc_U0_Input_group" type="group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="col_outbuf_group" type="group">
+               <obj_property name="label">col_outbuf(col_outbuf_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/col_outbuf_address0" type="array">
+                  <obj_property name="ElementShortName">col_outbuf_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/col_outbuf_q0" type="array">
+                  <obj_property name="ElementShortName">col_outbuf_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/col_outbuf_ce0" type="logic">
+                  <obj_property name="ElementShortName">col_outbuf_ce0</obj_property>
+                  <obj_property name="ObjectShortName">col_outbuf_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Xpose_Col_Outer_Loop_proc_U0_Handshake_group" type="group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_start" type="logic">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_ready" type="logic">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_done" type="logic">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_continue" type="logic">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="Loop_Xpose_Col_Outer_Loop_proc_U0_Output_group" type="group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="buf_2d_out_group" type="group">
+               <obj_property name="label">buf_2d_out(buf_2d_out_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/buf_2d_out_address0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_out_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_out_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/buf_2d_out_d0" type="array">
+                  <obj_property name="ElementShortName">buf_2d_out_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_out_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/buf_2d_out_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_out_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_out_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/buf_2d_out_we0" type="logic">
+                  <obj_property name="ElementShortName">buf_2d_out_we0</obj_property>
+                  <obj_property name="ObjectShortName">buf_2d_out_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="write_data_U0_group" type="group">
+         <obj_property name="label">write_data_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="write_data_U0_Input_group" type="group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="buf_r_group" type="group">
+               <obj_property name="label">buf_r(buf_2d_out_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/buf_r_address0" type="array">
+                  <obj_property name="ElementShortName">buf_r_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_r_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/buf_r_q0" type="array">
+                  <obj_property name="ElementShortName">buf_r_q0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">buf_r_q0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/buf_r_ce0" type="logic">
+                  <obj_property name="ElementShortName">buf_r_ce0</obj_property>
+                  <obj_property name="ObjectShortName">buf_r_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_ready" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="write_data_U0_Handshake_group" type="group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_start" type="logic">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_ready" type="logic">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_done" type="logic">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_continue" type="logic">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="write_data_U0_Output_group" type="group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="output_r_group" type="group">
+               <obj_property name="label">output_r(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/output_r_address0" type="array">
+                  <obj_property name="ElementShortName">output_r_address0[5:0]</obj_property>
+                  <obj_property name="ObjectShortName">output_r_address0[5:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/output_r_d0" type="array">
+                  <obj_property name="ElementShortName">output_r_d0[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">output_r_d0[15:0]</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/output_r_ce0" type="logic">
+                  <obj_property name="ElementShortName">output_r_ce0</obj_property>
+                  <obj_property name="ObjectShortName">output_r_ce0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/output_r_we0" type="logic">
+                  <obj_property name="ElementShortName">output_r_we0</obj_property>
+                  <obj_property name="ObjectShortName">output_r_we0</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_done" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+               </wvobject>
+               <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/write_data_U0/ap_continue" type="logic">
+                  <obj_property name="DisplayName">label</obj_property>
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group563" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group564" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group565" type="group">
+            <obj_property name="label">return(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_we1" type="logic">
+               <obj_property name="ElementShortName">output_r_we1</obj_property>
+               <obj_property name="ObjectShortName">output_r_we1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_q1" type="array">
+               <obj_property name="ElementShortName">output_r_q1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_q1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_d1" type="array">
+               <obj_property name="ElementShortName">output_r_d1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_d1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_ce1" type="logic">
+               <obj_property name="ElementShortName">output_r_ce1</obj_property>
+               <obj_property name="ObjectShortName">output_r_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_address1" type="array">
+               <obj_property name="ElementShortName">output_r_address1[5:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_address1[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_we0" type="logic">
+               <obj_property name="ElementShortName">output_r_we0</obj_property>
+               <obj_property name="ObjectShortName">output_r_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_q0" type="array">
+               <obj_property name="ElementShortName">output_r_q0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_q0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_d0" type="array">
+               <obj_property name="ElementShortName">output_r_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_ce0" type="logic">
+               <obj_property name="ElementShortName">output_r_ce0</obj_property>
+               <obj_property name="ObjectShortName">output_r_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/output_r_address0" type="array">
+               <obj_property name="ElementShortName">output_r_address0[5:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_address0[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group576" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group577" type="group">
+            <obj_property name="label">return(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_we1" type="logic">
+               <obj_property name="ElementShortName">input_r_we1</obj_property>
+               <obj_property name="ObjectShortName">input_r_we1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_q1" type="array">
+               <obj_property name="ElementShortName">input_r_q1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_q1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_d1" type="array">
+               <obj_property name="ElementShortName">input_r_d1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_d1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_ce1" type="logic">
+               <obj_property name="ElementShortName">input_r_ce1</obj_property>
+               <obj_property name="ObjectShortName">input_r_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_address1" type="array">
+               <obj_property name="ElementShortName">input_r_address1[5:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_address1[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_we0" type="logic">
+               <obj_property name="ElementShortName">input_r_we0</obj_property>
+               <obj_property name="ObjectShortName">input_r_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_q0" type="array">
+               <obj_property name="ElementShortName">input_r_q0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_q0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_d0" type="array">
+               <obj_property name="ElementShortName">input_r_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_ce0" type="logic">
+               <obj_property name="ElementShortName">input_r_ce0</obj_property>
+               <obj_property name="ObjectShortName">input_r_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/input_r_address0" type="array">
+               <obj_property name="ElementShortName">input_r_address0[5:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_address0[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group588" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group593" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_rst" type="logic">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group595" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_dct_top/AESL_inst_dct/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group597" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group598" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group599" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/AUTOTB_TRANSACTION_NUM" type="array">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group600" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/LENGTH_input_r" type="array">
+               <obj_property name="ElementShortName">LENGTH_input_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_input_r[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/LENGTH_output_r" type="array">
+               <obj_property name="ElementShortName">LENGTH_output_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_output_r[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group606" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group607" type="group">
+            <obj_property name="label">return(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/output_r_we1" type="logic">
+               <obj_property name="ElementShortName">output_r_we1</obj_property>
+               <obj_property name="ObjectShortName">output_r_we1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_q1" type="array">
+               <obj_property name="ElementShortName">output_r_q1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_q1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_d1" type="array">
+               <obj_property name="ElementShortName">output_r_d1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_d1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_ce1" type="logic">
+               <obj_property name="ElementShortName">output_r_ce1</obj_property>
+               <obj_property name="ObjectShortName">output_r_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_address1" type="array">
+               <obj_property name="ElementShortName">output_r_address1[5:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_address1[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_we0" type="logic">
+               <obj_property name="ElementShortName">output_r_we0</obj_property>
+               <obj_property name="ObjectShortName">output_r_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_q0" type="array">
+               <obj_property name="ElementShortName">output_r_q0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_q0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_d0" type="array">
+               <obj_property name="ElementShortName">output_r_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_ce0" type="logic">
+               <obj_property name="ElementShortName">output_r_ce0</obj_property>
+               <obj_property name="ObjectShortName">output_r_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/output_r_address0" type="array">
+               <obj_property name="ElementShortName">output_r_address0[5:0]</obj_property>
+               <obj_property name="ObjectShortName">output_r_address0[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group618" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group619" type="group">
+            <obj_property name="label">return(memory)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_dct_top/input_r_we1" type="logic">
+               <obj_property name="ElementShortName">input_r_we1</obj_property>
+               <obj_property name="ObjectShortName">input_r_we1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_q1" type="array">
+               <obj_property name="ElementShortName">input_r_q1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_q1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_d1" type="array">
+               <obj_property name="ElementShortName">input_r_d1[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_d1[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_ce1" type="logic">
+               <obj_property name="ElementShortName">input_r_ce1</obj_property>
+               <obj_property name="ObjectShortName">input_r_ce1</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_address1" type="array">
+               <obj_property name="ElementShortName">input_r_address1[5:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_address1[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_we0" type="logic">
+               <obj_property name="ElementShortName">input_r_we0</obj_property>
+               <obj_property name="ObjectShortName">input_r_we0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_q0" type="array">
+               <obj_property name="ElementShortName">input_r_q0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_q0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_d0" type="array">
+               <obj_property name="ElementShortName">input_r_d0[15:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_d0[15:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_ce0" type="logic">
+               <obj_property name="ElementShortName">input_r_ce0</obj_property>
+               <obj_property name="ObjectShortName">input_r_ce0</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_dct_top/input_r_address0" type="array">
+               <obj_property name="ElementShortName">input_r_address0[5:0]</obj_property>
+               <obj_property name="ObjectShortName">input_r_address0[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

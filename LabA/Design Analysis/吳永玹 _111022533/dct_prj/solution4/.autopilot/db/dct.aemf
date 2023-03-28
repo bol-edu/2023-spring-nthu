@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1678081026054">
+  <ports id="1" name="input_r" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="output_r" type="PortType" coreName="RAM" coreId="0" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="131" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="132" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="133" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="135" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="144" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="145" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="146" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="147" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="150" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="153" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="159" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="160" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="161" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="163" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="164" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="165" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="166" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="169" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="170" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="171" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="174" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="175" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="177" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="180" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="181" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="183" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="184" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="186" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="187" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="189" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="190" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="192" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="193" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="195" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="196" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="197" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="198" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="199" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="200" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="201" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="202" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="203" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="206" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="207" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="208" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="209" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="210" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="211" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="212" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="213" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="214" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="215" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="216" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="217" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="219" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="220" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="221" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="222" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="224" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="226" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="227" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="228" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="231" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="232" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="235" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="236" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="237" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="239" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="240" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="242" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="243" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="245" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="246" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="248" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="249" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="251" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="252" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="254" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="255" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="257" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="258" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="260" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="261" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="262" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="263" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="264" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="265" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.12"/>
+  <edges id="266" source_obj="//@blocks.5/@node_objs.5" sink_obj="//@blocks.5/@node_objs.13"/>
+  <edges id="267" source_obj="//@blocks.5/@node_objs.6" sink_obj="//@blocks.5/@node_objs.14"/>
+  <edges id="268" source_obj="//@blocks.5/@node_objs.7" sink_obj="//@blocks.5/@node_objs.15"/>
+  <edges id="270" source_obj="//@blocks.5/@node_objs.8" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="271" source_obj="//@blocks.5/@node_objs.9" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="272" source_obj="//@blocks.5/@node_objs.10" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="273" source_obj="//@blocks.5/@node_objs.11" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="274" source_obj="//@blocks.5/@node_objs.12" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="275" source_obj="//@blocks.5/@node_objs.13" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="276" source_obj="//@blocks.5/@node_objs.14" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="277" source_obj="//@blocks.5/@node_objs.15" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="278" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="279" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="280" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.5/@node_objs.17"/>
+  <edges id="281" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.5/@node_objs.17"/>
+  <edges id="282" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.18"/>
+  <edges id="283" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="284" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="285" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="286" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="287" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="288" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="289" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="290" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="291" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="292" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="293" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="294" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="295" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="296" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="297" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="298" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="368" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="369" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="370" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="371" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="372" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="373" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="374" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="375" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4" is_back_edge="1"/>
+  <edges id="376" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="377" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="378" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="379" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="380" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="381" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.5/@node_objs.17"/>
+  <edges id="382" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.17"/>
+  <edges id="383" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <blocks id="39" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc.i4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i" originalName="i" coreId="544437356" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="row_outbuf_i" rtlName="row_outbuf_i_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="col_outbuf_i" rtlName="col_outbuf_i_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="col_inbuf" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="col_inbuf_1" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="col_inbuf_2" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="col_inbuf_3" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="col_inbuf_4" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="col_inbuf_5" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_5_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="col_inbuf_6" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_6_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="col_inbuf_7" lineNumber="33" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_7_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct_2d" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="33" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="buf_2d_in" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="buf_2d_in_1" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="buf_2d_in_2" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="buf_2d_in_3" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="buf_2d_in_4" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="buf_2d_in_5" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_5_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="buf_2d_in_6" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_6_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="buf_2d_in_7" lineNumber="105" originalName="buf_2d_in" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_in_7_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="dct" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="105" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6" functionName="dct"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="buf_2d_out" lineNumber="106" originalName="out_block" fileName="dct.cpp" fileDirectory=".." rtlName="buf_2d_out_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="106" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln0" rtlName="grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_344" coreId="7237481" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>input_r</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_RD_Loop_Row_RD_Loop_Col</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="i_write_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." coreId="1868767232" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." coreId="4294967295" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <controlInputObjs>for.inc.i4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>33</validLinenumbers>
+      <validLinenumbers>105</validLinenumbers>
+      <validLinenumbers>106</validLinenumbers>
+      <validLinenumbers>39</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="47" name="for.inc.i4" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.inc.i4.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc18.i.preheader</controlOutputObjs>
+    <controlOutputObjs>for.inc.i4.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="i_2" lineNumber="39" originalName="i" fileName="dct.cpp" fileDirectory=".." coreId="0" bitwidth="4" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="zext_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." rtlName="zext_ln39_fu_446_p1" coreId="4294967295" bitwidth="64" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." rtlName="trunc_ln39_fu_458_p1" coreId="4294967294" bitwidth="3" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="icmp_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." rtlName="icmp_ln39_fu_462_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="1.3" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="add_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." rtlName="add_ln39_fu_468_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="4" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.73" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="br_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." coreId="570453615" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.inc.i4.split</controlInputObjs>
+      <controlInputObjs>for.inc18.i.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>39</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="68" name="for.inc.i4.split" type="BlockType">
+    <controlInputObjs>for.inc.i4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc.i4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="buf_2d_in_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="4294967294" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="buf_2d_in_1_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="539113527" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="buf_2d_in_2_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="1702043749" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="buf_2d_in_3_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="1768318322" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="buf_2d_in_4_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="808529200" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="buf_2d_in_5_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="171847458" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="buf_2d_in_6_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="1145391171" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="buf_2d_in_7_addr" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreId="1936942413" bitwidth="3" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="buf_2d_in_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="buf_2d_in_1_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="buf_2d_in_2_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="buf_2d_in_3_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="buf_2d_in_4_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="buf_2d_in_5_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="buf_2d_in_6_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="buf_2d_in_7_load" lineNumber="40" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="_ln40" lineNumber="40" fileName="dct.cpp" fileDirectory=".." rtlName="grp_dct_1d_fu_379" coreId="1445741900" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="40" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <constName>dct_1d</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="i_write_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." coreId="825046065" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln39" lineNumber="39" fileName="dct.cpp" fileDirectory=".." coreId="1113268797" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="39" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <controlInputObjs>for.inc.i4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>40</validLinenumbers>
+      <validLinenumbers>39</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="73" name="for.inc18.i.preheader" type="BlockType">
+    <controlInputObjs>for.inc.i4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc33.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="i_1" originalName="i" coreId="574106982" bitwidth="4" opcode="alloca" nodeLabel="2.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="_ln0" rtlName="grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_366" coreId="1701990432" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="i_1_write_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." coreId="574449505" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." coreId="1818846765" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <controlInputObjs>for.inc33.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>54</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="81" name="for.inc33.i" type="BlockType">
+    <controlInputObjs>for.inc18.i.preheader</controlInputObjs>
+    <controlInputObjs>for.inc33.i.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc50.i.preheader</controlOutputObjs>
+    <controlOutputObjs>for.inc33.i.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="i_3" lineNumber="54" originalName="i" fileName="dct.cpp" fileDirectory=".." coreId="1702043749" bitwidth="4" opcode="load" nodeLabel="6.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." rtlName="zext_ln54_fu_487_p1" coreId="942944813" bitwidth="64" opcode="zext" nodeLabel="6.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." rtlName="trunc_ln54_fu_499_p1" coreId="1936942413" bitwidth="3" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="icmp_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." rtlName="icmp_ln54_fu_503_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" bitwidth="1" opcode="icmp" nodeLabel="6.0" m_display="0" m_delay="1.3" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="add_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." rtlName="add_ln54_fu_509_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="4" opcode="add" nodeLabel="6.0" m_display="0" m_delay="1.73" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="br_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." coreId="808591443" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.inc33.i.split</controlInputObjs>
+      <controlInputObjs>for.inc50.i.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>54</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="102" name="for.inc33.i.split" type="BlockType">
+    <controlInputObjs>for.inc33.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.inc33.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="col_inbuf_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="790766141" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="col_inbuf_1_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="151666223" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="col_inbuf_2_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="544367987" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="col_inbuf_3_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="639659892" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="col_inbuf_4_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="909589104" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="col_inbuf_5_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="1528970616" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="col_inbuf_6_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="842620720" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="col_inbuf_7_addr" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreId="540221551" bitwidth="3" opcode="getelementptr" nodeLabel="6.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="col_inbuf_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="col_inbuf_1_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="col_inbuf_2_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="col_inbuf_3_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="col_inbuf_4_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="96" name="col_inbuf_5_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="col_inbuf_6_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="col_inbuf_7_load" lineNumber="55" fileName="dct.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" bitwidth="16" opcode="load" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="_ln55" lineNumber="55" fileName="dct.cpp" fileDirectory=".." rtlName="grp_dct_1d_fu_379" coreId="1031365995" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <constName>dct_1d</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="i_1_write_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." coreId="1914708526" opcode="store" nodeLabel="6.0" m_display="0" m_delay="1.58" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="br_ln54" lineNumber="54" fileName="dct.cpp" fileDirectory=".." coreId="1868785011" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="54" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+      <controlInputObjs>for.inc33.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>55</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="106" name="for.inc50.i.preheader" type="BlockType">
+    <controlInputObjs>for.inc33.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="_ln0" rtlName="grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_425" coreId="543516513" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="_ln0" rtlName="grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_431" coreId="758132786" opcode="call" nodeLabel="10.0" nodeLatency="1" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>output_r</dataOutputObjs>
+      <constName>dct_Pipeline_WR_Loop_Row_WR_Loop_Col</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="_ln115" lineNumber="115" fileName="dct.cpp" fileDirectory=".." coreId="808591428" opcode="ret" nodeLabel="11.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="115" fileDirectory="C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>115</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <regnodes realName="col_inbuf_4_load_reg_690">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_5_load_reg_607">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_4_addr_reg_555">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_1_load_reg_675">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_4_load_reg_602">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_5_load_reg_695">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_7_addr_reg_570">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_7_load_reg_705">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln54_reg_622">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_3_addr_reg_645">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_6_load_reg_700">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_1_addr_reg_540">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_2_load_reg_592">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_6_addr_reg_660">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_3_load_reg_597">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_7_addr_reg_665">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln39_reg_527">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_5_addr_reg_560">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_2_addr_reg_640">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_7_load_reg_617">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_load_reg_582">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_6_addr_reg_565">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_addr_reg_630">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_575">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_520">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_2_addr_reg_545">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_3_load_reg_685">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_6_load_reg_612">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_2_load_reg_680">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_load_reg_670">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_1_load_reg_587">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_5_addr_reg_655">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_1_addr_reg_635">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_3_addr_reg_550">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="col_inbuf_4_addr_reg_650">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="buf_2d_in_addr_reg_535">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <expressionNodes realName="col_inbuf_4_addr_gep_fu_272">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_68">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_7_addr_gep_fu_290">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln39_fu_458">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_fu_499">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_1_alloca_fu_116">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln54_fu_503">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_outbuf_i_alloca_fu_72">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_148">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_7_alloca_fu_140">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_4_alloca_fu_96">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln39_fu_468">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_2_addr_gep_fu_164">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_out_alloca_fu_144">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_5_alloca_fu_132">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_5_alloca_fu_100">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_2_alloca_fu_120">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_3_addr_gep_fu_170">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_3_alloca_fu_92">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_alloca_fu_112">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_4_alloca_fu_128">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_fu_509">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_7_alloca_fu_108">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_3_alloca_fu_124">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_5_addr_gep_fu_278">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_4_addr_gep_fu_176">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln39_fu_446">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_7_addr_gep_fu_194">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_alloca_fu_80">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln54_fu_487">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_gep_fu_248">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_1_addr_gep_fu_158">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_5_addr_gep_fu_182">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_2_addr_gep_fu_260">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_2_alloca_fu_88">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_6_addr_gep_fu_284">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_3_addr_gep_fu_266">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln39_fu_462">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_addr_gep_fu_152">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_6_alloca_fu_136">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_6_alloca_fu_104">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_1_alloca_fu_84">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_outbuf_i_alloca_fu_76">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buf_2d_in_6_addr_gep_fu_188">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_1_addr_gep_fu_254">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop_fu_425">
+    <nodeIds>103</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_1d_fu_379">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop_fu_366">
+    <nodeIds>70</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_RD_Loop_Row_RD_Loop_Col_fu_344">
+    <nodeIds>36</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dct_Pipeline_WR_Loop_Row_WR_Loop_Col_fu_431">
+    <nodeIds>104</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="i_3_load_fu_484">
+    <nodeIds>74</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln54_store_fu_479">
+    <nodeIds>71</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln54_store_fu_515">
+    <nodeIds>100</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln39_store_fu_474">
+    <nodeIds>66</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_2_load_fu_443">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln39_store_fu_438">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="buf_2d_in">
+    <nodeIds>57</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_1">
+    <nodeIds>58</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_1" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_2">
+    <nodeIds>59</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_2" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_3">
+    <nodeIds>60</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_3" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_4">
+    <nodeIds>61</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_4" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_5">
+    <nodeIds>62</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_5" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_6">
+    <nodeIds>63</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_6" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_7">
+    <nodeIds>64</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buf_2d_in_7" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf">
+    <nodeIds>91</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_1">
+    <nodeIds>92</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_1" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_2">
+    <nodeIds>93</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_2" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_3">
+    <nodeIds>94</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_3" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_4">
+    <nodeIds>95</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_4" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_5">
+    <nodeIds>96</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_5" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_6">
+    <nodeIds>97</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_6" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_7">
+    <nodeIds>98</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf_7" portID="100">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_1" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_2" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_3" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_4" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_5" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_6" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_1d_short_short_dct_coeff_table_7" portID="100">
+    <nodeIds>65</nodeIds>
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <fsm>
+    <states id="1">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="2" latency="2"/>
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+      <operations id="58" stage="2" latency="2"/>
+      <operations id="59" stage="2" latency="2"/>
+      <operations id="60" stage="2" latency="2"/>
+      <operations id="61" stage="2" latency="2"/>
+      <operations id="62" stage="2" latency="2"/>
+      <operations id="63" stage="2" latency="2"/>
+      <operations id="64" stage="2" latency="2"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="2" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="57" stage="1" latency="2"/>
+      <operations id="58" stage="1" latency="2"/>
+      <operations id="59" stage="1" latency="2"/>
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="61" stage="1" latency="2"/>
+      <operations id="62" stage="1" latency="2"/>
+      <operations id="63" stage="1" latency="2"/>
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="65" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="70" stage="1" latency="2"/>
+      <operations id="72" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="2" latency="2"/>
+      <operations id="92" stage="2" latency="2"/>
+      <operations id="93" stage="2" latency="2"/>
+      <operations id="94" stage="2" latency="2"/>
+      <operations id="95" stage="2" latency="2"/>
+      <operations id="96" stage="2" latency="2"/>
+      <operations id="97" stage="2" latency="2"/>
+      <operations id="98" stage="2" latency="2"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="103" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="91" stage="1" latency="2"/>
+      <operations id="92" stage="1" latency="2"/>
+      <operations id="93" stage="1" latency="2"/>
+      <operations id="94" stage="1" latency="2"/>
+      <operations id="95" stage="1" latency="2"/>
+      <operations id="96" stage="1" latency="2"/>
+      <operations id="97" stage="1" latency="2"/>
+      <operations id="98" stage="1" latency="2"/>
+      <operations id="99" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="103" stage="1" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="104" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="104" stage="1" latency="2"/>
+      <operations id="105" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="578" mMaxLatency="578">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="67" mMaxLatency="67">
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Row_DCT_Loop" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="152" mMaxLatency="152" mType="1">
+      <basicBlocks>47</basicBlocks>
+      <basicBlocks>68</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="68" mMaxLatency="68">
+      <basicBlocks>73</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Col_DCT_Loop" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="152" mMaxLatency="152" mType="1">
+      <basicBlocks>81</basicBlocks>
+      <basicBlocks>102</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="137" mMaxLatency="137">
+      <basicBlocks>106</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

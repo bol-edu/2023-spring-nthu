@@ -1,0 +1,307 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_dct.cpp
+   Compiling dct.cpp_pre.cpp.tb.cpp
+   Compiling dct_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_dct_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Checkpoint: i = 0
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Copying array b to b_prime
+Checkpoint: i = 1
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 2
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 3
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 4
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 5
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 6
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 7
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 8
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 9
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Test passed !
+
+C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6\dct_prj\solution6\sim\verilog>set PATH= 
+
+C:\Users\Richard\Desktop\Course\AAHLS\labs\labA\ug871-design-files-ch6\dct_prj\solution6\sim\verilog>call C:/Xilinx/Vivado/2022.1/bin/xelab xil_defaultlib.apatb_dct_top glbl -Oenable_linking_all_libraries  -prj dct.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib "ieee_proposed=./ieee_proposed" -s dct -debug wave 
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_dct_top glbl -Oenable_linking_all_libraries -prj dct.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s dct -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_automem_input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_automem_output_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_output_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_dct_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_col_inbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_col_inbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_col_inbuf_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_col_inbuf_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Col_DCT_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Col_DCT_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_3_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_3_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_4_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_4_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_5_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_5_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_6_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_6_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_7_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_7_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Row_DCT_Loop_proc_dct_1d_short_short_dct_coeff_table_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Xpose_Col_Outer_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Xpose_Col_Outer_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_Loop_Xpose_Row_Outer_Loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_Loop_Xpose_Row_Outer_Loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mac_muladd_16s_15s_13ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_13ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mac_muladd_16s_15s_29ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1_DSP48_4
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mac_muladd_16s_15s_29s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module dct_mac_muladd_16s_15s_29s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mul_mul_16s_14ns_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_14ns_29_4_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_14ns_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_mul_mul_16s_15s_29_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_15s_29_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module dct_mul_mul_16s_15s_29_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_read_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_read_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_row_outbuf_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_row_outbuf_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_row_outbuf_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_row_outbuf_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct_write_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_write_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.dct_row_outbuf_RAM_AUTO_1R1W_mem...
+Compiling module xil_defaultlib.dct_row_outbuf_RAM_AUTO_1R1W(Add...
+Compiling module xil_defaultlib.dct_col_inbuf_RAM_AUTO_1R1W_memc...
+Compiling module xil_defaultlib.dct_col_inbuf_RAM_AUTO_1R1W(Addr...
+Compiling module xil_defaultlib.dct_flow_control_loop_pipe
+Compiling module xil_defaultlib.dct_read_data
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc_dct_1...
+Compiling module xil_defaultlib.dct_mul_mul_16s_15s_29_4_1_DSP48...
+Compiling module xil_defaultlib.dct_mul_mul_16s_15s_29_4_1(ID=1,...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_13ns_29_4...
+Compiling module xil_defaultlib.dct_mul_mul_16s_14ns_29_4_1_DSP4...
+Compiling module xil_defaultlib.dct_mul_mul_16s_14ns_29_4_1(ID=1...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29s_29_4_...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_mac_muladd_16s_15s_29ns_29_4...
+Compiling module xil_defaultlib.dct_flow_control_loop_delay_pipe
+Compiling module xil_defaultlib.dct_Loop_Row_DCT_Loop_proc
+Compiling module xil_defaultlib.dct_Loop_Xpose_Row_Outer_Loop_pr...
+Compiling module xil_defaultlib.dct_Loop_Col_DCT_Loop_proc
+Compiling module xil_defaultlib.dct_Loop_Xpose_Col_Outer_Loop_pr...
+Compiling module xil_defaultlib.dct_write_data
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.AESL_automem_input_r
+Compiling module xil_defaultlib.AESL_automem_output_r
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_dct_top
+Compiling module work.glbl
+Built simulation snapshot dct
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/dct/xsim_script.tcl
+# xsim {dct} -view {{dct_dataflow_ana.wcfg}} -tclbatch {dct.tcl} -protoinst {dct.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file dct.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct//AESL_inst_dct_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct/Loop_Col_DCT_Loop_proc_U0/Loop_Col_DCT_Loop_proc_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct/Loop_Row_DCT_Loop_proc_U0/Loop_Row_DCT_Loop_proc_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct/Loop_Xpose_Col_Outer_Loop_proc_U0/Loop_Xpose_Col_Outer_Loop_proc_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct/Loop_Xpose_Row_Outer_Loop_proc_U0/Loop_Xpose_Row_Outer_Loop_proc_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct/read_data_U0/read_data_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_dct_top/AESL_inst_dct/write_data_U0/write_data_U0_activity
+Time resolution is 1 ps
+open_wave_config dct_dataflow_ana.wcfg
+source dct.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $coutputgroup]
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_q1 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_d1 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_address1 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_q0 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_d0 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/output_r_address0 -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $cinputgroup]
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_we1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_q1 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_d1 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_ce1 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_address1 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_q0 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_d0 -into $return_group -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/AESL_inst_dct/input_r_address0 -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_dct_top/AESL_inst_dct/ap_start -into $blocksiggroup
+## add_wave /apatb_dct_top/AESL_inst_dct/ap_done -into $blocksiggroup
+## add_wave /apatb_dct_top/AESL_inst_dct/ap_ready -into $blocksiggroup
+## add_wave /apatb_dct_top/AESL_inst_dct/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_dct_top/AESL_inst_dct/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_dct_top/AESL_inst_dct/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_dct_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_dct_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_dct_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_dct_top/LENGTH_input_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_dct_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcoutputgroup]
+## add_wave /apatb_dct_top/output_r_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/output_r_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/output_r_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/output_r_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/output_r_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/output_r_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/output_r_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/output_r_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/output_r_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/output_r_address0 -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcinputgroup]
+## add_wave /apatb_dct_top/input_r_we1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/input_r_q1 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/input_r_d1 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/input_r_ce1 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/input_r_address1 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/input_r_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/input_r_q0 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/input_r_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_dct_top/input_r_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_dct_top/input_r_address0 -into $tb_return_group -radix hex
+## save_wave_config dct.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+// RTL Simulation : 1 / 10 [81.49%] @ "4185000"
+// RTL Simulation : 2 / 10 [81.73%] @ "4845000"
+// RTL Simulation : 3 / 10 [81.73%] @ "5515000"
+// RTL Simulation : 4 / 10 [81.73%] @ "6175000"
+// RTL Simulation : 5 / 10 [81.97%] @ "6845000"
+// RTL Simulation : 6 / 10 [81.97%] @ "7505000"
+// RTL Simulation : 7 / 10 [81.97%] @ "8175000"
+// RTL Simulation : 8 / 10 [81.97%] @ "8835000"
+// RTL Simulation : 9 / 10 [81.97%] @ "9505000"
+// RTL Simulation : 10 / 10 [100.00%] @ "10165000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 10225 ns : File "C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution6/sim/verilog/dct.autotb.v" Line 292
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Mar  8 19:39:20 2023...
+Checkpoint: i = 0
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Copying array b to b_prime
+Checkpoint: i = 1
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 2
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 3
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 4
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 5
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 6
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 7
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 8
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Checkpoint: i = 9
+Checkpoint: j = 0; Checkpoint: j = 1; Checkpoint: j = 2; Checkpoint: j = 3; Checkpoint: j = 4; Checkpoint: j = 5; Checkpoint: j = 6; Checkpoint: j = 7; Checkpoint: j = 8; Checkpoint: j = 9; Checkpoint: j = 10; Checkpoint: j = 11; Checkpoint: j = 12; Checkpoint: j = 13; Checkpoint: j = 14; Checkpoint: j = 15; Checkpoint: j = 16; Checkpoint: j = 17; Checkpoint: j = 18; Checkpoint: j = 19; Checkpoint: j = 20; Checkpoint: j = 21; Checkpoint: j = 22; Checkpoint: j = 23; Checkpoint: j = 24; Checkpoint: j = 25; Checkpoint: j = 26; Checkpoint: j = 27; Checkpoint: j = 28; Checkpoint: j = 29; Checkpoint: j = 30; Checkpoint: j = 31; Checkpoint: j = 32; Checkpoint: j = 33; Checkpoint: j = 34; Checkpoint: j = 35; Checkpoint: j = 36; Checkpoint: j = 37; Checkpoint: j = 38; Checkpoint: j = 39; Checkpoint: j = 40; Checkpoint: j = 41; Checkpoint: j = 42; Checkpoint: j = 43; Checkpoint: j = 44; Checkpoint: j = 45; Checkpoint: j = 46; Checkpoint: j = 47; Checkpoint: j = 48; Checkpoint: j = 49; Checkpoint: j = 50; Checkpoint: j = 51; Checkpoint: j = 52; Checkpoint: j = 53; Checkpoint: j = 54; Checkpoint: j = 55; Checkpoint: j = 56; Checkpoint: j = 57; Checkpoint: j = 58; Checkpoint: j = 59; Checkpoint: j = 60; Checkpoint: j = 61; Checkpoint: j = 62; Checkpoint: j = 63; 
+Test passed !
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

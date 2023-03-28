@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrixmul.cpp" path="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/Design_Optimization/lab2/matrixmul.cpp"/>
+    <originFiles name="matrixmul.h" path="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/Design_Optimization/lab2/matrixmul.h"/>
+  </source>
+  <testbench>
+    <originFiles name="matrixmul_test.cpp" path="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/Design_Optimization/lab2/matrixmul_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

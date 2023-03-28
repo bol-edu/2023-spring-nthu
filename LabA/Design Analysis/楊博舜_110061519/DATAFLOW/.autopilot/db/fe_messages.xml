@@ -1,0 +1,138 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct_2d" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/csynth.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=dct" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="dct" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:63:4" msg_body="Loop 'Xpose_Col_Outer_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Xpose_Col_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:65:7" msg_body="Loop 'Xpose_Col_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Xpose_Col_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:58:4" msg_body="Loop 'Col_DCT_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Col_DCT_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:52:4" msg_body="Loop 'Xpose_Row_Outer_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Xpose_Row_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:54:7" msg_body="Loop 'Xpose_Row_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Xpose_Row_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47:4" msg_body="Loop 'Row_DCT_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Row_DCT_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28:4" msg_body="Loop 'DCT_Outer_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:30:7" msg_body="Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Unrolling loop 'Xpose_Col_Outer_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:63:4) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:63:4" LoopName="Xpose_Col_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Unrolling loop 'Xpose_Col_Inner_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:65:7) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:65:7" LoopName="Xpose_Col_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Unrolling loop 'Col_DCT_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:58:4) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:58:4" LoopName="Col_DCT_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Unrolling loop 'Xpose_Row_Outer_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:52:4) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:52:4" LoopName="Xpose_Row_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Unrolling loop 'Xpose_Row_Inner_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:54:7) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:54:7" LoopName="Xpose_Row_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0" msg_body="Unrolling loop 'Row_DCT_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47:4) in function 'dct_2d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:47:4" LoopName="Row_DCT_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:20:0" msg_body="Unrolling loop 'DCT_Outer_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28:4) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:28:4" LoopName="DCT_Outer_Loop"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:20:0" msg_body="Unrolling loop 'DCT_Inner_Loop' (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:30:7) in function 'dct_1d' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:30:7" LoopName="DCT_Inner_Loop"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:1" msg_body="array_partition dim=1 type=complete  variable=row_outbuf 1 dct_2d Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:41:15 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9row_outbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=row_outbuf" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="row_outbuf" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:41:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'row_outbuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="row_outbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:2" msg_body="array_partition dim=2 type=complete  variable=row_outbuf 1 dct_2d Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:41:15 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9row_outbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=row_outbuf" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="row_outbuf" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:41:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'row_outbuf' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="row_outbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:3" msg_body="array_partition dim=1 type=complete  variable=col_inbuf 1 dct_2d Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:33 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9col_inbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=col_inbuf" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="col_inbuf" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:33"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'col_inbuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="col_inbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:4" msg_body="array_partition dim=2 type=complete  variable=col_inbuf 1 dct_2d Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:33 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9col_inbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=col_inbuf" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="col_inbuf" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:33"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'col_inbuf' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="col_inbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:5" msg_body="array_partition dim=1 type=complete  variable=col_outbuf 1 dct_2d Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:15 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9col_outbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=col_outbuf" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="col_outbuf" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'col_outbuf' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="col_outbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:6" msg_body="array_partition dim=2 type=complete  variable=col_outbuf 1 dct_2d Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:15 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9col_outbuf">
+        <args PragmaFunction="dct_2d" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=col_outbuf" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="col_outbuf" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:15"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'col_outbuf' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="col_outbuf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:7" msg_body="array_partition dim=1 type=complete  variable=buf_2d_in 1 dct Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97:10 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9buf_2d_in">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=buf_2d_in" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="buf_2d_in" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'buf_2d_in' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="buf_2d_in" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:8" msg_body="array_partition dim=2 type=complete  variable=buf_2d_in 1 dct Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97:10 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9buf_2d_in">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=buf_2d_in" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="buf_2d_in" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'buf_2d_in' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="buf_2d_in" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:9" msg_body="array_partition dim=1 type=complete  variable=buf_2d_out 1 dct Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:98:10 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9buf_2d_out">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=buf_2d_out" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="buf_2d_out" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:98:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'buf_2d_out' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="buf_2d_out" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:0:10" msg_body="array_partition dim=2 type=complete  variable=buf_2d_out 1 dct Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:98:10 /mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9buf_2d_out">
+        <args PragmaFunction="dct" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=buf_2d_out" PragmaSrcLoc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" PragmaType="array_partition" VarName="buf_2d_out" varLoc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:98:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="/mnt/HLSNAS/03.aGBUtS/dct_prj/DATAFLOW/directives.tcl:8:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'buf_2d_out' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="buf_2d_out" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:41:15" msg_body="Applying array_partition to 'row_outbuf': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="row_outbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:15" msg_body="Applying array_partition to 'col_outbuf': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="col_outbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:42:33" msg_body="Applying array_partition to 'col_inbuf': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="col_inbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97:10" msg_body="Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="buf_2d_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:98:10" msg_body="Applying array_partition to 'buf_2d_out': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="buf_2d_out"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

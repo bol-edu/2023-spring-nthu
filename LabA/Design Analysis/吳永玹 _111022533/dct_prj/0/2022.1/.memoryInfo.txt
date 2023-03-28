@@ -1,0 +1,59 @@
+
+Host Name:                 DESKTOP-1OHP5OJ
+OS Name:                   Microsoft Windows 11 Home
+OS Version:                10.0.22000 N/A Build 22000
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Richard
+Registered Organization:   N/A
+Product ID:                00325-81955-17888-AAOEM
+Original Install Date:     12/21/2021, 6:44:10 AM
+System Boot Time:          2/23/2023, 6:59:52 AM
+System Manufacturer:       ASUSTeK COMPUTER INC.
+System Model:              ROG Strix G512LV_G512LV
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 165 Stepping 2 GenuineIntel ~2208 Mhz
+BIOS Version:              American Megatrends Inc. G512LV.314, 4/27/2021
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+08:00) Taipei
+Total Physical Memory:     16,168 MB
+Available Physical Memory: 10,484 MB
+Virtual Memory: Max Size:  18,728 MB
+Virtual Memory: Available: 10,259 MB
+Virtual Memory: In Use:    8,469 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-1OHP5OJ
+Hotfix(s):                 6 Hotfix(s) Installed.
+                           [01]: KB5020875
+                           [02]: KB5022505
+                           [03]: KB5007575
+                           [04]: KB5012170
+                           [05]: KB5021234
+                           [06]: KB5019385
+Network Card(s):           3 NIC(s) Installed.
+                           [01]: Intel(R) Wi-Fi 6 AX201 160MHz
+                                 Connection Name: Wi-Fi
+                                 Status:          Media disconnected
+                           [02]: Realtek PCIe GbE Family Controller
+                                 Connection Name: Ethernet
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.1.1
+                                 IP address(es)
+                                 [01]: 192.168.1.145
+                           [03]: VirtualBox Host-Only Ethernet Adapter
+                                 Connection Name: Ethernet 2
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 192.168.210.1
+                                 [02]: fe80::1f4b:7b43:3eb7:49dc
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes

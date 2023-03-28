@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/matrixmul/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrixmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/matrixmul/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrixmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/matrixmul/solution1/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="loop_flatten" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/mnt/HLSNAS/02.CtINEm/m110061608/vitis_HLS/matrixmul/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,166 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul"
+              }]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "Row",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {"name": "LOOP_FLATTEN"}
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "Col",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "ARRAY_RESHAPE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "a"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "ARRAY_RESHAPE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "b"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "a"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "b"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": ""
+              },
+              {
+                "name": "port",
+                "value": "res"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "\/mnt\/HLSNAS\/02.CtINEm\/m110061608\/vitis_HLS\/matrixmul\/solution5\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul"
+              }]
+          }
+        }
+      ]
+    }]}

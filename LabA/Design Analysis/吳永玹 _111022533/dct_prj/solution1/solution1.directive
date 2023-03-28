@@ -1,0 +1,30 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="dct" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="dct"/>
+            </pragma>
+        </directive>
+        <directive functionName="dct_2d" label="" functionLabel="">
+            <pragma name="INLINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="read_data" label="" functionLabel="">
+            <pragma name="INLINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="write_data" label="" functionLabel="">
+            <pragma name="INLINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="dct" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="dct"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

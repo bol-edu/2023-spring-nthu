@@ -1,0 +1,11 @@
+<pragmas>
+<pragma file="dct.cpp" line="9" pragmaType="pipeline" parentfunction="read_data" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="11" pragmaType="pipeline" parentfunction="dct_1d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="10" pragmaType="pipeline" parentfunction="write_data" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="14" pragmaType="dataflow" parentfunction="dct" disable_start_propagation="0"/>
+<pragma file="dct.cpp" line="12" pragmaType="array_partition" parentfunction="dct" dim="2" factor="0" mode="complete" dynamic="0" variable=""/>
+<pragma file="dct.cpp" line="15" pragmaType="inline" parentfunction="dct_2d" off="0" region="0" recursive="0"/>
+<pragma file="dct.cpp" line="8" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="7" pragmaType="pipeline" parentfunction="dct_2d" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="dct.cpp" line="13" pragmaType="array_partition" parentfunction="dct_2d" dim="2" factor="0" mode="complete" dynamic="0" variable=""/>
+</pragmas>

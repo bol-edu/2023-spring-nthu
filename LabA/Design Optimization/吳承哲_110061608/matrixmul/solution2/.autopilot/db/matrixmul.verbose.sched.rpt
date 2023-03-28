@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'matrixmul'
+================================================================
+* Date:           Sun Mar 12 16:17:09 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        matrixmul
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu50-fsvh2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  13.33 ns|  1.718 ns|     3.60 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      106|      106|  1.413 us|  1.413 us|  107|  107|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Row     |      105|      105|        35|          -|          -|     3|        no|
+        | + Col    |       33|       33|        11|          -|          -|     3|        no|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 2 
+4 --> 5 
+5 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 6 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 7 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%spectopmodule_ln48 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [Design_Optimization/lab1/matrixmul.cpp:48]   --->   Operation 8 'spectopmodule' 'spectopmodule_ln48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %a, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %a"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %b, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %b"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %res, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %res"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.38ns)   --->   "%store_ln54 = store i2 0, i2 %i" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 15 'store' 'store_ln54' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln54 = br void %Col" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 16 'br' 'br_ln54' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.70>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%i_1 = load i2 %i" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 17 'load' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln60 = zext i2 %i_1" [Design_Optimization/lab1/matrixmul.cpp:60]   --->   Operation 18 'zext' 'zext_ln60' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %i_1, i2 0" [Design_Optimization/lab1/matrixmul.cpp:60]   --->   Operation 19 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.70ns)   --->   "%sub_ln60 = sub i4 %tmp, i4 %zext_ln60" [Design_Optimization/lab1/matrixmul.cpp:60]   --->   Operation 20 'sub' 'sub_ln60' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.34ns)   --->   "%icmp_ln54 = icmp_eq  i2 %i_1, i2 3" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 21 'icmp' 'icmp_ln54' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 22 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.43ns)   --->   "%add_ln54 = add i2 %i_1, i2 1" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 23 'add' 'add_ln54' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln54 = br i1 %icmp_ln54, void %Col.split, void %for.end31" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 24 'br' 'br_ln54' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln54 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 25 'specloopname' 'specloopname_ln54' <Predicate = (!icmp_ln54)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.38ns)   --->   "%br_ln56 = br void %Product" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 26 'br' 'br_ln56' <Predicate = (!icmp_ln54)> <Delay = 0.38>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln65 = ret" [Design_Optimization/lab1/matrixmul.cpp:65]   --->   Operation 27 'ret' 'ret_ln65' <Predicate = (icmp_ln54)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.71>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%j = phi i2 %add_ln56, void %Product.split, i2 0, void %Col.split" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 28 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln57 = zext i2 %j" [Design_Optimization/lab1/matrixmul.cpp:57]   --->   Operation 29 'zext' 'zext_ln57' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.70ns)   --->   "%add_ln57 = add i4 %sub_ln60, i4 %zext_ln57" [Design_Optimization/lab1/matrixmul.cpp:57]   --->   Operation 30 'add' 'add_ln57' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln57_1 = zext i4 %add_ln57" [Design_Optimization/lab1/matrixmul.cpp:57]   --->   Operation 31 'zext' 'zext_ln57_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%res_addr = getelementptr i16 %res, i64 0, i64 %zext_ln57_1" [Design_Optimization/lab1/matrixmul.cpp:57]   --->   Operation 32 'getelementptr' 'res_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.34ns)   --->   "%icmp_ln56 = icmp_eq  i2 %j, i2 3" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 33 'icmp' 'icmp_ln56' <Predicate = true> <Delay = 0.34> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%empty_9 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 3, i64 3, i64 3"   --->   Operation 34 'speclooptripcount' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.43ns)   --->   "%add_ln56 = add i2 %j, i2 1" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 35 'add' 'add_ln56' <Predicate = true> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln56 = br i1 %icmp_ln56, void %Product.split, void %for.inc29" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 36 'br' 'br_ln56' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [2/2] (1.37ns)   --->   "%call_ln60 = call void @matrixmul_Pipeline_Product, i4 %sub_ln60, i8 %a, i2 %j, i8 %b, i16 %p_loc" [Design_Optimization/lab1/matrixmul.cpp:60]   --->   Operation 37 'call' 'call_ln60' <Predicate = (!icmp_ln56)> <Delay = 1.37> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 38 [1/1] (0.38ns)   --->   "%store_ln54 = store i2 %add_ln54, i2 %i" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 38 'store' 'store_ln54' <Predicate = (icmp_ln56)> <Delay = 0.38>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln54 = br void %Col" [Design_Optimization/lab1/matrixmul.cpp:54]   --->   Operation 39 'br' 'br_ln54' <Predicate = (icmp_ln56)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 40 [1/2] (0.00ns)   --->   "%call_ln60 = call void @matrixmul_Pipeline_Product, i4 %sub_ln60, i8 %a, i2 %j, i8 %b, i16 %p_loc" [Design_Optimization/lab1/matrixmul.cpp:60]   --->   Operation 40 'call' 'call_ln60' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.68>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln56 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 41 'specloopname' 'specloopname_ln56' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%p_loc_load = load i16 %p_loc"   --->   Operation 42 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.68ns)   --->   "%store_ln60 = store i16 %p_loc_load, i4 %res_addr" [Design_Optimization/lab1/matrixmul.cpp:60]   --->   Operation 43 'store' 'store_ln60' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 9> <RAM>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln56 = br void %Product" [Design_Optimization/lab1/matrixmul.cpp:56]   --->   Operation 44 'br' 'br_ln56' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 13.3ns, clock uncertainty: 3.6ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	'alloca' operation ('i') [4]  (0 ns)
+	'store' operation ('store_ln54', Design_Optimization/lab1/matrixmul.cpp:54) of constant 0 on local variable 'i' [13]  (0.387 ns)
+
+ <State 2>: 0.708ns
+The critical path consists of the following:
+	'load' operation ('i', Design_Optimization/lab1/matrixmul.cpp:54) on local variable 'i' [16]  (0 ns)
+	'sub' operation ('sub_ln60', Design_Optimization/lab1/matrixmul.cpp:60) [19]  (0.708 ns)
+
+ <State 3>: 1.72ns
+The critical path consists of the following:
+	'phi' operation ('j', Design_Optimization/lab1/matrixmul.cpp:56) with incoming values : ('add_ln56', Design_Optimization/lab1/matrixmul.cpp:56) [28]  (0 ns)
+	'call' operation ('call_ln60', Design_Optimization/lab1/matrixmul.cpp:60) to 'matrixmul_Pipeline_Product' [39]  (1.38 ns)
+	blocking operation 0.343 ns on control path)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0.683ns
+The critical path consists of the following:
+	'load' operation ('p_loc_load') on local variable 'p_loc' [40]  (0 ns)
+	'store' operation ('store_ln60', Design_Optimization/lab1/matrixmul.cpp:60) of variable 'p_loc_load' on array 'res' [41]  (0.683 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

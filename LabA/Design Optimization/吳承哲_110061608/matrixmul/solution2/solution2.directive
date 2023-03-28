@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+  <sourceFile>
+    <directive functionName="matrixmul" label="" functionLabel="">
+      <pragma name="TOP">
+        <option name="name" value="matrixmul"/>
+      </pragma>
+    </directive>
+    <directive functionName="matrixmul" label="Product" functionLabel="">
+      <pragma name="PIPELINE"/>
+    </directive>
+    <directive functionName="matrixmul" label="Col" functionLabel="">
+      <pragma name="LOOP_FLATTEN">
+        <option name="off" value="" positionalBoolean="1"/>
+      </pragma>
+    </directive>
+    <directive functionName="matrixmul" label="" functionLabel="">
+      <pragma name="TOP">
+        <option name="name" value="matrixmul"/>
+      </pragma>
+    </directive>
+  </sourceFile>
+  <sourceFile name="Design_Optimization/lab1/matrixmul.cpp">
+    <directive functionName="matrixmul" label="Row" functionLabel=" ">
+      <pragma name="LOOP_FLATTEN"/>
+    </directive>
+  </sourceFile>
+</AutoPilot:ProjectResources>

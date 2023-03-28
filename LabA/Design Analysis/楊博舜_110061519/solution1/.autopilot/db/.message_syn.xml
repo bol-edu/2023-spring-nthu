@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.212 GB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 1.99 seconds. CPU system time: 0.23 seconds. Elapsed time: 1.3 seconds; current allocated memory: 207.633 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-777]" key="HLS 200-777" tag="" content="Using interface defaults for &apos;Vitis&apos; flow target." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;dct_1d(short*, short*)&apos; into &apos;dct_2d(short (*) [8], short (*) [8])&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:40:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;read_data(short*, short (*) [8])&apos; into &apos;dct&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;dct_2d(short (*) [8], short (*) [8])&apos; into &apos;dct&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;write_data(short (*) [8], short*)&apos; into &apos;dct&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst reads of length 2 and bit width 512 has been inferred on bundle &apos;gmem&apos;. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:74:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Multiple burst writes of length 2 and bit width 512 has been inferred on bundle &apos;gmem&apos;. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:87:4)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Compiling Optimization and Transform: CPU user time: 1.99 seconds. CPU system time: 0.14 seconds. Elapsed time: 2.41 seconds; current allocated memory: 208.289 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 208.289 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Standard Transforms: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 209.609 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 210.688 MB." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;RD_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71) in function &apos;dct&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;DCT_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:21) in function &apos;dct&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;Xpose_Row_Inner_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:43) in function &apos;dct&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;DCT_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:21) in function &apos;dct&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;Xpose_Col_Inner_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:43) in function &apos;dct&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;WR_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84) in function &apos;dct&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;RD_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71) in function &apos;dct&apos; for pipelining." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;DCT_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:21) in function &apos;dct&apos; for pipelining." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;DCT_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:21) in function &apos;dct&apos; for pipelining." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;WR_Loop_Row&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84) in function &apos;dct&apos; for pipelining." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;RD_Loop_Col&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:71) in function &apos;dct&apos; completely with a factor of 8." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;DCT_Inner_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:21) in function &apos;dct&apos; completely with a factor of 8." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;WR_Loop_Col&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:84) in function &apos;dct&apos; completely with a factor of 8." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_121" tag="" content="Partitioning array &apos;buf_2d_in&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:97) in dimension 2 automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_121" tag="" content="Partitioning array &apos;dct_coeff_table&apos; in dimension 2 automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;dct&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:94)...16 expression(s) balanced." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 235.172 MB." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Row_DCT_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:43:13) in function &apos;dct&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Xpose_Row_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:43:16) in function &apos;dct&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Col_DCT_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:43:13) in function &apos;dct&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Xpose_Col_Outer_Loop&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:43:16) in function &apos;dct&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;buf_2d_in[0]&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:78:11)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;row_outbuf&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:34:14)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;col_inbuf&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:55:26)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;buf_2d_out&apos; (Vitis-Tutorials/Getting_Started/Vitis_HLS/reference-files/src/dct.cpp:66:26)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Architecture Synthesis: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 284.969 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;dct&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_Pipeline_RD_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;RD_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop &apos;RD_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 286.531 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 286.531 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_6) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln34) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_5) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_3) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_4) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_2) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_1) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Row_DCT_Loop_DCT_Outer_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop &apos;Row_DCT_Loop_DCT_Outer_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 287.391 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 287.391 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1457]" key="HLS 200-1457" tag="" content="Automatically inferring inferring RAM_1WNR storage type for array &apos;col_inbuf&apos;. Use bind_storage pragma to override this type." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop &apos;Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 287.910 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 287.910 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_12) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln34) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_11) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_9) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_10) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_8) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP latency (root=mul_ln31_7) to 3 in order to utilize available DSP registers." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1457]" key="HLS 200-1457" tag="" content="Automatically inferring inferring RAM_1WNR storage type for array &apos;col_inbuf&apos;. Use bind_storage pragma to override this type." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Col_DCT_Loop_DCT_Outer_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop &apos;Col_DCT_Loop_DCT_Outer_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 288.840 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 288.840 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1457]" key="HLS 200-1457" tag="" content="Automatically inferring inferring RAM_1WNR storage type for array &apos;buf_2d_out&apos;. Use bind_storage pragma to override this type." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop &apos;Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 289.402 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 289.402 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct_Pipeline_WR_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1457]" key="HLS 200-1457" tag="" content="Automatically inferring inferring RAM_1WNR storage type for array &apos;buf_2d_out&apos;. Use bind_storage pragma to override this type." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;WR_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop &apos;WR_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 289.910 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 289.910 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dct&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 290.262 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Binding: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 290.262 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_Pipeline_RD_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_Pipeline_RD_Loop_Row&apos; pipeline &apos;RD_Loop_Row&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARVALID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARADDR&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARLEN&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARSIZE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARBURST&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARLOCK&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARCACHE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARPROT&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARQOS&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARREGION&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARUSER&apos; to 0." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_Pipeline_RD_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 291.090 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop&apos; pipeline &apos;Row_DCT_Loop_DCT_Outer_Loop&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_14ns_29s_29_4_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_13ns_29_4_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_29ns_29_4_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_29s_29_4_1&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mul_mul_16s_15s_29_4_1&apos;: 3 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_Pipeline_Row_DCT_Loop_DCT_Outer_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 293.141 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos; pipeline &apos;Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_Pipeline_Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 295.406 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop&apos; pipeline &apos;Col_DCT_Loop_DCT_Outer_Loop&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_14ns_29s_29_4_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_13ns_29_4_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_29ns_29_4_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mac_muladd_16s_15s_29s_29_4_1&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mul_mul_16s_15s_29_4_1&apos;: 3 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_Pipeline_Col_DCT_Loop_DCT_Outer_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 297.270 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos; pipeline &apos;Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_Pipeline_Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 299.828 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct_Pipeline_WR_Loop_Row&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1030]" key="HLS 200-1030" tag="" content="Apply Unified Pipeline Control on module &apos;dct_Pipeline_WR_Loop_Row&apos; pipeline &apos;WR_Loop_Row&apos; pipeline type &apos;loop pipeline&apos;" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWVALID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWADDR&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWID&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWLEN&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWSIZE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWBURST&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWLOCK&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWCACHE&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWPROT&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWQOS&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWREGION&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWUSER&apos; to 0." resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_739" tag="" content="Setting dangling out port &apos;dct_Pipeline_WR_Loop_Row/m_axi_gmem_BREADY&apos; to 0." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct_Pipeline_WR_Loop_Row&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 301.359 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dct&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_918" tag="" content="Design contains AXI ports. Reset is fixed to synchronous and active low." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;dct/gmem&apos; to &apos;m_axi&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;dct/input_r&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;dct/output_r&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;dct&apos; to &apos;s_axilite &amp; ap_ctrl_chain&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;input_r&apos;, &apos;output_r&apos; and &apos;return&apos; to AXI-Lite port control." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dct&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 306.418 MB." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_0_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_1_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_2_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_3_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_4_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_5_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_6_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;dct_dct_coeff_table_7_ROM_AUTO_1R&apos; using auto ROMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;dct_row_outbuf_RAM_AUTO_1R1W_ram (RAM)&apos; using auto RAMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;dct_col_inbuf_RAM_1WNR_AUTO_1R1W_ram (RAM_1WnR)&apos; using auto RAMs." resolution=""/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;dct_buf_2d_in_0_RAM_AUTO_1R1W_ram (RAM)&apos; using auto RAMs." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Generating all RTL models: CPU user time: 0.94 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.74 seconds; current allocated memory: 312.117 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1603]" key="HLS 200-1603" tag="VITIS_INTERFACE" content="Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Updating report files: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.37 seconds; current allocated memory: 322.770 MB." resolution=""/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for dct." resolution=""/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for dct." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-790]" key="HLS 200-790" tag="LOOP,VITIS_KERNEL" content="**** Loop Constraint Status: All loop constraints were satisfied." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,VITIS_KERNEL" content="**** Estimated Fmax: 136.99 MHz" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 7.59 seconds. CPU system time: 0.45 seconds. Elapsed time: 10.03 seconds; current allocated memory: -918.457 MB." resolution=""/>
+</Messages>

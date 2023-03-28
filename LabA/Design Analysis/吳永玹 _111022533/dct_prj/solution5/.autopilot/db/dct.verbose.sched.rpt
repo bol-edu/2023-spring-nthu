@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'dct'
+================================================================
+* Date:           Mon Mar  6 13:53:04 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        dct_prj
+* Solution:       solution5 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.508 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |      577|      577|  5.770 us|  5.770 us|  443|  443|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%buf_2d_in = alloca i64 1" [dct.cpp:105]   --->   Operation 7 'alloca' 'buf_2d_in' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%buf_2d_in_1 = alloca i64 1" [dct.cpp:105]   --->   Operation 8 'alloca' 'buf_2d_in_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%buf_2d_in_2 = alloca i64 1" [dct.cpp:105]   --->   Operation 9 'alloca' 'buf_2d_in_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%buf_2d_in_3 = alloca i64 1" [dct.cpp:105]   --->   Operation 10 'alloca' 'buf_2d_in_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%buf_2d_in_4 = alloca i64 1" [dct.cpp:105]   --->   Operation 11 'alloca' 'buf_2d_in_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%buf_2d_in_5 = alloca i64 1" [dct.cpp:105]   --->   Operation 12 'alloca' 'buf_2d_in_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%buf_2d_in_6 = alloca i64 1" [dct.cpp:105]   --->   Operation 13 'alloca' 'buf_2d_in_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%buf_2d_in_7 = alloca i64 1" [dct.cpp:105]   --->   Operation 14 'alloca' 'buf_2d_in_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%buf_2d_out = alloca i64 1" [dct.cpp:106]   --->   Operation 15 'alloca' 'buf_2d_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln109 = call void @read_data, i16 %input_r, i16 %buf_2d_in, i16 %buf_2d_in_1, i16 %buf_2d_in_2, i16 %buf_2d_in_3, i16 %buf_2d_in_4, i16 %buf_2d_in_5, i16 %buf_2d_in_6, i16 %buf_2d_in_7" [dct.cpp:109]   --->   Operation 16 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln109 = call void @read_data, i16 %input_r, i16 %buf_2d_in, i16 %buf_2d_in_1, i16 %buf_2d_in_2, i16 %buf_2d_in_3, i16 %buf_2d_in_4, i16 %buf_2d_in_5, i16 %buf_2d_in_6, i16 %buf_2d_in_7" [dct.cpp:109]   --->   Operation 17 'call' 'call_ln109' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln111 = call void @dct_2d, i16 %buf_2d_in, i16 %buf_2d_in_1, i16 %buf_2d_in_2, i16 %buf_2d_in_3, i16 %buf_2d_in_4, i16 %buf_2d_in_5, i16 %buf_2d_in_6, i16 %buf_2d_in_7, i16 %buf_2d_out, i14 %dct_1d_short_short_dct_coeff_table, i15 %dct_1d_short_short_dct_coeff_table_1, i15 %dct_1d_short_short_dct_coeff_table_2, i15 %dct_1d_short_short_dct_coeff_table_3, i15 %dct_1d_short_short_dct_coeff_table_4, i15 %dct_1d_short_short_dct_coeff_table_5, i15 %dct_1d_short_short_dct_coeff_table_6, i15 %dct_1d_short_short_dct_coeff_table_7" [dct.cpp:111]   --->   Operation 18 'call' 'call_ln111' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln111 = call void @dct_2d, i16 %buf_2d_in, i16 %buf_2d_in_1, i16 %buf_2d_in_2, i16 %buf_2d_in_3, i16 %buf_2d_in_4, i16 %buf_2d_in_5, i16 %buf_2d_in_6, i16 %buf_2d_in_7, i16 %buf_2d_out, i14 %dct_1d_short_short_dct_coeff_table, i15 %dct_1d_short_short_dct_coeff_table_1, i15 %dct_1d_short_short_dct_coeff_table_2, i15 %dct_1d_short_short_dct_coeff_table_3, i15 %dct_1d_short_short_dct_coeff_table_4, i15 %dct_1d_short_short_dct_coeff_table_5, i15 %dct_1d_short_short_dct_coeff_table_6, i15 %dct_1d_short_short_dct_coeff_table_7" [dct.cpp:111]   --->   Operation 19 'call' 'call_ln111' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln114 = call void @write_data, i16 %buf_2d_out, i16 %output_r" [dct.cpp:114]   --->   Operation 20 'call' 'call_ln114' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln14 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_0" [C:/Users/Richard/Desktop/Course/AAHLS/labs/labA/ug871-design-files-ch6/dct_prj/solution5/directives.tcl:14]   --->   Operation 21 'specdataflowpipeline' 'specdataflowpipeline_ln14' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%spectopmodule_ln103 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [dct.cpp:103]   --->   Operation 22 'spectopmodule' 'spectopmodule_ln103' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %input_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %input_r"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %output_r, void @empty, i32 0, i32 0, void @empty_0, i32 4294967295, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %output_r"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln114 = call void @write_data, i16 %buf_2d_out, i16 %output_r" [dct.cpp:114]   --->   Operation 27 'call' 'call_ln114' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%ret_ln115 = ret" [dct.cpp:115]   --->   Operation 28 'ret' 'ret_ln115' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
