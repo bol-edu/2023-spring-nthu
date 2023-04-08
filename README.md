@@ -51,7 +51,7 @@ For Lab #A, students practiced the labs in Vitis-Tutorials [[2]](#[2]) and tried
 | [Mixing C++ and RTL Kernels](https://github.com/Xilinx/Vitis-Tutorials/tree/2021.2/Hardware_Acceleration/Feature_Tutorials/02-mixing-c-rtl-kernels) | [邱崇喆](https://github.com/ccontemplator/Vitis-mixed-c-rtl-kernel) |
 | [Dataflow Debug and Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization) |       [許睿哲](https://github.com/ray3210ray3210/2022HLS)        |
 | [Dataflow Debug and Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Feature_Tutorials/03-dataflow_debug_and_optimization) |       [宋乃仁](https://github.com/Barry-Sung/HLS_LABA_Dataflow-Debug-and-Optimization)        |
-| [Host Code Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Design_Tutorials/07-host-code-opt) | [陳佳詳](https://github.com/yclin629/High-Level-Synthesis--Host-Memory-Access) |
+| [Host Code Optimization](https://github.com/jiaxianggg-chen/07-host-code-opt_V2.git) | [陳佳詳](https://github.com/yclin629/High-Level-Synthesis--Host-Memory-Access) |
 | [Host Code Optimization](https://github.com/Xilinx/Vitis-Tutorials/tree/2022.1/Hardware_Acceleration/Design_Tutorials/07-host-code-opt) | [張耀明](https://github.com/s095339/LabA-host-code-optimization) |
 
 
