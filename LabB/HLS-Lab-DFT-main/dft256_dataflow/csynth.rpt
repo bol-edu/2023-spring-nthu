@@ -1,0 +1,282 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dft'
+================================================================
++ General Information: 
+    * Date:           Fri Mar 31 18:42:20 2023
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        DFT_256_Dataflow
+    * Solution:       dataflow (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+-----------+-------------+-------------+-----+
+    |                         Modules                        | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |          |           |             |             |     |
+    |                         & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |    DSP    |      FF     |     LUT     | URAM|
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+-----------+-------------+-------------+-----+
+    |+ dft*                                                  |     -|  0.04|     8508|  8.508e+04|         -|     8250|     -|  dataflow|  94 (33%)|  160 (72%)|  15901 (14%)|  25274 (47%)|    -|
+    | + read_r                                               |     -|  0.79|      258|  2.580e+03|         -|      258|     -|        no|         -|          -|     21 (~0%)|     67 (~0%)|    -|
+    |  o READ_LOOP                                           |     -|  7.30|      256|  2.560e+03|         2|        1|   256|       yes|         -|          -|            -|            -|    -|
+    | + dft_compute                                          |     -|  0.04|     8249|  8.249e+04|         -|     8249|     -|        no|  28 (10%)|  160 (72%)|  15766 (14%)|  24812 (46%)|    -|
+    |  + dft_compute_Pipeline_DFT_INIT_LOOP                  |     -|  3.89|       34|    340.000|         -|       34|     -|        no|         -|          -|     11 (~0%)|     41 (~0%)|    -|
+    |   o DFT_INIT_LOOP                                      |     -|  7.30|       32|    320.000|         1|        1|    32|       yes|         -|          -|            -|            -|    -|
+    |  + dft_compute_Pipeline_DFT_OUTER_LOOP_DFT_INNER_LOOP  |     -|  0.04|     8212|  8.212e+04|         -|     8212|     -|        no|  28 (10%)|  160 (72%)|  15748 (14%)|  23695 (44%)|    -|
+    |   o DFT_OUTER_LOOP_DFT_INNER_LOOP                      |     -|  7.30|     8210|  8.210e+04|        20|        1|  8192|       yes|         -|          -|            -|            -|    -|
+    | + write_r                                              |     -|  1.74|      259|  2.590e+03|         -|      259|     -|        no|         -|          -|     96 (~0%)|    151 (~0%)|    -|
+    |  o WRITE_LOOP                                          |     -|  7.30|      257|  2.570e+03|         3|        1|   256|       yes|         -|          -|            -|            -|    -|
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+-----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++----------------------+----------+
+| Interface            | Bitwidth |
++----------------------+----------+
+| Imag_freq_address0   | 8        |
+| Imag_freq_address1   | 8        |
+| Imag_freq_d0         | 32       |
+| Imag_freq_d1         | 32       |
+| Imag_freq_q0         | 32       |
+| Imag_freq_q1         | 32       |
+| Real_freq_address0   | 8        |
+| Real_freq_address1   | 8        |
+| Real_freq_d0         | 32       |
+| Real_freq_d1         | 32       |
+| Real_freq_q0         | 32       |
+| Real_freq_q1         | 32       |
+| imag_sample_address0 | 8        |
+| imag_sample_address1 | 8        |
+| imag_sample_d0       | 32       |
+| imag_sample_d1       | 32       |
+| imag_sample_q0       | 32       |
+| imag_sample_q1       | 32       |
+| real_sample_address0 | 8        |
+| real_sample_address1 | 8        |
+| real_sample_d0       | 32       |
+| real_sample_d1       | 32       |
+| real_sample_q0       | 32       |
+| real_sample_q1       | 32       |
++----------------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+----------+
+| Argument    | Direction | Datatype |
++-------------+-----------+----------+
+| real_sample | in        | float*   |
+| imag_sample | in        | float*   |
+| Real_freq   | out       | float*   |
+| Imag_freq   | out       | float*   |
++-------------+-----------+----------+
+
+* SW-to-HW Mapping
++-------------+----------------------+---------+----------+
+| Argument    | HW Interface         | HW Type | HW Usage |
++-------------+----------------------+---------+----------+
+| real_sample | real_sample_address0 | port    | offset   |
+| real_sample | real_sample_ce0      | port    |          |
+| real_sample | real_sample_d0       | port    |          |
+| real_sample | real_sample_q0       | port    |          |
+| real_sample | real_sample_we0      | port    |          |
+| real_sample | real_sample_address1 | port    | offset   |
+| real_sample | real_sample_ce1      | port    |          |
+| real_sample | real_sample_d1       | port    |          |
+| real_sample | real_sample_q1       | port    |          |
+| real_sample | real_sample_we1      | port    |          |
+| imag_sample | imag_sample_address0 | port    | offset   |
+| imag_sample | imag_sample_ce0      | port    |          |
+| imag_sample | imag_sample_d0       | port    |          |
+| imag_sample | imag_sample_q0       | port    |          |
+| imag_sample | imag_sample_we0      | port    |          |
+| imag_sample | imag_sample_address1 | port    | offset   |
+| imag_sample | imag_sample_ce1      | port    |          |
+| imag_sample | imag_sample_d1       | port    |          |
+| imag_sample | imag_sample_q1       | port    |          |
+| imag_sample | imag_sample_we1      | port    |          |
+| Real_freq   | Real_freq_address0   | port    | offset   |
+| Real_freq   | Real_freq_ce0        | port    |          |
+| Real_freq   | Real_freq_d0         | port    |          |
+| Real_freq   | Real_freq_q0         | port    |          |
+| Real_freq   | Real_freq_we0        | port    |          |
+| Real_freq   | Real_freq_address1   | port    | offset   |
+| Real_freq   | Real_freq_ce1        | port    |          |
+| Real_freq   | Real_freq_d1         | port    |          |
+| Real_freq   | Real_freq_q1         | port    |          |
+| Real_freq   | Real_freq_we1        | port    |          |
+| Imag_freq   | Imag_freq_address0   | port    | offset   |
+| Imag_freq   | Imag_freq_ce0        | port    |          |
+| Imag_freq   | Imag_freq_d0         | port    |          |
+| Imag_freq   | Imag_freq_q0         | port    |          |
+| Imag_freq   | Imag_freq_we0        | port    |          |
+| Imag_freq   | Imag_freq_address1   | port    | offset   |
+| Imag_freq   | Imag_freq_ce1        | port    |          |
+| Imag_freq   | Imag_freq_d1         | port    |          |
+| Imag_freq   | Imag_freq_q1         | port    |          |
+| Imag_freq   | Imag_freq_we1        | port    |          |
++-------------+----------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------+-----+--------+------------+------+---------+---------+
+| Name                                                   | DSP | Pragma | Variable   | Op   | Impl    | Latency |
++--------------------------------------------------------+-----+--------+------------+------+---------+---------+
+| + dft                                                  | 160 |        |            |      |         |         |
+|  + read_r                                              | 0   |        |            |      |         |         |
+|    add_ln10_fu_110_p2                                  | -   |        | add_ln10   | add  | fabric  | 0       |
+|  + dft_compute                                         | 160 |        |            |      |         |         |
+|   + dft_compute_Pipeline_DFT_INIT_LOOP                 | 0   |        |            |      |         |         |
+|     add_ln24_fu_342_p2                                 | -   |        | add_ln24   | add  | fabric  | 0       |
+|   + dft_compute_Pipeline_DFT_OUTER_LOOP_DFT_INNER_LOOP | 160 |        |            |      |         |         |
+|     add_ln30_fu_858_p2                                 | -   |        | add_ln30   | add  | fabric  | 0       |
+|     add_ln30_1_fu_886_p2                               | -   |        | add_ln30_1 | add  | fabric  | 0       |
+|     mul_8s_8s_8_1_1_U85                                | -   |        | mul_ln33   | mul  | auto    | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U53                  | 3   |        | mul        | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U54                  | 3   |        | mul1       | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U21                 | 2   |        | sub        | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U37                 | 2   |        | add        | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U55                  | 3   |        | mul2       | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U56                  | 3   |        | mul3       | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U22                 | 2   |        | add1       | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U38                 | 2   |        | add2       | fadd | fulldsp | 4       |
+|     add_ln33_fu_971_p2                                 | -   |        | add_ln33   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U57                  | 3   |        | mul13_1    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U58                  | 3   |        | mul20_1    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U23                 | 2   |        | sub_1      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U39                 | 2   |        | add_1      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U59                  | 3   |        | mul29_1    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U60                  | 3   |        | mul36_1    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U24                 | 2   |        | add37_1    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U40                 | 2   |        | add40_1    | fadd | fulldsp | 4       |
+|     empty_13_fu_981_p2                                 | -   |        | empty_13   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U61                  | 3   |        | mul13_2    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U62                  | 3   |        | mul20_2    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U25                 | 2   |        | sub_2      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U41                 | 2   |        | add_2      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U63                  | 3   |        | mul29_2    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U64                  | 3   |        | mul36_2    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U26                 | 2   |        | add37_2    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U42                 | 2   |        | add40_2    | fadd | fulldsp | 4       |
+|     empty_14_fu_992_p2                                 | -   |        | empty_14   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U65                  | 3   |        | mul13_3    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U66                  | 3   |        | mul20_3    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U27                 | 2   |        | sub_3      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U43                 | 2   |        | add_3      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U67                  | 3   |        | mul29_3    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U68                  | 3   |        | mul36_3    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U28                 | 2   |        | add37_3    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U44                 | 2   |        | add40_3    | fadd | fulldsp | 4       |
+|     empty_15_fu_1002_p2                                | -   |        | empty_15   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U69                  | 3   |        | mul13_4    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U70                  | 3   |        | mul20_4    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U29                 | 2   |        | sub_4      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U45                 | 2   |        | add_4      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U71                  | 3   |        | mul29_4    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U72                  | 3   |        | mul36_4    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U30                 | 2   |        | add37_4    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U46                 | 2   |        | add40_4    | fadd | fulldsp | 4       |
+|     empty_16_fu_1012_p2                                | -   |        | empty_16   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U73                  | 3   |        | mul13_5    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U74                  | 3   |        | mul20_5    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U31                 | 2   |        | sub_5      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U47                 | 2   |        | add_5      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U75                  | 3   |        | mul29_5    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U76                  | 3   |        | mul36_5    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U32                 | 2   |        | add37_5    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U48                 | 2   |        | add40_5    | fadd | fulldsp | 4       |
+|     empty_17_fu_1023_p2                                | -   |        | empty_17   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U77                  | 3   |        | mul13_6    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U78                  | 3   |        | mul20_6    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U33                 | 2   |        | sub_6      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U49                 | 2   |        | add_6      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U79                  | 3   |        | mul29_6    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U80                  | 3   |        | mul36_6    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U34                 | 2   |        | add37_6    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U50                 | 2   |        | add40_6    | fadd | fulldsp | 4       |
+|     empty_18_fu_1033_p2                                | -   |        | empty_18   | add  | fabric  | 0       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U81                  | 3   |        | mul13_7    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U82                  | 3   |        | mul20_7    | fmul | maxdsp  | 3       |
+|     fsub_32ns_32ns_32_5_full_dsp_1_U35                 | 2   |        | sub_7      | fsub | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U51                 | 2   |        | add_7      | fadd | fulldsp | 4       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U83                  | 3   |        | mul29_7    | fmul | maxdsp  | 3       |
+|     fmul_32ns_32ns_32_4_max_dsp_1_U84                  | 3   |        | mul36_7    | fmul | maxdsp  | 3       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U36                 | 2   |        | add37_7    | fadd | fulldsp | 4       |
+|     fadd_32ns_32ns_32_5_full_dsp_1_U52                 | 2   |        | add40_7    | fadd | fulldsp | 4       |
+|     add_ln32_fu_940_p2                                 | -   |        | add_ln32   | add  | fabric  | 0       |
+|  + write_r                                             | 0   |        |            |      |         |         |
+|    add_ln46_fu_328_p2                                  | -   |        | add_ln46   | add  | fabric  | 0       |
++--------------------------------------------------------+-----+--------+------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------------------------------------------+------+------+--------+------------------------+---------+------+---------+
+| Name                                                   | BRAM | URAM | Pragma | Variable               | Storage | Impl | Latency |
++--------------------------------------------------------+------+------+--------+------------------------+---------+------+---------+
+| + dft                                                  | 94   | 0    |        |                        |         |      |         |
+|   real_in_U                                            | 2    | -    |        | real_in                | ram_1p  | auto | 1       |
+|   imag_in_U                                            | 2    | -    |        | imag_in                | ram_1p  | auto | 1       |
+|   real_out_U                                           | 2    | -    |        | real_out               | ram_s2p | auto | 1       |
+|   real_out_1_U                                         | 2    | -    |        | real_out_1             | ram_s2p | auto | 1       |
+|   real_out_2_U                                         | 2    | -    |        | real_out_2             | ram_s2p | auto | 1       |
+|   real_out_3_U                                         | 2    | -    |        | real_out_3             | ram_s2p | auto | 1       |
+|   real_out_4_U                                         | 2    | -    |        | real_out_4             | ram_s2p | auto | 1       |
+|   real_out_5_U                                         | 2    | -    |        | real_out_5             | ram_s2p | auto | 1       |
+|   real_out_6_U                                         | 2    | -    |        | real_out_6             | ram_s2p | auto | 1       |
+|   real_out_7_U                                         | 2    | -    |        | real_out_7             | ram_s2p | auto | 1       |
+|   imag_out_U                                           | 2    | -    |        | imag_out               | ram_s2p | auto | 1       |
+|   imag_out_1_U                                         | 2    | -    |        | imag_out_1             | ram_s2p | auto | 1       |
+|   imag_out_2_U                                         | 2    | -    |        | imag_out_2             | ram_s2p | auto | 1       |
+|   imag_out_3_U                                         | 2    | -    |        | imag_out_3             | ram_s2p | auto | 1       |
+|   imag_out_4_U                                         | 2    | -    |        | imag_out_4             | ram_s2p | auto | 1       |
+|   imag_out_5_U                                         | 2    | -    |        | imag_out_5             | ram_s2p | auto | 1       |
+|   imag_out_6_U                                         | 2    | -    |        | imag_out_6             | ram_s2p | auto | 1       |
+|   imag_out_7_U                                         | 2    | -    |        | imag_out_7             | ram_s2p | auto | 1       |
+|  + dft_compute                                         | 28   | 0    |        |                        |         |      |         |
+|   + dft_compute_Pipeline_DFT_OUTER_LOOP_DFT_INNER_LOOP | 28   | 0    |        |                        |         |      |         |
+|     cos_coefficients_table_U                           | 14   | -    |        | cos_coefficients_table | rom_np  | auto | 1       |
+|     sin_coefficients_table_U                           | 14   | -    |        | sin_coefficients_table | rom_np  | auto | 1       |
++--------------------------------------------------------+------+------+--------+------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options | Location                                           | Messages                                                                                                                                                                           |
++----------+---------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataflow |         | DFT_256_Dataflow/dataflow/directives.tcl:11 in dft | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
++----------+---------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+-----------------------------------------+-------------------------------------------------------------+
+| Type            | Options                                 | Location                                                    |
++-----------------+-----------------------------------------+-------------------------------------------------------------+
+| array_partition | variable=imag_out cyclic factor=8 dim=1 | DFT_256_Dataflow/dataflow/directives.tcl:7 in dft, imag_out |
+| array_partition | variable=real_out cyclic factor=8 dim=1 | DFT_256_Dataflow/dataflow/directives.tcl:6 in dft, real_out |
+| unroll          | factor=8                                | DFT_256_Dataflow/dataflow/directives.tcl:10 in dft_compute  |
++-----------------+-----------------------------------------+-------------------------------------------------------------+
+
+
