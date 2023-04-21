@@ -1,0 +1,114 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'zjes0' on host 'msi' (Windows NT_amd64 version 6.2) on Mon Apr 03 14:40:05 +0800 2023
+INFO: [HLS 200-10] In directory 'D:/HLS/HLS_LabB'
+Sourcing Tcl script 'D:/HLS/HLS_LabB/fir128_Q2/II_5/csynth.tcl'
+INFO: [HLS 200-1510] Running: source D:/HLS/HLS_LabB/fir128_Q2/II_5/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project fir128_Q2 
+INFO: [HLS 200-10] Opening project 'D:/HLS/HLS_LabB/fir128_Q2'.
+INFO: [HLS 200-1510] Running: set_top fir 
+INFO: [HLS 200-1510] Running: add_files fir128_Q2/fir.cpp 
+INFO: [HLS 200-10] Adding design file 'fir128_Q2/fir.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files fir128_Q2/fir.h 
+INFO: [HLS 200-10] Adding design file 'fir128_Q2/fir.h' to the project
+INFO: [HLS 200-1510] Running: add_files fir128_Q2/input.dat 
+INFO: [HLS 200-10] Adding design file 'fir128_Q2/input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files fir128_Q2/out.gold.dat 
+INFO: [HLS 200-10] Adding design file 'fir128_Q2/out.gold.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb fir128_Q2/fir_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'fir128_Q2/fir_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution II_5 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/HLS/HLS_LabB/fir128_Q2/II_5'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./fir128_Q2/II_5/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name fir fir 
+INFO: [HLS 200-1510] Running: set_directive_pipeline -II 5 fir/Shift_Accum_Loop 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Skipped source file 'out.gold.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input.dat'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] Analyzing design file 'fir128_Q2/fir.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.063 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, true>::ssdm_int(signed char)' into 'ap_int_base<8, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::ap_int_base(int)' into 'ap_int<8>::ap_int(int)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:179:57)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, true>::ssdm_int(int)' into 'ap_int_base<32, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi40ELb1EEC2EDq40_i' into 'ap_int_base<40, true>::ap_int_base(int)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)' into 'ap_int_base<8, true>::RType<32, true>::mult operator*<8, true, 32, true>(ap_int_base<8, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<40>::ap_int<40, true>(ap_int_base<40, true> const&)' into 'ap_int_base<8, true>::RType<32, true>::mult operator*<8, true, 32, true>(ap_int_base<8, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:554)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base(int)' into 'ap_int_base<8, true>::RType<32, true>::mult operator*<8, true, 32, true>(ap_int_base<8, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:516)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<8, true>::RType<32, true>::mult operator*<8, true, 32, true>(ap_int_base<8, true> const&, ap_int_base<32, true> const&)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1540:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<8, true>::RType<($_0)32, true>::mult operator*<8, true>(ap_int_base<8, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1679:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::RType<32, true>::mult operator*<8, true, 32, true>(ap_int_base<8, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<8, true>::RType<($_0)32, true>::mult operator*<8, true>(ap_int_base<8, true> const&, int)' (D:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1679:481)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'fir(int*, int)' (fir128_Q2/fir.cpp:31:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<40, true>::operator long long() const' into 'fir(int*, int)' (fir128_Q2/fir.cpp:34:11)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, true>::RType<($_0)32, true>::mult operator*<8, true>(ap_int_base<8, true> const&, int)' into 'fir(int*, int)' (fir128_Q2/fir.cpp:34:24)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.1 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'shift_reg.V' (fir128_Q2/fir.cpp:31:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'shift_reg.V' (fir128_Q2/fir.cpp:33:17)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fir' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir_Pipeline_Shift_Accum_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Shift_Accum_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 5, Final II = 4, Depth = 4, loop 'Shift_Accum_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.803 seconds; current allocated memory: 1.390 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.390 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir_Pipeline_Shift_Accum_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_5s_8s_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_Pipeline_Shift_Accum_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fir' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/y' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fir/x' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'fir_int_int_c' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fir'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.390 GB.
+INFO: [RTMG 210-278] Implementing memory 'fir_fir_Pipeline_Shift_Accum_Loop_shift_reg_V_RAM_AUTO_1R1W_ram (RAM)' using auto RAMs with power-on initialization.
+INFO: [RTMG 210-279] Implementing memory 'fir_fir_Pipeline_Shift_Accum_Loop_fir_int_int_c_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.811 seconds; current allocated memory: 1.390 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.256 seconds; current allocated memory: 1.390 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fir.
+INFO: [VLOG 209-307] Generating Verilog RTL for fir.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.709 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.846 seconds; peak allocated memory: 1.390 GB.
