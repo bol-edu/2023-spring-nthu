@@ -79,11 +79,11 @@ For Lab #C, students tried out the Vitis Libraries [[4]](#[4]) and used them to 
 
 |          Topics          |                       Students (Links)                       |
 | :----------------------: | :----------------------------------------------------------: |
-|      Data Compression    |    [宋乃仁](https://github.com/Barry-Sung/LAB_C_data_compression) |
-|            DSP           |    [石思宇 邱崇喆](https://github.com/ccontemplator/AAHLS_LAB_C)     |
-|        Solver QRF        |    [吳承哲 許睿哲](https://github.com/sssh311318/Lab_C_solver_QRF)     |
-|          Vision          |    [陳揚哲 周子翔](https://github.com/ZheChen-Bill/Vision)     |
-|           Codec          |    [張耀明 陳佳詳](https://github.com/s095339/LABC-Codec)           |
+|      Data Compression    |    [宋乃仁](https://github.com/Xilinx/Vitis_Libraries/tree/main/data_compression) |
+|            DSP           |    [石思宇 邱崇喆](https://github.com/Xilinx/Vitis_Libraries/tree/main/dsp)     |
+|        Solver QRF        |    [吳承哲 許睿哲](https://github.com/Xilinx/Vitis_Libraries/tree/main/solver)     |
+|          Vision          |    [陳揚哲 周子翔](https://github.com/Xilinx/Vitis_Libraries/tree/main/vision)     |
+|           Codec          |    [張耀明 陳佳詳](https://github.com/Xilinx/Vitis_Libraries/tree/main/codec)           |
 
 ## Final Projects
 
