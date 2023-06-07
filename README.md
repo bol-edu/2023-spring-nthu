@@ -62,16 +62,16 @@ For Lab #B, students practiced the labs in pp4 fpgas [[3]](#[3]) and tried to an
 
 |          Topics          |                       Students (Links)                       |
 | :----------------------: | :----------------------------------------------------------: |
-|      Systolic Array      |    [周子翔](https://github.com/SzuHsi/AAHLS_LabB_cordic)     |
-|    Cholesky Algorithm    |    [陳佳翔](https://github.com/SzuHsi/AAHLS_LabB_cordic)     |
-|        Bloom Filter      |    [邱崇喆](https://github.com/SzuHsi/AAHLS_LabB_cordic)     |
-|  Convolution Filtering   |    [張耀明](https://github.com/SzuHsi/AAHLS_LabB_cordic)     |
-|           FIR            |    [吳承哲](https://github.com/SzuHsi/AAHLS_LabB_cordic)     |
+|      Systolic Array      |    [周子翔]https://github.com/ecoyukino/LAB_B_SystolicArray)     |
+|    Cholesky Algorithm    |    [陳佳詳](https://github.com/jiaxianggg-chen/cholesky-algorithm)     |
+|        Bloom Filter      |    [邱崇喆](https://github.com/ccontemplator/AAHlLS_Lab_B)     |
+|  Convolution Filtering   |    [陳揚哲](https://github.com/ZheChen-Bill/convolution-filtering)     |
+|  Convolution Filtering   |    [張耀明](https://github.com/s095339/LAB-B_Convolution_Filtering)     |
+|           FIR            |    [吳承哲](https://github.com/sssh311318/Lab_B_FIR)     |
 |          CORDIC          |    [吳永玹](https://github.com/SzuHsi/AAHLS_LabB_cordic)     |
-|           DFT            |     [楊博舜](https://github.com/StanTeng/AAHLS_labB_DFT)     |
-|           FFT            |     [石思宇](https://github.com/StanTeng/AAHLS_labB_DFT)     |
-|Sparse Matrix Vector Multiplication|     [宋乃仁](https://github.com/StanTeng/AAHLS_labB_DFT)     |
-|  Matrix Multiplication   | [許睿哲](https://github.com/andy39866821/AAHLS-LabB-Matrix-Multiplication) |
+|           FFT            |     [石思宇](https://github.com/freud96/LabB_fft)     |
+|Sparse Matrix Vector Multiplication|     [宋乃仁](https://github.com/Barry-Sung/LAB_B)     |
+|  Matrix Multiplication   | [許睿哲](https://github.com/ray3210ray3210/2022HLS) |
 
 ## Lab #C - Vitis Libraries
 
@@ -79,11 +79,11 @@ For Lab #C, students tried out the Vitis Libraries [[4]](#[4]) and used them to 
 
 |          Topics          |                       Students (Links)                       |
 | :----------------------: | :----------------------------------------------------------: |
-|      Data Compression    |    [宋乃仁](https://github.com/Xilinx/Vitis_Libraries/tree/main/data_compression) |
-|            DSP           |    [石思宇 邱崇喆](https://github.com/Xilinx/Vitis_Libraries/tree/main/dsp)     |
-|        Solver QRF        |    [吳承哲 許睿哲](https://github.com/Xilinx/Vitis_Libraries/tree/main/solver)     |
-|          Vision          |    [陳揚哲 周子翔](https://github.com/Xilinx/Vitis_Libraries/tree/main/vision)     |
-|           Codec          |    [張耀明 陳佳詳](https://github.com/Xilinx/Vitis_Libraries/tree/main/codec)           |
+|      Data Compression    |    [宋乃仁](https://github.com/Barry-Sung/LAB_C_data_compression) |
+|            DSP           |    [石思宇 邱崇喆](https://github.com/ccontemplator/AAHLS_LAB_C)     |
+|        Solver QRF        |    [吳承哲 許睿哲](https://github.com/sssh311318/Lab_C_solver_QRF)     |
+|          Vision          |    [陳揚哲 周子翔](https://github.com/ZheChen-Bill/Vision)     |
+|           Codec          |    [張耀明 陳佳詳](https://github.com/s095339/LABC-Codec)           |
 
 ## Final Projects
 
