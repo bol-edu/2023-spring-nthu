@@ -62,7 +62,7 @@ For Lab #B, students practiced the labs in pp4 fpgas [[3]](#[3]) and tried to an
 
 |          Topics          |                       Students (Links)                       |
 | :----------------------: | :----------------------------------------------------------: |
-|      Systolic Array      |    [周子翔]https://github.com/ecoyukino/LAB_B_SystolicArray)     |
+|      Systolic Array      |    [周子翔](https://github.com/ecoyukino/LAB_B_SystolicArray)     |
 |    Cholesky Algorithm    |    [陳佳詳](https://github.com/jiaxianggg-chen/cholesky-algorithm)     |
 |        Bloom Filter      |    [邱崇喆](https://github.com/ccontemplator/AAHlLS_Lab_B)     |
 |  Convolution Filtering   |    [陳揚哲](https://github.com/ZheChen-Bill/convolution-filtering)     |
