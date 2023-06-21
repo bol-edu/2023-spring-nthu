@@ -6,10 +6,11 @@
 
 ## Table of Content
 
+- [Table of Content](#table-of-content)
 - [About This Repository](#about-this-repository)
 - [Lab #A - UG871](#lab-a---ug871)
-- [Lab #A - Vitis Tutorials](#lab-A---vitis-tutorials)
-- [Lab #B - PP4 FPGAs](#lab-B---pp4-fpgas)
+- [Lab #A - Vitis Tutorials](#lab-a---vitis-tutorials)
+- [Lab #B - PP4 FPGAs](#lab-b---pp4-fpgas)
 - [Lab #C - Vitis Libraries](#lab-c---vitis-libraries)
 - [Final Projects](#final-projects)
 - [References](#references)
@@ -86,6 +87,12 @@ For Lab #C, students tried out the Vitis Libraries [[4]](#[4]) and used them to 
 |           Codec          |    [張耀明 陳佳詳](https://github.com/s095339/LABC-Codec)           |
 
 ## Final Projects
+
+|          Topics          |                       Students (Links)                       |
+| :----------------------: | :----------------------------------------------------------: |
+|          AES-128         |    [周子翔 陳揚哲](https://github.com/ZheChen-Bill/HLS_FINAL) |
+|      DNN accelerator     |    [吳承哲 許睿哲 石思宇 ](https://github.com/ccontemplator/AAHLS_LAB_C)     |
+|   Adaptive beamforming   |    [張耀明 陳佳詳 宋乃仁 邱崇喆](https://github.com/sssh311318/Lab_C_solver_QRF)     |
 
 ## References
 
