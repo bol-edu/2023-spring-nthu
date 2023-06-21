@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vitis Analyzer v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# 
+# Start of session at: Sat Jun 17 14:47:28 2023
+# Process ID: 2089872
+# Current directory: /mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW
+# Command line: vitis_analyzer xrt.run_summary
+# Log file: /mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW/vitis_analyzer.log
+# Journal file: /mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW/vitis_analyzer.jou
+# Running On: HLS04, OS: Linux, CPU Frequency: 800.540 MHz, CPU Physical cores: 8, Host memory: 50365 MB
+#-----------------------------------------------------------
+start_gui
+create_project dummy

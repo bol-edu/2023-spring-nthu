@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/mnt/HLSNAS/03.bMXnEl/workspace/final_project/Adaptive_Beamforming/opencl_trace.wdb" id="1">
+         <top_modules>
+            <top_module name="Active" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject type="array" fp_name="/Host/Objects/Model_1/DynamicRow_1/Row_0/Row_0">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/OpenCL API Calls/Parallel General 1</obj_property>
+      <obj_property name="Description_Data">API Events not associated with a Queue</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#708090</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank 26=blank 25=#FF8800 24=#813535 22=#FF8800 21=#FF8800 20=#139394 1f=#139394 0b=#139394 04=#139394 1d=#FF8000 0f=#139394 0a=#813535 12=#4DB34D 08=#DAA520 16=#228B22 06=#139394 03=#DAA520 02=#2B2B75 23=#2B2B75 0c=#FF8000 18=#C5101A 0d=#C5101A 09=#4DB34D 01=#DAA520 07=#DAA520 1a=#ff00ff 0e=#139394 19=#813535 10=#139394 11=#139394 13=#228B22 14=#2B2B75 05=#DAA520 15=#813535 17=#2B2B75 1b=#ff00ff 1e=#FF8000 1c=#FF00FF </obj_property>
+      <obj_property name="EnumTransactionValueTable">00=blank;0_=blank;__=blank;_0=blank;26=INACTIVE;25=clPollStreams;24=clWriteStream;22=clReleaseStreamBuffer;21=clReleaseStream;20=clCreateStream;1f=clCreateStreamBuffer;0b=clCreateBuffer;04=clCreateKernel;1d=clEnqueueFillBuffer;0f=clCreateProgramWithBinary;0a=clEnqueueWriteBuffer;12=clEnqueueTask;08=clGetDeviceInfo;16=clEnqueueMigrateMem;06=clCreateContextFromType;03=clSetKernelArg;02=clEnqueueReadBuffer;23=clReadStream;0c=clBuildProgram;18=clFinish;0d=clWaitForEvents;09=clEnqueueNDRangeKernel;01=clGetPlatformIDs;07=clGetPlatformInfo;1a=clCreateUserEvent;0e=clCreateCommandQueue;19=clEnqueueUnmapMemObject;10=clCreateContext;11=clCreateImage;13=clEnqueueMigrateMemObjects;14=clEnqueueReadImage;05=clGetDeviceIDs;15=clEnqueueWriteImage;17=clEnqueueMapBuffer;1b=clSetUserEventStatus;1e=clEnqueueCopyBuffer;1c=UserMarker;</obj_property>
+      <obj_property name="Detail_Data">/Host/Details/Model_1/DynamicRow_1/Row_0/Row_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Host/Objects/Model_1/DynamicRow_1/Row_1/Row_1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/OpenCL API Calls/Parallel General 2</obj_property>
+      <obj_property name="Description_Data">API Events not associated with a Queue</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#708090</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank 26=blank 25=#FF8800 24=#813535 22=#FF8800 21=#FF8800 20=#139394 1f=#139394 0b=#139394 04=#139394 1d=#FF8000 0f=#139394 0a=#813535 12=#4DB34D 08=#DAA520 16=#228B22 06=#139394 03=#DAA520 02=#2B2B75 23=#2B2B75 0c=#FF8000 18=#C5101A 0d=#C5101A 09=#4DB34D 01=#DAA520 07=#DAA520 1a=#ff00ff 0e=#139394 19=#813535 10=#139394 11=#139394 13=#228B22 14=#2B2B75 05=#DAA520 15=#813535 17=#2B2B75 1b=#ff00ff 1e=#FF8000 1c=#FF00FF </obj_property>
+      <obj_property name="EnumTransactionValueTable">00=blank;0_=blank;__=blank;_0=blank;26=INACTIVE;25=clPollStreams;24=clWriteStream;22=clReleaseStreamBuffer;21=clReleaseStream;20=clCreateStream;1f=clCreateStreamBuffer;0b=clCreateBuffer;04=clCreateKernel;1d=clEnqueueFillBuffer;0f=clCreateProgramWithBinary;0a=clEnqueueWriteBuffer;12=clEnqueueTask;08=clGetDeviceInfo;16=clEnqueueMigrateMem;06=clCreateContextFromType;03=clSetKernelArg;02=clEnqueueReadBuffer;23=clReadStream;0c=clBuildProgram;18=clFinish;0d=clWaitForEvents;09=clEnqueueNDRangeKernel;01=clGetPlatformIDs;07=clGetPlatformInfo;1a=clCreateUserEvent;0e=clCreateCommandQueue;19=clEnqueueUnmapMemObject;10=clCreateContext;11=clCreateImage;13=clEnqueueMigrateMemObjects;14=clEnqueueReadImage;05=clGetDeviceIDs;15=clEnqueueWriteImage;17=clEnqueueMapBuffer;1b=clSetUserEventStatus;1e=clEnqueueCopyBuffer;1c=UserMarker;</obj_property>
+      <obj_property name="Detail_Data">/Host/Details/Model_1/DynamicRow_1/Row_1/Row_1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Host/Objects/Model_1/StaticRow_2/Row">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/OpenCL API Calls/Queue 0x55b508224010</obj_property>
+      <obj_property name="Description_Data">API events associated with the command queue</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#708090</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank 26=blank 25=#FF8800 24=#813535 22=#FF8800 21=#FF8800 20=#139394 1f=#139394 0b=#139394 04=#139394 1d=#FF8000 0f=#139394 0a=#813535 12=#4DB34D 08=#DAA520 16=#228B22 06=#139394 03=#DAA520 02=#2B2B75 23=#2B2B75 0c=#FF8000 18=#C5101A 0d=#C5101A 09=#4DB34D 01=#DAA520 07=#DAA520 1a=#ff00ff 0e=#139394 19=#813535 10=#139394 11=#139394 13=#228B22 14=#2B2B75 05=#DAA520 15=#813535 17=#2B2B75 1b=#ff00ff 1e=#FF8000 1c=#FF00FF </obj_property>
+      <obj_property name="EnumTransactionValueTable">00=blank;0_=blank;__=blank;_0=blank;26=INACTIVE;25=clPollStreams;24=clWriteStream;22=clReleaseStreamBuffer;21=clReleaseStream;20=clCreateStream;1f=clCreateStreamBuffer;0b=clCreateBuffer;04=clCreateKernel;1d=clEnqueueFillBuffer;0f=clCreateProgramWithBinary;0a=clEnqueueWriteBuffer;12=clEnqueueTask;08=clGetDeviceInfo;16=clEnqueueMigrateMem;06=clCreateContextFromType;03=clSetKernelArg;02=clEnqueueReadBuffer;23=clReadStream;0c=clBuildProgram;18=clFinish;0d=clWaitForEvents;09=clEnqueueNDRangeKernel;01=clGetPlatformIDs;07=clGetPlatformInfo;1a=clCreateUserEvent;0e=clCreateCommandQueue;19=clEnqueueUnmapMemObject;10=clCreateContext;11=clCreateImage;13=clEnqueueMigrateMemObjects;14=clEnqueueReadImage;05=clGetDeviceIDs;15=clEnqueueWriteImage;17=clEnqueueMapBuffer;1b=clSetUserEventStatus;1e=clEnqueueCopyBuffer;1c=UserMarker;</obj_property>
+      <obj_property name="Detail_Data">/Host/Details/Model_1/StaticRow_2/Row</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Host/Objects/Model_1/DynamicRow_3/Row_0/Row_0">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/Data Transfer/Read/Parallel Read 1</obj_property>
+      <obj_property name="Description_Data">Read data transfers from global memory to host</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#6c71c4</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank</obj_property>
+      <obj_property name="EnumTransactionValueTable">00=blank;01=Read;10=Bank0;11=Bank1;12=Bank2;13=Bank3;14=Bank4;15=Bank5;16=Bank6;17=Bank7;18=Bank8</obj_property>
+      <obj_property name="Detail_Data">/Host/Details/Model_1/DynamicRow_3/Row_0/Row_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Host/Objects/Model_1/DynamicRow_4/Row_0/Row_0">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/Data Transfer/Write/Parallel Write 1</obj_property>
+      <obj_property name="Description_Data">Write data transfer from host to global memory</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#d33682</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank</obj_property>
+      <obj_property name="EnumTransactionValueTable">00=blank;01=Write;10=Bank0;11=Bank1;12=Bank2;13=Bank3;14=Bank4;15=Bank5;16=Bank6;17=Bank7;18=Bank8</obj_property>
+      <obj_property name="Detail_Data">/Host/Details/Model_1/DynamicRow_4/Row_0/Row_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Top/UnknownSignal">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/Data Transfer/Copy</obj_property>
+      <obj_property name="Description_Data">Copy data transfers from global memory to global memory</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#073642</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank</obj_property>
+      <obj_property name="EnumTransactionValueTable">0=blank</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Host/Objects/Model_1/DynamicRowSummary_6/Row_0/Row_0">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="label">/OpenCL Host Trace/Kernel Enqueues/xilinx_u50_gen3x16_xdma_5_202210_1:Top_Kernel:Top_Kernel/Kernel Enqueue 1</obj_property>
+      <obj_property name="Description_Data">Kernel Enqueue</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#859900</obj_property>
+      <obj_property name="unexpandable"></obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">00=blank 01=#859900 </obj_property>
+      <obj_property name="EnumTransactionValueTable">00=blank;0_=blank;__=blank;_0=blank;01=Top_Kernel;</obj_property>
+      <obj_property name="Detail_Data">/Host/Details/Model_1/DynamicRowSummary_6/Row_0/Row_0</obj_property>
+   </wvobject>
+</wave_config>

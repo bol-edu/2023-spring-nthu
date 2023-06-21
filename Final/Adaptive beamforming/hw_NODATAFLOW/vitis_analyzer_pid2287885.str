@@ -1,0 +1,107 @@
+/*
+
+Xilinx Vitis Analyzer v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+
+Process ID (PID): 2287885
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jun 16 15:39:10 CST 2023
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Ubuntu
+OS Version: 5.8.0-41-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: localhost:11.0
+Screen size: 1536x864
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vitis/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/opt/Xilinx/Vitis/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	04.HPOmGn
+User home directory: /mnt/HLSNAS/04.HPOmGn
+User working directory: /mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2022.1
+RDI_DATADIR: /opt/Xilinx/Vitis/2022.1/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2022.1/bin
+
+Vitis Analyzer preferences file: /mnt/HLSNAS/04.HPOmGn/.Xilinx/vitis_analyzer/2022.1/vitis_analyzer.xml
+Vitis Analyzer preferences directory: /mnt/HLSNAS/04.HPOmGn/.Xilinx/vitis_analyzer/2022.1/
+Vitis Analyzer layouts directory: /mnt/HLSNAS/04.HPOmGn/.Xilinx/vitis_analyzer/2022.1/data/layouts
+PlanAhead jar file: 	/opt/Xilinx/Vitis/2022.1/lib/classes/frank.jar
+Vitis Analyzer log file: 	/mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW/vitis_analyzer.log
+Vitis Analyzer journal file: 	/mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW/vitis_analyzer.jou
+Engine tmp dir: 	./.Xil/vitis_analyzer-2287885-HLS04
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2022.1
+XILINX_SDK: /opt/Xilinx/Vitis/2022.1
+XILINX_VITIS: /opt/Xilinx/Vitis/2022.1
+XILINX_VIVADO: /opt/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2022.1
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,928 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Vitis Analyzer Command Line Arguments: xrt.run_summary
+// WARNING: HEventQueue.dispatchEvent() is taking  2242 ms.
+dismissDialog("Open Files"); // bA
+// Tcl Command: 'create_project dummy'
+// TclEventType: PROJECT_NEW
+// Opening Summary: Resource{value=FrankResource.FrankReportHolderType_RUN_SUMMARY}Type{value=RUN_SUMMARY},SummaryFile{file=/mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW/xrt.run_summary}
+// Command working directory: /tmp/vitis_analyzer_04.HPOmGn11138974552055084960/31176653
+// Command: /opt/Xilinx/Vitis/2022.1/bin/vp_analyze profile -o /tmp/vitis_analyzer_04.HPOmGn11138974552055084960/31176653/profile_summary.pb
+// Command elapsed time: 0.8s seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1929 ms.
+// Tcl Message: create_project dummy 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,934 MB. GUI used memory: 63 MB. Current time: 6/16/23, 3:39:11 PM CST
+dismissDialog("Open Summary"); // bA
+// [GUI Memory]: 80 MB (+81557kb) [00:00:12]
+// [Engine Memory]: 1,937 MB (+1879992kb) [00:00:12]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Run Guidance Report Generation"); // t
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_TIMELINE_TRACE}Type{value=VP_TRACE_REPORT},SummaryFile{file=xrt.run_summary isArchive=false},ReportFile{file=31176653/vp_trace.wdb}]", 6, false); // b
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_TIMELINE_TRACE}Type{value=VP_TRACE_REPORT},SummaryFile{file=xrt.run_summary isArchive=false},ReportFile{file=31176653/vp_trace.wdb}]", 6, false, false, false, false, false, true); // b - Double Click
+dismissDialog("Missing Report File"); // t
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_RUN_SUMMARY}Type{value=RUN_SUMMARY_REPORT},SummaryFile{file=xrt.run_summary isArchive=false},ReportFile{file=hw_NODATAFLOW/xrt.run_summary}]", 1, false); // b
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_RUN_SUMMARY}Type{value=RUN_SUMMARY_REPORT},SummaryFile{file=xrt.run_summary isArchive=false},ReportFile{file=hw_NODATAFLOW/xrt.run_summary}]", 1, false, false, false, false, false, true); // b - Double Click
+// Elapsed time: 13 seconds
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_SYSTEM_DIAGRAM}Type{value=SYSTEM_DIAGRAM_REPORT},SummaryFile{file=xrt.run_summary isArchive=false}]", 2, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_SYSTEM_DIAGRAM}Type{value=SYSTEM_DIAGRAM_REPORT},SummaryFile{file=xrt.run_summary isArchive=false}
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PLATFORM_DIAGRAM}Type{value=PLATFORM_DIAGRAM_REPORT},SummaryFile{file=xrt.run_summary isArchive=false}]", 3, false); // b
+// Opening Report: Resource{value=FrankResource.FrankViewType_PLATFORM_DIAGRAM}Type{value=PLATFORM_DIAGRAM_REPORT},SummaryFile{file=xrt.run_summary isArchive=false}
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_RUN_GUIDANCE}Type{value=RUN_GUIDANCE_REPORT},SummaryFile{file=xrt.run_summary isArchive=false},ReportFile{file=hw_NODATAFLOW/summary.csv}]", 4, false); // b
+dismissDialog("Missing Report File"); // t
+selectTree(FrankResource.ReportNavigatorTreePanel_REPORT_NAVIGATOR_TREE, "[root, Resource{value=FrankResource.FrankViewType_PROFILE_SUMMARY}Type{value=PROFILE_SUMMARY_REPORT},SummaryFile{file=xrt.run_summary isArchive=false},ReportFile{file=hw_NODATAFLOW/summary.csv}]", 5, false); // b
+closeMainWindow("Platform Diagram - [/mnt/HLSNAS/04.HPOmGn/m111061549/BeamFormer/Adaptive_Beamforming/hw_NODATAFLOW/xrt.run_summary] - Vitis Analyzer 2022.1"); // bc
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.

@@ -1,0 +1,150 @@
+===============================================================================
+Version:    v++ v2022.1 (64-bit)
+Build:      SW Build 3524075 on 2022-04-13-17:42:45
+Copyright:  Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Created:    Mon Jun 19 23:23:04 2023
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             Top_Kernel
+Target Device:           xilinx:u50:gen3x16_xdma_5:202210.1
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+Top_Kernel   c     fpga0:OCL_REGION_0  Top_Kernel      1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     Top_Kernel
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name                                                               Target Frequency  Estimated Frequency
+------------  -----------  ------------------------------------------------------------------------  ----------------  -------------------
+Top_Kernel_1  Top_Kernel   entry_proc                                                                300.300293        821.692688
+Top_Kernel_1  Top_Kernel   Master2Stream_Pipeline_VITIS_LOOP_326_1                                   300.300293        411.015198
+Top_Kernel_1  Top_Kernel   Master2Stream_Pipeline_VITIS_LOOP_332_2                                   300.300293        411.015198
+Top_Kernel_1  Top_Kernel   Master2Stream                                                             300.300293        411.015198
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_VITIS_LOOP_714_1                                         300.300293        411.015198
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_double_Pipeline_2      300.300293        578.703674
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_double_Pipeline_3      300.300293        519.48053
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_Pipeline_col_copy_q_i  300.300293        411.015198
+Top_Kernel_1  Top_Kernel   qrf_givens_double_s                                                       300.300293        424.808807
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_calc_rotations                                           300.300293        424.808807
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_Pipeline_update_q      300.300293        430.477844
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_row_assign_loop_col_assign_loop                          300.300293        413.736023
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_double_complex_double_s        300.300293        411.015198
+Top_Kernel_1  Top_Kernel   QRF                                                                       300.300293        411.015198
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_1                                                          300.300293        913.242004
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_2                                                          300.300293        913.242004
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_3                                                          300.300293        913.242004
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_VITIS_LOOP_51_1                                            300.300293        411.015198
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_read_U_loop1_read_U_loop2                                  300.300293        450.450439
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_read_Vs_loop                                               300.300293        517.866394
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_1                                                         300.300293        703.234863
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_VITIS_LOOP_89_2                                           300.300293        430.477844
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_index_calz_read                                           300.300293        700.280151
+Top_Kernel_1  Top_Kernel   CALC_Z                                                                    300.300293        424.808807
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_VITIS_LOOP_178_1                                           300.300293        430.477844
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_1                                                         300.300293        703.234863
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_VITIS_LOOP_136_2                                          300.300293        430.477844
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_index_calu_read                                           300.300293        700.280151
+Top_Kernel_1  Top_Kernel   CALC_U                                                                    300.300293        424.808807
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_Weights_write                                              300.300293        424.808807
+Top_Kernel_1  Top_Kernel   inhom                                                                     300.300293        411.015198
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_read_stream_input_VITIS_LOOP_280_1                   300.300293        431.965424
+Top_Kernel_1  Top_Kernel   operator_mul_double                                                       300.300293        430.477844
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_VITIS_LOOP_297_2                                     300.300293        430.477844
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_burst_write_output                                   300.300293        411.015198
+Top_Kernel_1  Top_Kernel   Weights_Mul                                                               300.300293        411.015198
+Top_Kernel_1  Top_Kernel   pass_dataflow                                                             300.300293        411.015198
+Top_Kernel_1  Top_Kernel   Top_Kernel                                                                300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name                                                               Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  ------------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+Top_Kernel_1  Top_Kernel   entry_proc                                                                0               0              0             0               0 ns             0 ns            0 ns
+Top_Kernel_1  Top_Kernel   Master2Stream_Pipeline_VITIS_LOOP_326_1                                   1003            1003           1003          1003            3.343 us         3.343 us        3.343 us
+Top_Kernel_1  Top_Kernel   Master2Stream_Pipeline_VITIS_LOOP_332_2                                   13              13             13            13              43.329 ns        43.329 ns       43.329 ns
+Top_Kernel_1  Top_Kernel   Master2Stream                                                             1159            1159           1159          1159            3.863 us         3.863 us        3.863 us
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_VITIS_LOOP_714_1                                         12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_double_Pipeline_2      102             102            102           102             0.340 us         0.340 us        0.340 us
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_double_Pipeline_3      506             506            506           506             1.686 us         1.686 us        1.686 us
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_Pipeline_col_copy_q_i  102             102            102           102             0.340 us         0.340 us        0.340 us
+Top_Kernel_1  Top_Kernel   qrf_givens_double_s                                                       1               129            129           129             0.430 us         0.430 us        0.430 us
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_calc_rotations                                           136 ~ 185       136            160           185             0.453 us         0.533 us        0.617 us
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_Pipeline_update_q      427             427            427           427             1.423 us         1.423 us        1.423 us
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_row_assign_loop_col_assign_loop                          103             103            103           103             0.343 us         0.343 us        0.343 us
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_double_complex_double_s        21641 ~ 633049  21641          undef         633049          72.129 us        undef           2.110 ms
+Top_Kernel_1  Top_Kernel   QRF                                                                       21642 ~ 633050  21642          undef         633050          72.133 us        undef           2.110 ms
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_1                                                          12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_2                                                          12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_3                                                          12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_VITIS_LOOP_51_1                                            1002            1002           1002          1002            3.340 us         3.340 us        3.340 us
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_read_U_loop1_read_U_loop2                                  102             102            102           102             0.340 us         0.340 us        0.340 us
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_read_Vs_loop                                               12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_1                                                         11              11             11            11              36.663 ns        36.663 ns       36.663 ns
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_VITIS_LOOP_89_2                                           93              93             93            93              0.310 us         0.310 us        0.310 us
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_index_calz_read                                           12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   CALC_Z                                                                    1370            1370           1370          1370            4.566 us         4.566 us        4.566 us
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_VITIS_LOOP_178_1                                           93              93             93            93              0.310 us         0.310 us        0.310 us
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_1                                                         11              11             11            11              36.663 ns        36.663 ns       36.663 ns
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_VITIS_LOOP_136_2                                          93              93             93            93              0.310 us         0.310 us        0.310 us
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_index_calu_read                                           12              12             12            12              39.996 ns        39.996 ns       39.996 ns
+Top_Kernel_1  Top_Kernel   CALC_U                                                                    1370            1370           1370          1370            4.566 us         4.566 us        4.566 us
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_Weights_write                                              60              60             60            60              0.200 us         0.200 us        0.200 us
+Top_Kernel_1  Top_Kernel   inhom                                                                     4052            4052           4052          4052            13.505 us        13.505 us       13.505 us
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_read_stream_input_VITIS_LOOP_280_1                   1009            1009           1009          1009            3.363 us         3.363 us        3.363 us
+Top_Kernel_1  Top_Kernel   operator_mul_double                                                       1               16             16            16              53.328 ns        53.328 ns       53.328 ns
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_VITIS_LOOP_297_2                                     201             201            201           201             0.670 us         0.670 us        0.670 us
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_burst_write_output                                   103             103            103           103             0.343 us         0.343 us        0.343 us
+Top_Kernel_1  Top_Kernel   Weights_Mul                                                               1387            1387           1387          1387            4.623 us         4.623 us        4.623 us
+Top_Kernel_1  Top_Kernel   pass_dataflow                                                             21643 ~ 633051  21786          undef         633194          72.613 us        undef           2.110 ms
+Top_Kernel_1  Top_Kernel   Top_Kernel                                                                21789 ~ 633197  21788          undef         633196          72.619 us        undef           2.110 ms
+
+Area Information
+Compute Unit  Kernel Name  Module Name                                                               FF      LUT     DSP  BRAM  URAM
+------------  -----------  ------------------------------------------------------------------------  ------  ------  ---  ----  ----
+Top_Kernel_1  Top_Kernel   entry_proc                                                                3       29      0    0     0
+Top_Kernel_1  Top_Kernel   Master2Stream_Pipeline_VITIS_LOOP_326_1                                   915     121     0    0     0
+Top_Kernel_1  Top_Kernel   Master2Stream_Pipeline_VITIS_LOOP_332_2                                   397     106     0    0     0
+Top_Kernel_1  Top_Kernel   Master2Stream                                                             1577    1311    0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_VITIS_LOOP_714_1                                         7       81      0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_double_Pipeline_2      9       72      0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_double_Pipeline_3      29      369     0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_Pipeline_col_copy_q_i  15      186     0    0     0
+Top_Kernel_1  Top_Kernel   qrf_givens_double_s                                                       46550   4105    0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_calc_rotations                                           47325   4459    0    3     0
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_complex_Pipeline_update_q      11947   6344    0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_Pipeline_row_assign_loop_col_assign_loop                          28      188     0    0     0
+Top_Kernel_1  Top_Kernel   qrf_alt_false_100_10_my_qrf_traits_complex_double_complex_double_s        63219   14636   0    75    0
+Top_Kernel_1  Top_Kernel   QRF                                                                       63224   14715   0    75    0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_1                                                          6       48      0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_2                                                          6       48      0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_3                                                          6       48      0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_VITIS_LOOP_51_1                                            13      88      0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_read_U_loop1_read_U_loop2                                  23      206     0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_read_Vs_loop                                               11      70      0    0     0
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_1                                                         6       48      0    0     0
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_VITIS_LOOP_89_2                                           853     417     0    0     0
+Top_Kernel_1  Top_Kernel   CALC_Z_Pipeline_index_calz_read                                           11      59      0    0     0
+Top_Kernel_1  Top_Kernel   CALC_Z                                                                    3355    1795    0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_VITIS_LOOP_178_1                                           853     386     0    0     0
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_1                                                         6       48      0    0     0
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_VITIS_LOOP_136_2                                          854     408     0    0     0
+Top_Kernel_1  Top_Kernel   CALC_U_Pipeline_index_calu_read                                           11      59      0    0     0
+Top_Kernel_1  Top_Kernel   CALC_U                                                                    3359    1772    0    0     0
+Top_Kernel_1  Top_Kernel   inhom_Pipeline_Weights_write                                              743     70      0    0     0
+Top_Kernel_1  Top_Kernel   inhom                                                                     16713   14383   0    0     0
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_read_stream_input_VITIS_LOOP_280_1                   380     13772   0    0     0
+Top_Kernel_1  Top_Kernel   operator_mul_double                                                       5004    6966    0    0     0
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_VITIS_LOOP_297_2                                     69290   83174   0    0     0
+Top_Kernel_1  Top_Kernel   Weights_Mul_Pipeline_burst_write_output                                   527     423     0    0     0
+Top_Kernel_1  Top_Kernel   Weights_Mul                                                               71614   98160   0    36    0
+Top_Kernel_1  Top_Kernel   pass_dataflow                                                             155149  129878  0    139   0
+Top_Kernel_1  Top_Kernel   Top_Kernel                                                                167204  150722  0    139   0
+-------------------------------------------------------------------------------
