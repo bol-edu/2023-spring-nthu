@@ -91,8 +91,8 @@ For Lab #C, students tried out the Vitis Libraries [[4]](#[4]) and used them to 
 |          Topics          |                       Students (Links)                       |
 | :----------------------: | :----------------------------------------------------------: |
 |          AES-128         |    [周子翔 陳揚哲](https://github.com/ZheChen-Bill/HLS_FINAL) |
-|  Flexible Matrix Multiplication Accelerator |    [吳承哲 許睿哲 石思宇](https://github.com/ccontemplator/AAHLS_LAB_C)     |
-|   Adaptive beamforming   |    [張耀明 陳佳詳 宋乃仁 邱崇喆](https://github.com/sssh311318/Lab_C_solver_QRF)     |
+|  Flexible Matrix Multiplication Accelerator |    [吳承哲 許睿哲 石思宇](https://github.com/sssh311318/HLS_FinalProject)     |
+|   Adaptive beamforming   |    [張耀明 陳佳詳 宋乃仁 邱崇喆](https://github.com/s095339/Adaptive_Beamforming/tree/ADD_INHOM)     |
 
 ## References
 
